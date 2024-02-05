@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  padding: 0 2rem;
+  padding: 0 3rem;
 }
 
 * {
@@ -18,7 +18,7 @@ body {
   text-decoration: none;
   scroll-behavior: smooth;
   font-family: "jost";
-  list-style-position: inside;
+  /* list-style-position: inside; */
   text-transform: capitalize;
 }
 
