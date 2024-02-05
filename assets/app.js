@@ -1,3 +1,16 @@
+let header = document.querySelector(".header");
+let anchors = document.querySelectorAll(".navbar a");
+let toggleBtns = document.querySelector(".toggle-btns");
+
+toggleBtns.addEventListener("click", () => {
+  header.classList.toggle("show");
+});
+anchors.forEach((val) => {
+  val.addEventListener("click", () => {
+    header.classList.remove("show");
+  });
+});
+
 var students = ["sani", "sami", "paro", "farooque", "zain"];
 
 // console.log("checing", students.length);

@@ -1,0 +1,58 @@
+@media (width <= 860px) {
+  .header,
+  .navbar {
+    background-color: rgba(230, 230, 230, 1);
+  }
+  .toggle-btns,
+  .menu-bar {
+    display: block;
+  }
+  .show .menu-bar {
+    display: none;
+  }
+  .show .cancel-btn {
+    display: block;
+  }
+  .navbar {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 7rem;
+    right: 0%;
+    width: 0%;
+    height: calc(100vh - 7rem);
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    overflow-y: scroll;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+  }
+
+  .show .navbar {
+    width: 50%;
+  }
+
+  .navbar a {
+    white-space: nowrap;
+    justify-content: start;
+    width: 100%;
+    height: auto;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (width <= 530px) {
+  .show .navbar {
+    width: 70%;
+  }
+}
+
+@media (width <= 360px) {
+  .show .navbar {
+    width: 90%;
+  }
+}
