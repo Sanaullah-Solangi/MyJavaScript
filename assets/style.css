@@ -125,7 +125,7 @@ ul > li:last-child {
 ol > li,
 dt {
   line-height: 35px;
-  padding: 2rem 0;
+  padding: 2rem 0 0 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 
@@ -137,7 +137,7 @@ dt {
 
 dd {
   background-color: rgba(200, 200, 200, 0.1);
-  padding: 1rem 0;
+  padding: 1rem 0 0 0;
 }
 ol li,
 dd {
