@@ -129,20 +129,22 @@ ol > li {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-ol > li:nth-child(odd) {
+/* ol > li:nth-child(odd) {
   background-color: var(--mainColor2);
 }
 
 ol > li:nth-child(even) {
   background-color: var(--mainColor1);
-}
+} */
 /*?=== answers ===*/
 
 .question {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: var(--mainColor1);
 }
 .answer {
   font-size: 1.6rem;
+  background-color: var(--mainColor2);
 }
 
 .question,
