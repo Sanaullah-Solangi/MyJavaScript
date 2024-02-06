@@ -145,7 +145,7 @@ dd {
   font-weight: 600;
   padding: 1rem;
   margin-top: 1rem;
-  list-style-type: square;
+  list-style: none;
 }
 ul > li:last-child {
   border: none;
