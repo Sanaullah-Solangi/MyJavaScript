@@ -118,7 +118,7 @@ dt,
 dd {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   line-height: 35px;
-  padding: 2rem 2rem;
+  padding: 2rem 0rem;
   margin-bottom: 2rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
@@ -149,4 +149,23 @@ dd {
 }
 ul > li:last-child {
   border: none;
+}
+
+.wrapper {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 1rem 2rem;
+}
+
+.question {
+  font-size: 2rem;
+}
+.answer {
+  font-size: 1.8rem;
+  font-weight: bold;
+  background-color: Rgb(233, 233, 233);
+}
+
+.question,
+.answer {
+  padding-left: 2rem;
 }
