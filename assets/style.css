@@ -6,7 +6,7 @@
 
 :root {
   --mainColor1: Rgb(233, 233, 233);
-  --mainColor2: rgba(192, 190, 192, 0.7);
+  --mainColor2: Rgb(211, 209, 211);
   --lightBg: rgba(200, 200, 200, 0.1);
 }
 
@@ -26,6 +26,7 @@ body {
   scroll-behavior: smooth;
   font-family: "jost";
   text-transform: capitalize;
+  line-height: 3rem;
 }
 
 /*!====== reuseable code ======*/
@@ -88,6 +89,7 @@ h1 {
   height: 7rem;
   padding: 0 3rem;
   z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -119,30 +121,22 @@ a {
 }
 
 a:hover {
-  background-color: rgba(200, 200, 200, 0.4);
+  background-color: var(--mainColor1);
 }
 
 /*!====== main content styling  ======*/
-/*?=== questions ===*/
 
 ol > li {
   font-size: 2rem;
   margin-bottom: 1rem;
+  background-color: var(--mainColor2);
 }
-
-/*?=== answers ===*/
 
 .question {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   background-color: var(--mainColor1);
   border-top-left-radius: 0.6rem;
   border-top-right-radius: 0.6rem;
-}
-.answer {
-  font-size: 1.6rem;
-  background-color: var(--mainColor2);
-  border-bottom-left-radius: 0.6rem;
-  border-bottom-right-radius: 0.6rem;
 }
 
 .question,
@@ -151,7 +145,22 @@ ol > li {
   padding: 1rem 2rem;
 }
 
+.answer,
+ul > li {
+  font-size: 1.6rem;
+}
+
 .answer span {
   font-size: 1.7rem;
   font-weight: bold;
+}
+
+ul > li {
+  padding: 0.5rem 2rem;
+  list-style-position: inside;
+  list-style-type: decimal;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+ul > li:last-child {
+  padding-bottom: 1rem;
 }
