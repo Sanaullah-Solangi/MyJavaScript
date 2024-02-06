@@ -1,3 +1,4 @@
+/*!====== base styling  ======*/
 @font-face {
   font-family: "jost";
   src: url(./Jost-Regular.ttf);
@@ -17,9 +18,12 @@ body {
   box-sizing: border-box;
   text-decoration: none;
   scroll-behavior: smooth;
+  list-style-position: inside;
   font-family: "jost";
   text-transform: capitalize;
 }
+
+/*!====== reuseable code ======*/
 
 .d-flex {
   display: flex;
@@ -52,13 +56,9 @@ body {
   margin-top: 10rem;
 }
 
-h1,
-.links {
-  margin-bottom: 3rem;
-}
-
 h1 {
   font-size: 4rem;
+  margin-bottom: 3rem;
 }
 
 a {
@@ -71,6 +71,14 @@ a {
 a:hover {
   background-color: rgba(200, 200, 200, 0.4);
 }
+
+ul > li,
+dd,
+.header {
+  background-color: Rgb(233, 233, 233);
+}
+
+/*!====== header styling starts ======*/
 .header {
   position: fixed;
   top: 0%;
@@ -86,10 +94,10 @@ a:hover {
   background: transparent;
   overflow: hidden;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
 }
 
 .toggle-btns {
@@ -102,29 +110,16 @@ a:hover {
   height: 100%;
 }
 
-ul > li,
-dd,
-.header {
-  background-color: Rgb(233, 233, 233);
-}
-
-ul > li,
-dd {
-  font-size: 1.8rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  font-weight: 600;
-}
-ul > li:last-child {
-  border: none;
-}
-.subItems {
-  margin-top: 1rem;
-}
+/*!====== main content styling  ======*/
+/*?=== questions ===*/
 
 ol > li,
-dt {
+dt,
+dd {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   line-height: 35px;
-  padding: 2rem 0 0 0;
+  padding: 2rem 2rem;
+  margin-bottom: 2rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 
@@ -141,4 +136,16 @@ dd {
 ol li,
 dd {
   font-size: 2.2rem;
+}
+/*?=== answers ===*/
+ul > li,
+dd {
+  font-size: 1.8rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+  padding: 1rem 0rem;
+  margin-top: 1rem;
+}
+ul > li:last-child {
+  border: none;
 }
