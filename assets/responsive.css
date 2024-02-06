@@ -53,6 +53,11 @@
     font-size: 1.8rem;
   }
 
+  .question,
+  .answer {
+    padding: 1rem;
+  }
+
   .show .navbar {
     width: 70%;
   }
