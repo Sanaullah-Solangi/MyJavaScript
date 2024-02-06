@@ -18,7 +18,7 @@ body {
   box-sizing: border-box;
   text-decoration: none;
   scroll-behavior: smooth;
-  list-style-position: inside;
+  list-style-position: outside;
   font-family: "jost";
   text-transform: capitalize;
 }
@@ -145,6 +145,7 @@ dd {
   font-weight: 600;
   padding: 1rem 0rem;
   margin-top: 1rem;
+  list-style-type: square;
 }
 ul > li:last-child {
   border: none;
