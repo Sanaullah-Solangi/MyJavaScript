@@ -71,11 +71,11 @@ h1 {
 }
 
 .br-radius-6 {
-  border-radius: 0.6rem;
-  -webkit-border-radius: 0.6rem;
-  -moz-border-radius: 0.6rem;
-  -ms-border-radius: 0.6rem;
-  -o-border-radius: 0.6rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 
 /*!====== header styling starts ======*/
@@ -129,13 +129,7 @@ ol > li {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-/* ol > li:nth-child(odd) {
-  background-color: var(--mainColor2);
-}
 
-ol > li:nth-child(even) {
-  background-color: var(--mainColor1);
-} */
 /*?=== answers ===*/
 
 .question {
