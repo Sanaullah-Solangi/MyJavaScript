@@ -4,10 +4,12 @@
     background-color: rgba(230, 230, 230, 1);
   }
   .toggle-btns,
-  .menu-bar {
+  .menu-bar,
+  .mob-subMenu {
     display: block;
   }
-  .show .menu-bar {
+  .show .menu-bar,
+  .web-subMenu {
     display: none;
   }
   .show .cancel-btn {
@@ -23,22 +25,38 @@
     flex-direction: column;
     align-items: start;
     justify-content: start;
-    overflow-y: scroll;
+    overflow: auto;
   }
-
-
 
   .show .navbar {
     width: 50%;
   }
 
-  .navbar a {
+  .navbar :is(a, span) {
     white-space: nowrap;
     justify-content: start;
     width: 100%;
     height: auto;
     padding: 1rem 2rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .link-cover {
+    height: auto;
+  }
+  .link-cover > span {
+    justify-content: space-between;
+  }
+
+  .link-cover,
+  .web-subMenu,
+  .mob-subMenu {
+    width: 100%;
+  }
+
+  .showMenu .mob-subMenu {
+    height: 80rem;
+    overflow: visible;
   }
 }
 

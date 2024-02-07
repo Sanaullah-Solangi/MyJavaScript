@@ -116,10 +116,10 @@ h1 {
   background: transparent;
   overflow: hidden;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
 }
 
 .toggle-btns {
@@ -131,57 +131,62 @@ h1 {
   height: 100%;
 }
 
-:is(.navbar, .link-cover) > a {
+:is(.navbar, .link-cover) > :is(a, span) {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-block: none;
   border-right: none;
 }
 
-.link-cover > a {
+.link-cover > :is(a, span) {
   width: 10rem;
   padding: 0 1rem;
 }
 
-.link-cover > a > .toggle-btns {
+.link-cover > :is(a, span) > .toggle-btns {
   font-size: 1.4rem;
 }
 
-.show > a > .toggle-btns .menu-bar {
+.showMenu > :is(a, span) > .toggle-btns .fa-plus {
   display: none;
 }
 
-.show > a > .toggle-btns .cancel-btn {
+.showMenu > :is(a, span) > .toggle-btns .fa-minus {
   display: block;
 }
 
-a {
+a,
+span {
   height: 100%;
   color: #000;
   font-size: 2rem;
   padding: 0 2rem;
 }
 
-a:hover {
+:is(a, span):hover {
   background-color: var(--mainColor1);
 }
-.subMenu {
+:is(.web-subMenu, .mob-subMenu) {
   top: 100%;
-  left: 0;
-  overflow: hidden;
+  right: 0;
   background-color: var(--mainColor1);
+  overflow: hidden;
   height: 0%;
 }
 
-.show .subMenu {
+.showMenu :is(.web-subMenu, .mob-subMenu) {
   height: 45rem;
 }
-.subMenu a {
+:is(.web-subMenu, .mob-subMenu) a {
   white-space: nowrap;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   padding: 0.7rem 2rem;
 }
 
-.subMenu a:hover {
+:is(.web-subMenu, .mob-subMenu) a:hover {
+  background-color: var(--mainColor2);
+}
+
+.mob-subMenu {
   background-color: var(--mainColor2);
 }
 

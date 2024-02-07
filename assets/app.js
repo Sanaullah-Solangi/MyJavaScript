@@ -3,6 +3,8 @@ let anchors = document.querySelectorAll(".navbar a");
 let toggleBtns = document.querySelector(".toggle-btns");
 let linkCover = document.querySelector(".link-cover");
 let toggleMenu = document.querySelector(".toggle-menu");
+let navbar = document.querySelector(".navbar");
+
 toggleBtns.addEventListener("click", () => {
   header.classList.toggle("show");
 });
@@ -14,7 +16,8 @@ anchors.forEach((val) => {
 });
 
 toggleMenu.addEventListener("click", () => {
-  linkCover.classList.toggle("show");
+  linkCover.classList.toggle("showMenu");
+  navbar.classList.toggle("showMenu");
 });
 
 var students = ["sani", "sami", "paro", "farooque", "zain"];
