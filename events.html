@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My JavaScript</title>
+    <!--!=== facicon link ===-->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favIcon2.png"
+      type="image/x-icon"
+    />
+
+    <!--!=== fontawesome cdn link ===-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--!=== style sheets link ===-->
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/responsive.css" />
+  </head>
+  <body>
+    <!--!====== header section starts =====-->
+    <header class="header p-relative d-flex jc-between al-center">
+      <!--todo=== logo ===-->
+      <div class="logo">
+        <img
+          src="./assets/images/logo.png"
+          alt="this is my javasript website's logo"
+          width="100% "
+          height="100%"
+        />
+      </div>
+      <!--todo=== toggle btns ===-->
+      <div class="toggle-btns d-none">
+        <i class="d-none fa-solid fa-bars menu-bar"></i>
+        <i class="d-none fa-solid fa-xmark cancel-btn"></i>
+      </div>
+      <!--todo=== navbar links ===-->
+      <nav class="navbar transition-2 d-flex jc-center al-center">
+        <!--!== link one ===-->
+        <a class="d-flex al-center jc-center" href="./index.html"
+          >history & basics</a
+        >
+        <!--!== link two ===-->
+        <div class="link-cover transition-2 p-relative h-100">
+          <!--?=== link ===-->
+          <a class="toggle-menu d-flex al-center jc-between" href="#"
+            >topics
+            <!--?=== toggle btns ===-->
+            <div class="toggle-btns">
+              <i class="fa-solid fa-plus menu-bar"></i>
+              <i class="d-none fa-solid fa-minus cancel-btn"></i></div
+          ></a>
+          <!--?=== subMenu ===-->
+          <div class="subMenu transition-2 p-absolute d-flex jc-center dir-col">
+            <a class="d-flex al-center h-100" href="./variables.html"
+              >variables</a
+            >
+            <a class="d-flex al-center h-100" href="./string.html">string</a>
+            <a class="d-flex al-center h-100" href="./number.html">number</a>
+            <a class="d-flex al-center h-100" href="./array.html">array</a>
+            <a class="d-flex al-center h-100" href="./function.html"
+              >function</a
+            >
+            <a class="d-flex al-center h-100" href="./loop.html">loops</a>
+
+            <a
+              class="d-flex al-center h-100"
+              href="./conditional-statement.html"
+              >conditional statements</a
+            >
+
+            <a class="d-flex al-center h-100" href="./object.html">object</a>
+
+            <a class="d-flex al-center h-100" href="./dom.html"
+              >DOM manipulation</a
+            >
+
+            <a class="d-flex al-center h-100" href="./events.html">events</a>
+          </div>
+        </div>
+        <!--!== link three ===-->
+        <a class="d-flex al-center jc-center" href="./rules.html">rules</a>
+
+        <!--!== link four ===-->
+        <a class="d-flex al-center jc-center" href="./liberaries.html"
+          >liberaries</a
+        >
+      </nav>
+    </header>
+    <!--!====== next section starts =====-->
+
+    <!--!====== script section starts =====-->
+    <script src="./assets/app.js"></script>
+  </body>
+</html>
