@@ -122,6 +122,8 @@ h1 {
   -o-border-radius: ;
 }
 
+/*?=== main navbar toggle btns ===*/
+
 .toggle-btns {
   font-size: 2rem;
   cursor: pointer;
@@ -131,27 +133,16 @@ h1 {
   height: 100%;
 }
 
+/*?=== anchors which are in navbar ===*/
+
 :is(.navbar, .link-cover) > :is(a, span) {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-block: none;
   border-right: none;
 }
 
-.link-cover > :is(a, span) {
-  width: 10rem;
-  padding: 0 1rem;
-}
-
-.link-cover > :is(a, span) > .toggle-btns {
-  font-size: 1.4rem;
-}
-
-.showMenu > :is(a, span) > .toggle-btns .fa-plus {
-  display: none;
-}
-
-.showMenu > :is(a, span) > .toggle-btns .fa-minus {
-  display: block;
+:is(.navbar, .link-cover) > :is(a, span) {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 a,
@@ -162,9 +153,38 @@ span {
   padding: 0 2rem;
 }
 
-:is(a, span):hover {
+/*?=== anchor which toggles submenu  ===*/
+
+.link-cover > :is(a, span) {
+  width: 10rem;
+  padding: 0 1rem;
+}
+
+/*?=== plus & minus btn which are in toggle anchor  ===*/
+
+.link-cover > :is(a, span) > .toggle-btns,
+.subMenu-cover > .toggle-btns {
+  font-size: 1.4rem;
+}
+:is(.showSubMenu, .showMenu > :is(a, span)) .toggle-btns .fa-plus {
+  display: none;
+}
+
+:is(.showSubMenu, .showMenu > :is(a, span)) .toggle-btns .fa-minus {
+  display: block;
+}
+
+.subMenu-cover > .toggle-btns{
+  background-color: var(--mainColor2);
+  height: 100%;
+  padding: 0 1rem;
+}
+.subMenu-cover:hover > .toggle-btns{
   background-color: var(--mainColor1);
 }
+
+/*?=== website subMenu  ===*/
+
 :is(.web-subMenu, .mob-subMenu) {
   top: 100%;
   right: 0;
@@ -176,15 +196,28 @@ span {
 .showMenu :is(.web-subMenu, .mob-subMenu) {
   height: 45rem;
 }
-:is(.web-subMenu, .mob-subMenu) a {
-  white-space: nowrap;
+
+/*?=== subMenu anchor's parent  ===*/
+
+:is(.web-subMenu, .mob-subMenu) > .subMenu-cover {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   padding: 0.7rem 2rem;
+  gap: 4rem;
 }
-
-:is(.web-subMenu, .mob-subMenu) a:hover {
+:is(.web-subMenu, .mob-subMenu) .subMenu-cover:hover {
   background-color: var(--mainColor2);
 }
+
+/*?=== anchors present in subMenus ===*/
+
+:is(.web-subMenu, .mob-subMenu) a {
+  white-space: nowrap;
+  padding: 0;
+}
+
+/*?=== subMenu Items styling ===*/
+
+/*?=== mobile subMenu ===*/
 
 .mob-subMenu {
   background-color: var(--mainColor2);
