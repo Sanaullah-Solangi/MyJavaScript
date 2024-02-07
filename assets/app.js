@@ -7,6 +7,7 @@ let linkCover = document.querySelector(".link-cover");
 let toggleMenu = document.querySelector(".toggle-menu");
 let navbar = document.querySelector(".navbar");
 let subMenuBtns = document.querySelectorAll(".subMenu-toggle-btns");
+let subMenuWrapper = document.querySelector(".subMenu-cover");
 
 //!=== header functionality ===
 
