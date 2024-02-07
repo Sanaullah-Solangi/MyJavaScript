@@ -24,12 +24,9 @@
     align-items: start;
     justify-content: start;
     overflow-y: scroll;
-    transition: all 0.2s linear;
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -ms-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
   }
+
+
 
   .show .navbar {
     width: 50%;

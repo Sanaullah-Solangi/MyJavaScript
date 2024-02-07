@@ -61,6 +61,17 @@ body {
 .p-relative {
   position: relative;
 }
+.p-absolute {
+  content: "";
+  position: absolute;
+}
+
+.h-100 {
+  height: 100%;
+}
+.w-100 {
+  width: 100%;
+}
 
 .main-container {
   margin-top: 10rem;
@@ -77,6 +88,14 @@ h1 {
   -moz-border-radius: 0.6rem;
   -ms-border-radius: 0.6rem;
   -o-border-radius: 0.6rem;
+}
+
+.transition-2 {
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
 }
 
 /*!====== header styling starts ======*/
@@ -109,8 +128,30 @@ h1 {
 }
 
 .navbar {
-  overflow-x: hidden;
   height: 100%;
+}
+
+:is(.navbar, .link-cover) > a {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-block: none;
+  border-right: none;
+}
+
+.link-cover > a {
+  width: 10rem;
+  padding: 0 1rem;
+}
+
+.link-cover > a > .toggle-btns {
+  font-size: 1.4rem;
+}
+
+.show > a > .toggle-btns .menu-bar {
+  display: none;
+}
+
+.show > a > .toggle-btns .cancel-btn {
+  display: block;
 }
 
 a {
@@ -122,6 +163,26 @@ a {
 
 a:hover {
   background-color: var(--mainColor1);
+}
+.subMenu {
+  top: 100%;
+  left: 0;
+  overflow: hidden;
+  background-color: var(--mainColor1);
+  height: 0%;
+}
+
+.show .subMenu {
+  height: 45rem;
+}
+.subMenu a {
+  white-space: nowrap;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0.7rem 2rem;
+}
+
+.subMenu a:hover {
+  background-color: var(--mainColor2);
 }
 
 /*!====== main content styling  ======*/

@@ -1,14 +1,20 @@
 let header = document.querySelector(".header");
 let anchors = document.querySelectorAll(".navbar a");
 let toggleBtns = document.querySelector(".toggle-btns");
-
+let linkCover = document.querySelector(".link-cover");
+let toggleMenu = document.querySelector(".toggle-menu");
 toggleBtns.addEventListener("click", () => {
   header.classList.toggle("show");
 });
+
 anchors.forEach((val) => {
   val.addEventListener("click", () => {
     header.classList.remove("show");
   });
+});
+
+toggleMenu.addEventListener("click", () => {
+  linkCover.classList.toggle("show");
 });
 
 var students = ["sani", "sami", "paro", "farooque", "zain"];
