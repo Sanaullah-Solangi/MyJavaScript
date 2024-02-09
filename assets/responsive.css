@@ -183,6 +183,7 @@
   .subMenu-cover:nth-of-type(10) > .subMenu-item {
     grid-template-columns: 1fr;
   }
+  .subMenu-cover:nth-of-type(8) > .subMenu-item,
   .subMenu-cover:nth-of-type(9) > .subMenu-item,
   .subMenu-cover:nth-of-type(10) > .subMenu-item {
     top: 100%;
@@ -202,9 +203,34 @@
   }
 
   .showSubMenu .subMenu-item {
-    height: fit-content;
+    height: 8rem;
     left: 0%;
     display: flex;
+  }
+  .showSubMenu:nth-of-type(2) > .subMenu-item {
+    height: 60rem;
+  }
+  .showSubMenu:nth-of-type(3) > .subMenu-item {
+    height: 40rem;
+  }
+  .showSubMenu:nth-of-type(4) > .subMenu-item {
+    height: 50rem;
+  }
+  .showSubMenu:nth-of-type(5) > .subMenu-item {
+    height: 17rem;
+  }
+  .showSubMenu:nth-of-type(6) > .subMenu-item {
+    height: 20rem;
+  }
+  .showSubMenu:nth-of-type(7) > .subMenu-item {
+    height: 14rem;
+  }
+  .showSubMenu:nth-of-type(8) > .subMenu-item {
+    height: 25rem;
+  }
+  .showSubMenu:nth-of-type(9) > .subMenu-item,
+  .showSubMenu:nth-of-type(10) > .subMenu-item {
+    height: 70rem;
   }
 }
 
