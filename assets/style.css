@@ -1,4 +1,4 @@
-/*!====== base styling  ======*/
+/*!============================ base styling  ============================*/
 @font-face {
   font-family: "jost";
   src: url(./Jost-Regular.ttf);
@@ -29,7 +29,7 @@ body {
   line-height: 3rem;
 }
 
-/*!====== reuseable code ======*/
+/*!============================ reuseable code ============================*/
 
 .d-flex {
   display: flex;
@@ -98,7 +98,7 @@ h1 {
   -o-transition: all 0.2s linear;
 }
 
-/*!====== header styling starts ======*/
+/*!============================ header styling starts ============================*/
 .header {
   background-color: var(--mainColor2);
   position: fixed;
@@ -134,20 +134,19 @@ h1 {
 
 /*?=== anchors which are in navbar ===*/
 
-.navbar > a,
-span,
+.navbar > :is(a, span),
 .toggle-btns,
-.subMenu-item a {
+.subMenu-item a,
+.link-cover {
   cursor: pointer;
 }
 
 :is(.navbar, .link-cover) > :is(a, span) {
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-block: none;
-  border-right: none;
+  border: none;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-:is(.navbar, .link-cover) > :is(a, span) {
+.link-cover span {
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -159,10 +158,15 @@ span {
   padding: 0 2rem;
 }
 
+.navbar > a:hover,
+.link-cover > span:hover {
+  background-color: var(--mainColor1);
+}
+
 /*?=== anchor which toggles submenu  ===*/
 
 .link-cover > :is(a, span) {
-  width: 10rem;
+  width: 11rem;
   padding: 0 1rem;
 }
 
@@ -193,8 +197,7 @@ span {
 
 /*?=== website subMenu  ===*/
 
-.web-subMenu,
-.mob-subMenu {
+.web-subMenu {
   top: 100%;
   right: 0%;
   background-color: var(--mainColor1);
@@ -204,7 +207,7 @@ span {
   visibility: hidden;
 }
 
-.showMenu :is(.web-subMenu, .mob-subMenu) {
+.showMenu .web-subMenu {
   height: 45rem;
   opacity: 1;
   visibility: visible;
@@ -213,19 +216,19 @@ span {
 
 /*?=== subMenu anchor's parent  ===*/
 
-:is(.web-subMenu, .mob-subMenu) > .subMenu-cover,
+.web-subMenu > .subMenu-cover,
 .subMenu-item a {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   padding: 0.7rem 2rem;
   gap: 4rem;
 }
-:is(.web-subMenu, .mob-subMenu) .subMenu-cover:hover {
+.web-subMenu .subMenu-cover:hover {
   background-color: var(--mainColor2);
 }
 
 /*?=== anchors  in subMenus ===*/
 
-:is(.web-subMenu, .mob-subMenu) a {
+.web-subMenu a {
   white-space: nowrap;
   padding: 0;
 }
@@ -289,6 +292,8 @@ span {
   left: -80%;
 }
 
+/*?=== anchors under subMenu Items ===*/
+
 .subMenu-item > a {
   font-size: 1.5rem;
   padding-inline: 2rem;
@@ -314,7 +319,7 @@ span {
   background-color: var(--mainColor2);
 }
 
-/*!====== main content styling  ======*/
+/*!============================ main content styling  ============================*/
 
 ol > li {
   font-size: 2rem;

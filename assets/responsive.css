@@ -25,14 +25,14 @@
     flex-direction: column;
     align-items: start;
     justify-content: start;
-    overflow-y: auto;
+    overflow: auto;
   }
 
   .show .navbar {
-    width: 50%;
+    width: 70%;
   }
 
-  .navbar :is(a, span) {
+  .navbar > :is(a, span, .link-cover) {
     white-space: nowrap;
     justify-content: start;
     width: 100%;
@@ -41,22 +41,156 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   }
 
+  .navbar > :is(a, span, .link-cover):hover {
+    background-color: var(--mainColor2);
+  }
+
+  /*?=== nav's anchor which is parent of subMenu ===*/
+
+  .link-cover > span:hover {
+    background-color: transparent;
+  }
+
   .link-cover {
     height: auto;
   }
   .link-cover > span {
+    width: 100%;
+    padding: 0;
+    border: none;
     justify-content: space-between;
   }
 
   .link-cover,
-  .web-subMenu,
   .mob-subMenu {
     width: 100%;
   }
 
+  /*?=== website subMenu  ===*/
+
+  .mob-subMenu {
+    height: fit-content;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
   .showMenu .mob-subMenu {
-    height: 80rem;
+    height: fit-content;
+    opacity: 1;
+    visibility: visible;
     overflow: visible;
+  }
+
+  /*?=== subMenu anchor's parent  ===*/
+
+  .mob-subMenu > .subMenu-cover,
+  .subMenu-item a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0.7rem 2rem;
+    gap: 4rem;
+  }
+  .mob-subMenu .subMenu-cover:hover {
+    background-color: var(--mainColor1);
+  }
+
+  /*?=== anchors  in subMenus ===*/
+
+  .mob-subMenu a {
+    white-space: nowrap;
+    padding: 0;
+  }
+
+  /*?=== plus & minus btn which are in toggle anchor  ===*/
+
+  .subMenu-cover > .toggle-btns {
+    background-color: var(--mainColor1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem 1rem;
+  }
+  .subMenu-cover:hover > .toggle-btns,
+  .subMenu-item a:hover {
+    background-color: var(--mainColor2);
+  }
+  /*?=== subMenu Items styling ===*/
+
+  .subMenu-item {
+    background-color: var(--mainColor1);
+    width: 100%;
+    height: fit-content;
+    top: -140%;
+    left: -100%;
+    z-index: 99;
+  }
+
+  .showSubMenu .subMenu-item {
+    display: block;
+    visibility: visible;
+    left: 0%;
+    opacity: 1;
+    display: flex;
+  }
+
+  /*?=== subMenu items positioning ===*/
+
+  .subMenu-cover:nth-of-type(3) > .subMenu-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+  }
+  .subMenu-cover:nth-of-type(2) > .subMenu-item,
+  .subMenu-cover:nth-of-type(4) > .subMenu-item,
+  .subMenu-cover:nth-of-type(5) > .subMenu-item,
+  .subMenu-cover:nth-of-type(9) > .subMenu-item,
+  .subMenu-cover:nth-of-type(10) > .subMenu-item {
+    width: 100%;
+  }
+  .subMenu-cover:nth-of-type(1) > .subMenu-item,
+  .subMenu-cover:nth-of-type(2) > .subMenu-item,
+  .subMenu-cover:nth-of-type(3) > .subMenu-item,
+  .subMenu-cover:nth-of-type(4) > .subMenu-item,
+  .subMenu-cover:nth-of-type(5) > .subMenu-item,
+  .subMenu-cover:nth-of-type(6) > .subMenu-item,
+  .subMenu-cover:nth-of-type(7) > .subMenu-item {
+    top: 100%;
+  }
+  .subMenu-cover:nth-of-type(8) > .subMenu-item {
+    top: -510%;
+  }
+  .subMenu-cover:nth-of-type(9) > .subMenu-item {
+    top: -725%;
+  }
+  .subMenu-cover:nth-of-type(10) > .subMenu-item {
+    top: -725%;
+  }
+
+  .showSubMenu:nth-of-type(2) > .subMenu-item,
+  .showSubMenu:nth-of-type(4) > .subMenu-item,
+  .showSubMenu:nth-of-type(5) > .subMenu-item,
+  .showSubMenu:nth-of-type(9) > .subMenu-item,
+  .showSubMenu:nth-of-type(10) > .subMenu-item {
+    left: 0%;
+  }
+
+  /*?=== anchor's in subMenu Item ===*/
+  .subMenu-item > a {
+    padding-inline: 2rem;
+  }
+}
+
+@media (width <=595px) {
+  .subMenu-cover:nth-of-type(2) > .subMenu-item,
+  .subMenu-cover:nth-of-type(3) > .subMenu-item,
+  .subMenu-cover:nth-of-type(4) > .subMenu-item,
+  .subMenu-cover:nth-of-type(9) > .subMenu-item,
+  .subMenu-cover:nth-of-type(10) > .subMenu-item {
+    grid-template-columns: 1fr;
+  }
+  .subMenu-cover:nth-of-type(9) > .subMenu-item,
+  .subMenu-cover:nth-of-type(10) > .subMenu-item {
+    top: 100%;
   }
 }
 
@@ -73,9 +207,6 @@
     padding: 1rem;
   }
 
-  .show .navbar {
-    width: 70%;
-  }
   h1 {
     font-size: 3rem;
   }
