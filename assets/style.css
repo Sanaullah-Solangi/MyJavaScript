@@ -247,11 +247,9 @@ span {
 }
 
 .showSubMenu .subMenu-item {
-  display: block;
   visibility: visible;
   left: -60%;
   opacity: 1;
-  display: flex;
 }
 /*?=== subMenu items positioning ===*/
 

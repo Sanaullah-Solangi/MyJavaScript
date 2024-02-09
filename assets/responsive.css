@@ -28,6 +28,10 @@
     overflow: auto;
   }
 
+  .navbar::-webkit-scrollbar {
+    display: none;
+  }
+
   .show .navbar {
     width: 70%;
   }
@@ -70,7 +74,7 @@
   /*?=== website subMenu  ===*/
 
   .mob-subMenu {
-    height: fit-content;
+    height: 0%;
     opacity: 0;
     overflow: hidden;
     visibility: hidden;
@@ -127,7 +131,6 @@
   }
 
   .showSubMenu .subMenu-item {
-    display: block;
     visibility: visible;
     left: 0%;
     opacity: 1;
@@ -183,6 +186,25 @@
   .subMenu-cover:nth-of-type(9) > .subMenu-item,
   .subMenu-cover:nth-of-type(10) > .subMenu-item {
     top: 100%;
+  }
+  /*?=== subMenu Items styling ===*/
+
+  .subMenu-item {
+    background-color: var(--mainColor1);
+    width: 100%;
+    height: 0%;
+    top: 100%;
+    left: 0%;
+    z-index: 99;
+    opacity: 1;
+    visibility: visible;
+    overflow: hidden;
+  }
+
+  .showSubMenu .subMenu-item {
+    height: fit-content;
+    left: 0%;
+    display: flex;
   }
 }
 
