@@ -72,7 +72,7 @@
             <div
               class="subMenu-cover p-relative d-flex jc-between al-center subMenu-item-1"
             >
-              <a class="d-flex al-center w-100 h-100" href="./datatype.html"
+              <a class="d-flex al-center w-100 h-100" href="./variables.html"
                 >data types</a
               >
               <!--?=== toggle btns ===-->
@@ -134,6 +134,13 @@
                   href="./datatype.html#symbol"
                   class="d-felx al-center w-100 h-100 subMenu-item-link"
                   >symbol(ES6 mein)</a
+                >
+
+                <!--*=== subMenu-item 8 ===-->
+                <a
+                  href="./datatype.html#notdefined"
+                  class="d-felx al-center w-100 h-100 subMenu-item-link"
+                  >not defined</a
                 >
               </div>
             </div>
@@ -1195,7 +1202,7 @@
           <div
             class="subMenu-cover p-relative d-flex jc-between al-center subMenu-item-1"
           >
-            <a class="d-flex al-center w-100 h-100" href="./datatype.html"
+            <a class="d-flex al-center w-100 h-100" href="./variables.html"
               >data types</a
             >
             <!--?=== toggle btns ===-->
@@ -1257,6 +1264,13 @@
                 href="./datatype.html#symbol"
                 class="d-felx al-center w-100 h-100 subMenu-item-link"
                 >symbol(ES6 mein)</a
+              >
+
+              <!--*=== subMenu-item 8 ===-->
+              <a
+                href="./datatype.html#notdefined"
+                class="d-felx al-center w-100 h-100 subMenu-item-link"
+                >not defined</a
               >
             </div>
           </div>
@@ -2308,104 +2322,76 @@
     </header>
     <!--!====== next section starts =====-->
     <div class="main-container">
-      <h1 class="txt-center">variables</h1>
+      <h1 class="txt-center">data types</h1>
 
       <ol>
         <!--!== question 1 ===-->
-        <li class="br-radius-6">
-          <p class="d-flex al-center question">variables kya hota hai?</p>
-          <p class="d-flex al-center answer">
-            variable aik tarah ka folder ya container type hota hai jis men ham
-            apni marzi ki koi bhi value store kr skte hen?
-          </p>
+        <li id="string" class="br-radius-6">
+          <p class="question">string kya hota hai or q use hota hai?</p>
+          <p class="answer"></p>
         </li>
 
         <!--!== question 2 ===-->
-        <li class="br-radius-6">
-          <p class="d-flex al-center question">variable q banate hen?</p>
-          <p class="d-flex al-center answer">
-            kisi bhi value ko store krne k lye
-          </p>
+        <li id="number" class="br-radius-6">
+          <p class="question">number kya hota hai?</p>
+          <p class="answer"></p>
         </li>
 
         <!--!== question 3 ===-->
-        <li class="br-radius-6">
-          <p class="d-flex al-center question">variable kese banate hen?</p>
-          <p class="d-flex al-center answer">
-            variable banane k lye JavaScript hamen aik key word deti hai jise
-            ham jese hi likhte hen JavaScript ko pta chal jata hai k ham aik
-            variable banane wale hen or wo keyword hai "var".
-          </p>
+        <li id="boolean" class="br-radius-6">
+          <p class="question">boolean kya hota hai?</p>
+          <p class="answer"></p>
         </li>
 
         <!--!== question 4 ===-->
-        <li class="br-radius-6">
-          <p class="d-flex al-center question">
-            kya ham variable ka koi name rakh skte hen?
-          </p>
-          <p class="d-flex al-center answer">
-            g han rakhh skte hen balke name rakhna zaruri hai jab ap "var" key
-            word likhte hen to uske directly baad apko variable ka name likhna
-            hota hai agar ap name nhi likhenge to variable nhi banega.
-          </p>
+        <li id="null" class="br-radius-6">
+          <p class="question">null kya hota hai?</p>
+          <p class="answer"></p>
         </li>
 
         <!--!== question 5 ===-->
-        <li class="br-radius-6">
-          <p class="d-flex al-center question">
-            variable men koi bhi value kese store krte hen?
-          </p>
-          <p class="d-flex al-center answer">
-            iska tareeka ye hai k ap jab variable ka name likhte hen to uske
-            baad ap "equal to =" ka sign lagate hen or uske baad jo bhi value
-            apne store krni ho to wo store ho jati hai.
+        <li id="undefined" class="br-radius-6">
+          <p class="question">undefined kya hota hai?</p>
+          <p class="answer">
+            undefined se murad hai "empty variable ya koi bhi empty storage". or
+            undefined bhi as a value hi mani jati hai iska mtlab ye bhi hota hai
+            k jis variable ya storage ko ap use kr rhe ho ye exist to krta hai
+            but is men koi bhi value mojood nhi hai. <br />
+            &sext; or ye aik "false value hai"
+            <br />for example:<br />
+            &sext; var fullName;<br />
+            &sext; aleart(fullName);<br />
+            to ye koi error nhi dega balke alert men iski value aaegi jo k
+            "undefined" hogi jiska mtlab ye hoga k ye fullName ka variable to
+            hai but is men koi value mojood nhi hai.<br />
+            &sext; is ki misal esi hai jese aik empty folder.
           </p>
         </li>
 
         <!--!== question 6 ===-->
-        <li class="br-radius-6">
-          <p class="d-flex al-center question">
-            variable banane ka faida kya huwa?
-          </p>
-          <p class="d-flex al-center answer">
-            variable banane ka faida ye hai k ap bari se bari value ko is men
-            store kr k use baar baar easily use kr skte hen or varibale ka use
-            is lye bhi krte hen k koi bhi value jo baar baar use krni hia use
-            easily use kya ja ske.
-          </p>
+        <li id="object" class="br-radius-6">
+          <p class="question">object kya hota hia?</p>
+          <p class="answer"></p>
         </li>
 
         <!--!== question 7 ===-->
-        <li class="br-radius-6">
-          <p class="d-flex al-center question">
-            variable ko print kese krte hen console men?
-          </p>
-          <p class="d-flex al-center answer">
-            console.log() men variable ka name directly likhne se wo console men
-            print ho jata hai or document.write() men likhne se ye webpage men
-            print ho jata hai but ismen khayal is baat ka krna hai k variable ka
-            name inverted commas men na likha jae agar likha gaya to use
-            variable nhi balke string samjha jaega to is lye iska name bina
-            commas k likha jaega.
-          </p>
+        <li id="symbol" class="br-radius-6">
+          <p class="question">symbol kya hota hai?</p>
+          <p class="answer"></p>
         </li>
 
-        <!--!== question 8 ===-->
-        <li class="br-radius-6">
-          <p class="d-flex al-center question">
-            variable k saath ham or konse operations kr skte hen?
-          </p>
-          <p class="d-flex al-center answer">
-            ham variable ko update bhi kr skte hen or iska tareeqa ye hai jhan
-            variable ko define kya hai us se agli kisi bhi line men ap variable
-            ka name likhe or uske baad equal to ka sign lagae phr jo bhi new
-            wali value apne usmen update krni hia use likhde to variable update
-            ho jaega. for example.<br />
-            var fullName = "Sanaullah";<br />
-            fullName = "Muhammad Sanaullah";<br />
-            ab yhan apne pehle variable men store kya sanaullah name or phr uske
-            baad next line men use update kr dya to ab kya hoga k sanaullah ki
-            jaga muhammad sanaullah ajaega.
+        <!--!== question 7 ===-->
+        <li id="notdefined" class="br-radius-6">
+          <p class="question">not defined kya hota hai?</p>
+          <p class="answer">
+            iska mtlab hai k jis <strong>variable</strong> ya kisi bhi value ko
+            tum <strong>print ya use</strong> kr rhe ho wo
+            <strong>exist</strong> hi nhi krti yani mojood hi nhi acha wo use ki
+            jane wali value kuch bhi ho skti hai for example <br />
+            agar ap kisi <strong>function</strong> ko run kr rhe hen or wo
+            function apne banaya hi nhi to ap ko <strong>error</strong> milega k
+            <br />
+            &sext; <strong>[function name]</strong> is not defined.
           </p>
         </li>
       </ol>

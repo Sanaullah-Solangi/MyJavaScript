@@ -128,11 +128,12 @@
     top: 100%;
     left: -100%;
     z-index: 99;
-    transition: all 0.6s linear;
-    -webkit-transition: all 0.6s linear;
-    -moz-transition: all 0.6s linear;
-    -ms-transition: all 0.6s linear;
-    -o-transition: all 0.6s linear;
+    border-bottom: none;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
   }
 
   .showSubMenu .subMenu-item {
@@ -144,33 +145,33 @@
 
   /*?=== subMenu items positioning ===*/
 
-  .subMenu-cover:nth-of-type(3) > .subMenu-item {
+  .subMenu-cover:nth-of-type(4) > .subMenu-item {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1rem;
   }
-  .subMenu-cover:nth-of-type(2) > .subMenu-item,
-  .subMenu-cover:nth-of-type(4) > .subMenu-item,
+  .subMenu-cover:nth-of-type(3) > .subMenu-item,
   .subMenu-cover:nth-of-type(5) > .subMenu-item,
-  .subMenu-cover:nth-of-type(9) > .subMenu-item,
-  .subMenu-cover:nth-of-type(10) > .subMenu-item {
+  .subMenu-cover:nth-of-type(6) > .subMenu-item,
+  .subMenu-cover:nth-of-type(10) > .subMenu-item,
+  .subMenu-cover:nth-of-type(11) > .subMenu-item {
     width: 100%;
   }
-  .subMenu-cover:nth-of-type(8) > .subMenu-item {
+  .subMenu-cover:nth-of-type(9) > .subMenu-item {
     top: -510%;
   }
-  .subMenu-cover:nth-of-type(9) > .subMenu-item {
+  .subMenu-cover:nth-of-type(10) > .subMenu-item {
     top: -725%;
   }
-  .subMenu-cover:nth-of-type(10) > .subMenu-item {
+  .subMenu-cover:nth-of-type(11) > .subMenu-item {
     top: -725%;
   }
 
-  .showSubMenu:nth-of-type(2) > .subMenu-item,
-  .showSubMenu:nth-of-type(4) > .subMenu-item,
+  .showSubMenu:nth-of-type(3) > .subMenu-item,
   .showSubMenu:nth-of-type(5) > .subMenu-item,
-  .showSubMenu:nth-of-type(9) > .subMenu-item,
-  .showSubMenu:nth-of-type(10) > .subMenu-item {
+  .showSubMenu:nth-of-type(6) > .subMenu-item,
+  .showSubMenu:nth-of-type(10) > .subMenu-item,
+  .showSubMenu:nth-of-type(11) > .subMenu-item {
     left: 0%;
   }
 
@@ -181,16 +182,16 @@
 }
 
 @media (width <=595px) {
-  .subMenu-cover:nth-of-type(2) > .subMenu-item,
   .subMenu-cover:nth-of-type(3) > .subMenu-item,
   .subMenu-cover:nth-of-type(4) > .subMenu-item,
-  .subMenu-cover:nth-of-type(9) > .subMenu-item,
-  .subMenu-cover:nth-of-type(10) > .subMenu-item {
+  .subMenu-cover:nth-of-type(5) > .subMenu-item,
+  .subMenu-cover:nth-of-type(10) > .subMenu-item,
+  .subMenu-cover:nth-of-type(11) > .subMenu-item {
     grid-template-columns: 1fr;
   }
-  .subMenu-cover:nth-of-type(8) > .subMenu-item,
   .subMenu-cover:nth-of-type(9) > .subMenu-item,
-  .subMenu-cover:nth-of-type(10) > .subMenu-item {
+  .subMenu-cover:nth-of-type(10) > .subMenu-item,
+  .subMenu-cover:nth-of-type(11) > .subMenu-item {
     top: 100%;
   }
   /*?=== subMenu Items styling ===*/
@@ -212,29 +213,32 @@
     left: 0%;
     display: flex;
   }
-  .showSubMenu:nth-of-type(2) > .subMenu-item {
-    height: 60rem;
+  .showSubMenu:nth-of-type(1) > .subMenu-item {
+    height: 28rem;
   }
   .showSubMenu:nth-of-type(3) > .subMenu-item {
-    height: 40rem;
+    height: 60rem;
   }
   .showSubMenu:nth-of-type(4) > .subMenu-item {
-    height: 50rem;
+    height: 40rem;
   }
   .showSubMenu:nth-of-type(5) > .subMenu-item {
-    height: 17rem;
+    height: 50rem;
   }
   .showSubMenu:nth-of-type(6) > .subMenu-item {
-    height: 20rem;
+    height: 17rem;
   }
   .showSubMenu:nth-of-type(7) > .subMenu-item {
-    height: 14rem;
+    height: 20rem;
   }
   .showSubMenu:nth-of-type(8) > .subMenu-item {
+    height: 14rem;
+  }
+  .showSubMenu:nth-of-type(9) > .subMenu-item {
     height: 25rem;
   }
-  .showSubMenu:nth-of-type(9) > .subMenu-item,
-  .showSubMenu:nth-of-type(10) > .subMenu-item {
+  .showSubMenu:nth-of-type(10) > .subMenu-item,
+  .showSubMenu:nth-of-type(11) > .subMenu-item {
     height: 70rem;
   }
 }
@@ -243,6 +247,11 @@
   body {
     padding: 0 1rem 0 4rem;
   }
+
+  :is(.navbar, .mob-subMenu .subMenu-cover, .link-cover) > :is(a, span) {
+    font-size: 1.6rem;
+  }
+
   ol > li {
     font-size: 1.8rem;
   }
