@@ -327,13 +327,13 @@ span {
 ol > li {
   font-size: 2rem;
   margin-bottom: 2rem;
-  background-color: var(--mainColor2);
+  background-color: var(--mainColor1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .question {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  background-color: var(--mainColor1);
+  background-color: var(--mainColor2);
   border-top-left-radius: 0.6rem;
   border-top-right-radius: 0.6rem;
 }
