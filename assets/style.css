@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  padding: 0 4rem;
+  padding: 0 2rem;
 }
 
 * {
@@ -333,9 +333,13 @@ ol > li {
 
 .question {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  background-color: var(--mainColor2);
   border-top-left-radius: 0.6rem;
   border-top-right-radius: 0.6rem;
+  padding-top: 0rem;
+}
+
+.answer {
+  background-color: var(--mainColor2);
 }
 
 .question,

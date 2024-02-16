@@ -244,10 +244,6 @@
 }
 
 @media (width <= 530px) {
-  body {
-    padding: 0 1rem 0 4rem;
-  }
-
   :is(.navbar, .mob-subMenu .subMenu-cover, .link-cover) > :is(a, span) {
     font-size: 1.6rem;
   }
