@@ -27,6 +27,7 @@ body {
   font-family: "jost";
   text-transform: capitalize;
   line-height: 3rem;
+  list-style-position: inside;
 }
 
 /*!============================ reuseable code ============================*/
