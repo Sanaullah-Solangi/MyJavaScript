@@ -325,6 +325,7 @@ span {
 /*!============================ main content styling  ============================*/
 
 ol > li {
+  text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
   background-color: var(--mainColor1);
@@ -344,6 +345,7 @@ ol > li {
 
 .question,
 .answer {
+  text-align: left;
   height: 100%;
   padding: 1rem 2rem;
 }
