@@ -111,7 +111,7 @@ h1 {
   width: 100%;
   height: 7rem;
   padding: 0 3rem;
-  z-index: 10;
+  z-index: 1;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -267,29 +267,13 @@ span {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.showSubMenu .subMenu-item,
-.showSubNavbar .subNavbar-item {
+.web-subMenu .subMenu-cover:hover > .subMenu-item,
+.showSubMenu .subMenu-item {
   visibility: visible;
   left: -60%;
   opacity: 1;
 }
 
-.web-subMenu .subMenu-cover:hover > .subMenu-item {
-  visibility: visible;
-  left: -60%;
-  opacity: 1;
-}
-.showSubNavbar .subNavbar-item {
-  width: fit-content;
-  left: -125%;
-}
-
-.subMenu-navbar:hover > .subNavbar-item {
-  width: fit-content;
-  left: -125%;
-  visibility: visible;
-  opacity: 1;
-}
 /*?=== subMenu items positioning ===*/
 
 .subMenu-cover:nth-of-type(3) > .subMenu-item,
@@ -345,6 +329,35 @@ span {
   left: -65%;
 }
 
+/*?=== subNavbar and subNavbar-items styling ===*/
+
+.subMenu-navbar {
+  gap: 7rem;
+}
+.subNavbar-item {
+  width: fit-content;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.subMenu-navbar:hover > .subNavbar-item,
+.showSubNavbar .subNavbar-item {
+  left: -125%;
+  visibility: visible;
+  opacity: 1;
+}
+
+:is(.subMenu-navbar, .subNavbar-item) a:hover {
+  background-color: var(--mainColor2);
+}
+.subNavbar-item {
+  background-color: var(--mainColor1);
+}
+
+.subNavbar-btns {
+  font-size: 1.5rem;
+}
+
 /*?=== anchors under subMenu Items and subNavbar Items ===*/
 
 .subMenu-item > :is(.subMenu-navbar, a),
@@ -371,22 +384,6 @@ span {
 .subMenu-cover:nth-of-type(2):hover > .subMenu-item > a:nth-child(2),
 .heightlight-right {
   color: green;
-}
-
-/*?=== subNavbar and subNavbar-items styling ===*/
-
-.subMenu-navbar {
-  gap: 7rem;
-}
-:is(.subMenu-navbar, .subNavbar-item) a:hover {
-  background-color: var(--mainColor2);
-}
-.subNavbar-item {
-  background-color: var(--mainColor1);
-}
-
-.subNavbar-btns {
-  font-size: 1.5rem;
 }
 
 /*?=== mobile subMenu ===*/
