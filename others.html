@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My JavaScript</title>
     <!--!=== facicon link ===-->
     <link
       rel="shortcut icon"
@@ -22,6 +21,7 @@
     <!--!=== style sheets link ===-->
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="stylesheet" href="./assets/responsive.css" />
+    <title>My JavaScript (Others)</title>
   </head>
   <body>
     <!--!====== header section starts =====-->
@@ -2371,67 +2371,275 @@
       </nav>
     </header>
     <!--!====== next section starts =====-->
-    <main class="main-container">
-      <h1 class="txt-center">strings</h1>
+    <div class="main-container">
+      <h1 class="txt-center">Randam Topics</h1>
 
       <ol>
-        <!--!=== question 1 ===-->
+        <!--!== question 1 ===-->
+        <h2 class="txt-cap sub-heading" id="mathametical familiar operatores">
+          &starf; mathametical familiar operatores
+        </h2>
         <li class="br-radius-6">
           <p class="question">
-            <strong>string</strong> kya hota hai? or ise ham q use krte hen.
+            mathametical familiar operaters konse hen? or kya krte hen.
           </p>
           <p class="answer">
-            <strong>string</strong> har
-            <strong>programming language</strong> men aik
-            <strong>data type</strong> hai. <strong>JavaScript</strong> or har
-            <strong>programming language</strong> men ise text ko represnet krne
-            k lye use krte hen <strong>JavaScript</strong> men
-            <strong>number, boolean</strong> or <strong>variable</strong> k
-            ilawa sab string men ata hai.
+            ye simple mathametical familiar operaters hen jinse ap numbers ko
+            <strong>plus, minus, multiply, devide or etc</strong> operations kr
+            skte hen. for example<br />
+            <strong>
+              let num = 10;<br />
+              console.log( num + 10);<br />
+              the result will be " 20 "; </strong
+            ><br />
+            isi tarah ham dusra operation bhi kr skte hen. for example<br />
+            <strong>
+              let num = 10;<br />
+              console.log( num * 10);<br />
+              the result will be " 100 "; </strong
+            ><br />
+            isi tarah ham dusra operation bhi kr k dekhte hen. for example<br />
+            <strong>
+              let num = 10;<br />
+              console.log( num % 2);<br />
+              the result will be " 0 "; </strong
+            ><br />
+            ye sign remider ko maloom krne k lye use hota hai yani ye ye check
+            krne ka k 10 ko agar 2 2 kr k divide kya jae to kya akhir men kuch
+            bachega agar bachna hoga to wo btaega.
           </p>
         </li>
 
-        <!--!=== question 2 ===-->
+        <!--!== question 2 ===-->
+        <h2 class="txt-cap sub-heading" id="mathametical unfamiliar operatores">
+          &starf; mathametical unfamiliar operatores
+        </h2>
         <li class="br-radius-6">
-          <p class="question"><strong>string</strong> kese likhte hen?</p>
+          <p class="question">
+            mathametical unfamiliar operaters konse hen? or kya krte hen.
+          </p>
           <p class="answer">
-            <strong>string</strong> likhne k lye ap text ko
-            <strong>("") inverted commas</strong> men likhte hen. for example.
+            ye mathametical unfamiliar operaters hen jinse ap numbers men
+            operations kr skte hen.<br />
+            <strong>&starf; increament (++) :</strong>
+            agar ap ne number men sirf aik number ko plus krna ho to uske lye
+            normal jo plus ka krne ka tareeqa hai jese
+            <strong>num = num + 1;</strong>
+            ham ise use nhi krte balke hamare pas increament ka opetion hota hai
+            jis men ham bas variable k age <strong>++</strong> ka sign lagate
+            hen or 1 number add ho jata hai.<br />
+            for example<br />
+            <strong>
+              let num = 10;<br />
+              num++;<br />
+              console.log(num);<br />
+              the result will be " 11 " </strong
+            ><br />
+            <strong>&starf; decreament (- -) :</strong>isi tarah decrement ka
+            bhi opetion hota hai yani ap agar aik number minus krna chahte hen
+            to normal process k bajae ap <strong>(- -)</strong> ka use kr skte
+            hen jise decrement kha jata hai. for example<br />
+            <strong>
+              let num = 10;<br />
+              num--;<br />
+              console.log(num);<br />
+              the result will be " 9 " </strong
+            ><br />
+          </p>
+        </li>
+
+        <!--!== question 3 ===-->
+        <li class="br-radius-6">
+          <p class="question">
+            kya post-increment/decrement or pre-increment/decrement kya hota
+            hai?
+          </p>
+          <p class="answer">
+            <strong class="title">&starf; post increment/decrement :</strong> is
+            se murad hai ye k JavaScript jese k intepreted language hai or
+            <strong>top to bottom</strong> and
+            <strong>left to right</strong> kaam krti hai to jab ye print kregi
+            to pehle variable ko print kregi or uske baad increament hoga jis se
+            increament krda value print nhi hogi. for example<br />
+            <strong>
+              let num = 10;<br />
+              console.log(num++)<br />
+              to iska result aaega 10 <br />
+            </strong>
+            q k variable pehle print ho gaya increament phr baad men huwa ab
+            agar iske baad phr se ap print krenge to us result men increament
+            show hoga. for example.
+            <strong
+              >console.log(num) <br />
+              11
+            </strong>
             <br />
-            <strong>console.log("muhammad Sanaullah")</strong> <br />
-            yhan per name jo likha hai ye strong hai <br />
+            isi tarah increament bhi kaam kregi. for example <br />
+            <strong>
+              let num = 10;<br />
+              console.log(num--)<br />
+              to iska result aaega 10 <br />
+            </strong>
+            or iske baad agar phr print krenge to increment show hoga. <br />
+            <strong
+              >console.log(num) <br />
+              9
+            </strong>
+            <br />
+            <strong class="title">&starf; pre increment/decrement :</strong>
+            ismen increment/decrement pehle hi ho jaegi or jab print krenge to
+            increment/decrement hoga. for example <br />
+            <strong>
+              let num = 10;<br />
+              console.log(++num)<br />
+              to iska result aaega 11 <br />
+            </strong>
+            q k is baar increament pehle hi ho gaya or print baad men huwa isi
+            tarah decreament bhi kaam krta hai.
           </p>
         </li>
 
-        <!--!=== question 3 ===-->
+        <!--!== question 4 ===-->
+        <h2 class="txt-cap sub-heading" id="mathametical unfamiliar operatores">
+          &starf; eliminating ambiguity
+        </h2>
         <li class="br-radius-6">
           <p class="question">
-            agar <strong>string</strong> men number ko likha jae to kya wo bhi
-            string ban jata hai
+            agar kabhi esa ho k boht sare mathametical operations aik saath ho
+            rhe hun yani k
+            <strong>(plus, minus, multiply, divide, etc)</strong> to in men se
+            pehle konsa wala operation perform hoga or inke perfoem hone ka
+            sequence kya hoga?
           </p>
           <p class="answer">
-            g han agar ap number ko bhi <strong>string</strong> men likhte hen
-            to wo bhi <strong>string</strong> ban jata hai. for example <br />
-            <strong>console.log("1234");</strong>
+            agar kabhhi boht sare mathametical operations aik saath ho to us
+            waqt normaly <strong>math</strong> men jo <strong>BODMAS</strong> ka
+            rule hota hai wo follow kya jata hai?<br />
           </p>
         </li>
 
-        <!--!=== question 4 ===-->
-        <li class="br-radius-6" id="splice">
-          <p class="question">splice</p>
+        <!--!== question 5 ===-->
+        <li class="br-radius-6">
+          <p class="question"><strong>BODMAS</strong> ka kay mtlab hai?</p>
           <p class="answer">
-            ye apko hamesha deleted value return krta hai<br />
-            <span> splice 3 kaam krta hia khin se bhi</span>
+            <strong>BODMAS</strong> aik rule hia math ka jis k according
+            mathametical operations perform kye jate hen. iski
+            <strong>full form</strong> hai.<br />
+            <strong>B : Bracket "( )"</strong><br />
+            <strong>O : Order (Powers and Roots)</strong><br />
+            <strong>D : division ( / )</strong><br />
+            <strong>M : multiplication ( * )</strong><br />
+            <strong>A : Addition ( + )</strong><br />
+            <strong>S : subtraction ( - )</strong><br />
+            iska mtlab hai k jab ye operations aik saath ajaen to in men se
+            pehle wo wala operation hoga jo <strong>Brackets</strong> men likha
+            gaya hoga chahen wo jo bhi ho uske baad <strong>order</strong> ko
+            solve kya jaega or isi tarah baqi operations perform kye jaenge.for
+            example <br />
+            <strong>2 + 4 * 3</strong> <br />
+            iska jo answer hai wo hai <strong>14</strong> q k pehle
+            <strong>multiplication</strong> huwi or uske bad
+            <strong>Addition</strong><br />
+            but agar men ye krdun <br />
+            <strong>(2 + 4) * 3</strong> <br />
+            to ab iska answer hoga <strong>18</strong> q k ab pehle
+            <strong>Addition</strong> huwi or phr uske baad
+            <strong>multiplication</strong> <br />
+            or isi tarah <strong>nested Brackets</strong> bhi ap laga skte hen
+            yani agar <strong>Brackets</strong> k andar bhi koi bari
+            <strong>calculation</strong> ho rhi ho to un men se wo pehle hogi jo
+            <strong>nested brackets</strong> men hogi.
           </p>
-          <ul class="subItems">
-            <li>delete krna</li>
-            <li>update krna</li>
-            <li>add krna</li>
+        </li>
+
+        <!--!== question 6 ===-->
+
+        <li class="br-radius-6">
+          <p class="question">
+            <strong>JavaScript</strong> k <strong>intepreted</strong> tareeqe ki
+            koi practical example? or saath hi
+            <strong>muultiple mathametical operations</strong> ki bhi practice.
+          </p>
+          <p class="answer">
+            <strong class="lowerCase">
+              var a = 4; <br />
+              var b = 3; <br />
+              &starf; : a++ - b-- + --a + a++;</strong
+            >
+            <br />
+            ab yhan per sab se pehle is baat ko revise kr len k
+            <strong>JavaScript</strong> kese kaam krti hai yani
+            <strong>left to right and top to bottom</strong>
+            to ab ap operations ko samjh skenge.
+          </p>
+          <ul>
+            <li>
+              sab se pehle <strong class="lowerCase">a</strong> ki value print
+              huwi jo k hai
+              <strong>4;</strong>
+            </li>
+            <li>
+              uske baad <strong class="lowerCase">a</strong> k value men
+              <strong>increament</strong> huwa to ab value ban gai
+              <strong>5;</strong>
+            </li>
+            <li>
+              iske baad <strong class="lowerCase">b</strong> ki value ko print
+              kya jo k hai <strong>3</strong>;
+            </li>
+            <li>
+              ab <strong class="lowerCase">b</strong> ki value men
+              <strong>decreament</strong> huwa jis se iske value ban gai
+              <strong>2</strong>
+            </li>
+            <li>
+              iske baad in dono men
+              <strong>mathametical operation</strong> yani k
+              <strong>subtraction</strong> huwi yani k
+              <strong class="lowerCase">a</strong> ki value men se
+              <strong class="lowerCase">b</strong> ki value ko
+              <strong>minus</strong> kya to result aya <strong>1</strong>;<br />
+              q k <strong class="lowerCase">a</strong> ki value
+              <strong>increament</strong> se pehle hi print huwi to uski value
+              <strong>4</strong> hi rhi uske baad increment huwa ab next time
+              jab print hoga tab <strong class="lowerCase">a</strong> ki value
+              <strong>5</strong> hogi isi tarh
+              <strong class="lowerCase">b</strong> ki value bhi pehle print ho
+              gai uske baad is men <strong>decreament</strong> huwa to ab jab
+              next time <strong class="lowerCase">b</strong> print hoga uski
+              value 2 hogi to <strong>calculation</strong> k waqt
+              <strong class="lowerCase">a</strong> ki value 4 or
+              <strong class="lowerCase">b</strong> ki value 3 thi isi waja se
+              inka result aya <strong>1</strong>
+            </li>
+            <li>
+              iske baad <strong class="lowerCase">a</strong> ki value men
+              <strong>decreament</strong> huwa jis se
+              <strong class="lowerCase">a</strong> ki value phr se
+              <strong>4</strong> ho gai.
+            </li>
+            <li>
+              ab jo pehle result aya tha <strong>1</strong> ka wo
+              <strong class="lowerCase">a</strong> ki present value yani k
+              <strong>4</strong> men <strong>add</strong> huwa jis se result aya
+              <strong>5</strong>
+            </li>
+            <li>
+              iske baad phr se <strong class="lowerCase">a</strong> ki value jo
+              k ab <strong>4</strong> hai print huwi yani usi k saath
+              <strong>mathametical operation</strong> huwa jo k yhan per
+              <strong>addition</strong> hai to ab result <strong>9</strong>; aya
+              jo k last result hai.
+            </li>
+            <li>
+              ab iske baad phr se <strong class="lowerCase">a</strong> ki value
+              men increament huwa jis se iski value huwi <strong>5</strong> but
+              wo show nhi hoga q k ab wo print hone k baad execute huwa hai.
+            </li>
           </ul>
         </li>
       </ol>
-    </main>
-
+    </div>
     <!--!====== script section starts =====-->
     <script src="./assets/app.js"></script>
   </body>
