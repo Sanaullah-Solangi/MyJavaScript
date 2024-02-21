@@ -111,7 +111,7 @@ h1 {
   width: 100%;
   height: 7rem;
   padding: 0 3rem;
-  z-index: 1;
+  z-index: 10;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -182,12 +182,18 @@ span {
 }
 
 :is(.showSubMenu, .showMenu > :is(a, span)) > .toggle-btns .fa-plus,
-.showSubNavbar .subNavbar-btns .fa-plus {
+.link-cover:hover :is(a, span) > .toggle-btns .fa-plus,
+.subMenu-cover:hover > .toggle-btns .fa-plus,
+.showSubNavbar .subNavbar-btns .fa-plus,
+.subMenu-navbar:hover > .toggle-btns .fa-plus {
   display: none;
 }
 
 :is(.showSubMenu, .showMenu > :is(a, span)) > .toggle-btns .fa-minus,
-.showSubNavbar .subNavbar-btns .fa-minus {
+.link-cover:hover :is(a, span) > .toggle-btns .fa-minus,
+.showSubNavbar .subNavbar-btns .fa-minus,
+.subMenu-cover:hover > .toggle-btns .fa-minus,
+.subMenu-navbar:hover > .toggle-btns .fa-minus {
   display: block;
 }
 
@@ -213,7 +219,8 @@ span {
   visibility: hidden;
 }
 
-.showMenu .web-subMenu {
+.showMenu .web-subMenu,
+.link-cover:hover .web-subMenu {
   height: 49rem;
   opacity: 1;
   visibility: visible;
@@ -267,12 +274,25 @@ span {
   opacity: 1;
 }
 
+.web-subMenu .subMenu-cover:hover > .subMenu-item {
+  visibility: visible;
+  left: -60%;
+  opacity: 1;
+}
 .showSubNavbar .subNavbar-item {
   width: fit-content;
   left: -125%;
 }
+
+.subMenu-navbar:hover > .subNavbar-item {
+  width: fit-content;
+  left: -125%;
+  visibility: visible;
+  opacity: 1;
+}
 /*?=== subMenu items positioning ===*/
 
+.subMenu-cover:nth-of-type(3) > .subMenu-item,
 .subMenu-cover:nth-of-type(3) > .subMenu-item,
 .subMenu-cover:nth-of-type(5) > .subMenu-item,
 .subMenu-cover:nth-of-type(10) > .subMenu-item,
@@ -290,31 +310,37 @@ span {
   top: -390%;
 }
 
-.showSubMenu:nth-of-type(3) > .subMenu-item {
+.showSubMenu:nth-of-type(3) > .subMenu-item,
+.web-subMenu > .subMenu-cover:nth-of-type(3):hover > .subMenu-item {
   left: -90%;
 }
 
-.showSubMenu:nth-of-type(5) > .subMenu-item {
+.showSubMenu:nth-of-type(5) > .subMenu-item,
+.web-subMenu .subMenu-cover:nth-of-type(5):hover > .subMenu-item {
   left: -69%;
 }
 
-.showSubMenu:nth-of-type(6) > .subMenu-item {
+.showSubMenu:nth-of-type(6) > .subMenu-item,
+.web-subMenu .subMenu-cover:nth-of-type(6):hover > .subMenu-item {
   width: 70%;
   left: -70%;
 }
-
-.showSubMenu:nth-of-type(10) > .subMenu-item {
+.showSubMenu:nth-of-type(10) > .subMenu-item,
+.web-subMenu .subMenu-cover:nth-of-type(10):hover > .subMenu-item {
   left: -140%;
 }
 
 .showSubMenu:nth-of-type(11) > .subMenu-item,
-.showSubMenu:nth-of-type(12) > .subMenu-item {
+.web-subMenu .subMenu-cover:nth-of-type(11):hover > .subMenu-item,
+.showSubMenu:nth-of-type(12) > .subMenu-item,
+.web-subMenu .subMenu-cover:nth-of-type(12):hover > .subMenu-item {
   left: -80%;
 }
 
 /*!===== this is subNavbar positioning =====*/
 
-.showSubMenu:nth-of-type(12) > .subMenu-item {
+.showSubMenu:nth-of-type(12) > .subMenu-item,
+.web-subMenu .subMenu-cover:nth-of-type(12):hover > .subMenu-item {
   width: fit-content;
   left: -65%;
 }
@@ -329,17 +355,20 @@ span {
   align-items: center;
 }
 
-.showSubMenu:nth-of-type(2) > .subMenu-item > a {
+.showSubMenu:nth-of-type(2) > .subMenu-item > a,
+.subMenu-cover:nth-of-type(2):hover > .subMenu-item > a {
   font-weight: bold;
 }
 
 .showSubMenu:nth-of-type(2) > .subMenu-item > a:nth-child(1),
+.subMenu-cover:nth-of-type(2):hover > .subMenu-item > a:nth-child(1),
 .heightlight-wrong {
   color: red;
   letter-spacing: 1px;
 }
 
 .showSubMenu:nth-of-type(2) > .subMenu-item > a:nth-child(2),
+.subMenu-cover:nth-of-type(2):hover > .subMenu-item > a:nth-child(2),
 .heightlight-right {
   color: green;
 }

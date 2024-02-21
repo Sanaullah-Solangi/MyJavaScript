@@ -43,29 +43,13 @@ toggleMenu.addEventListener("click", () => {
   navbar.classList.toggle("showMenu");
 });
 
-function media() {
-  if (matchMedia("(min-width:10px) and (max-width:860px)").matches) {
-    subMenuBtns.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        let subMenuCover = btn.parentElement;
-        subMenuCover.classList.toggle("showSubMenu");
-      });
-    });
-  } else {
-    subMenuWrapper.forEach((subMenuCover) => {
-      subMenuCover.addEventListener("mouseover", () => {
-        subMenuCover.classList.add("showSubMenu");
-      });
-    });
+subMenuBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    let subMenuCover = btn.parentElement;
+    subMenuCover.classList.toggle("showSubMenu");
+  });
+});
 
-    subMenuWrapper.forEach((subMenuCover) => {
-      subMenuCover.addEventListener("mouseleave", () => {
-        subMenuCover.classList.remove("showSubMenu");
-      });
-    });
-  }
-}
-media();
 //!== A programm to show and hide subNavbar-items
 subNavbarBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -78,17 +62,5 @@ subMenuBtns.forEach((val) => {
   val.addEventListener("click", () => {
     let parent = document.querySelector(".subMenu-navbar");
     parent.classList.remove("showSubNavbar");
-  });
-});
-
-subNavbar.forEach((subNavbar) => {
-  subNavbar.addEventListener("mouseover", () => {
-    subNavbar.classList.add("showSubNavbar");
-  });
-});
-
-subNavbar.forEach((subNavbar) => {
-  subNavbar.addEventListener("mouseleave", () => {
-    subNavbar.classList.remove("showSubNavbar");
   });
 });
