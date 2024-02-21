@@ -101,6 +101,7 @@ h1 {
 .lowerCase {
   text-transform: lowercase;
 }
+
 /*!============================ header styling starts ============================*/
 .header {
   background-color: var(--mainColor2);
@@ -180,11 +181,13 @@ span {
   font-size: 1.4rem;
 }
 
-:is(.showSubMenu, .showMenu > :is(a, span)) .toggle-btns .fa-plus {
+:is(.showSubMenu, .showMenu > :is(a, span)) > .toggle-btns .fa-plus,
+.showSubNavbar .subNavbar-btns .fa-plus {
   display: none;
 }
 
-:is(.showSubMenu, .showMenu > :is(a, span)) .toggle-btns .fa-minus {
+:is(.showSubMenu, .showMenu > :is(a, span)) > .toggle-btns .fa-minus,
+.showSubNavbar .subNavbar-btns .fa-minus {
   display: block;
 }
 
@@ -217,14 +220,20 @@ span {
   overflow: visible;
 }
 
-/*?=== subMenu anchor's parent  ===*/
+/*?=== subMenu anchor's parent & many other elements ===*/
 
 .web-subMenu > .subMenu-cover,
-.subMenu-item a {
+.subMenu-item a,
+.subNavbar-item > a {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   padding: 0.7rem 2rem;
   gap: 4rem;
 }
+
+.web-subMenu > .subMenu-cover {
+  padding: 0.5rem 2rem;
+}
+
 .web-subMenu .subMenu-cover:hover {
   background-color: var(--mainColor2);
 }
@@ -236,9 +245,10 @@ span {
   padding: 0;
 }
 
-/*?=== subMenu Items styling ===*/
+/*?=== subMenu Items & subNavbar items styling ===*/
 
-.subMenu-item {
+.subMenu-item,
+.subNavbar-item {
   background-color: var(--mainColor2);
   width: 60%;
   height: fit-content;
@@ -250,10 +260,16 @@ span {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.showSubMenu .subMenu-item {
+.showSubMenu .subMenu-item,
+.showSubNavbar .subNavbar-item {
   visibility: visible;
   left: -60%;
   opacity: 1;
+}
+
+.showSubNavbar .subNavbar-item {
+  width: fit-content;
+  left: -125%;
 }
 /*?=== subMenu items positioning ===*/
 
@@ -291,13 +307,22 @@ span {
   left: -140%;
 }
 
-.showSubMenu:nth-of-type(11) > .subMenu-item {
+.showSubMenu:nth-of-type(11) > .subMenu-item,
+.showSubMenu:nth-of-type(12) > .subMenu-item {
   left: -80%;
 }
 
-/*?=== anchors under subMenu Items ===*/
+/*!===== this is subNavbar positioning =====*/
 
-.subMenu-item > a {
+.showSubMenu:nth-of-type(12) > .subMenu-item {
+  width: fit-content;
+  left: -65%;
+}
+
+/*?=== anchors under subMenu Items and subNavbar Items ===*/
+
+.subMenu-item > :is(.subMenu-navbar, a),
+.subNavbar-item > a {
   font-size: 1.5rem;
   padding-inline: 2rem;
   display: flex;
@@ -308,14 +333,33 @@ span {
   font-weight: bold;
 }
 
-.showSubMenu:nth-of-type(2) > .subMenu-item > a:nth-child(1) {
+.showSubMenu:nth-of-type(2) > .subMenu-item > a:nth-child(1),
+.heightlight-wrong {
   color: red;
   letter-spacing: 1px;
 }
 
-.showSubMenu:nth-of-type(2) > .subMenu-item > a:nth-child(2) {
+.showSubMenu:nth-of-type(2) > .subMenu-item > a:nth-child(2),
+.heightlight-right {
   color: green;
 }
+
+/*?=== subNavbar and subNavbar-items styling ===*/
+
+.subMenu-navbar {
+  gap: 7rem;
+}
+:is(.subMenu-navbar, .subNavbar-item) a:hover {
+  background-color: var(--mainColor2);
+}
+.subNavbar-item {
+  background-color: var(--mainColor1);
+}
+
+.subNavbar-btns {
+  font-size: 1.5rem;
+}
+
 /*?=== mobile subMenu ===*/
 
 .mob-subMenu {
@@ -330,6 +374,39 @@ ol > li {
   margin-bottom: 2rem;
   background-color: var(--mainColor1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding-top: 2rem;
+}
+
+.sub-heading {
+  width: fit-content;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.sub-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -45%;
+  left: 8%;
+  background-color: orange;
+  width: 30%;
+  height: 0.5rem;
+}
+
+.sub-heading::before {
+  content: "";
+  position: absolute;
+  bottom: -60%;
+  left: 7%;
+  background-color: orange;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.title {
+  padding-left: 10px;
+  border-left: 5px solid rgb(0, 0, 255);
 }
 
 .question {
@@ -352,7 +429,7 @@ ol > li {
 
 .answer,
 ul > li {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 .answer span {
@@ -361,7 +438,9 @@ ul > li {
 }
 
 ul > li {
+  text-align: left;
   padding: 0.5rem 2rem;
+  background-color: var(--mainColor2);
   list-style-position: inside;
   list-style-type: decimal;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
