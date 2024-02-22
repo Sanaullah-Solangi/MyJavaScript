@@ -181,7 +181,7 @@ span {
   font-size: 1.4rem;
 }
 
-:is(.showSubMenu, .showMenu > :is(a, span)) > .toggle-btns .fa-plus,
+:is(.showMenu, .showSubMenu > :is(a, span)) > .toggle-btns .fa-plus,
 .link-cover:hover :is(a, span) > .toggle-btns .fa-plus,
 .subMenu-cover:hover > .toggle-btns .fa-plus,
 .showSubNavbar .subNavbar-btns .fa-plus,
@@ -237,6 +237,10 @@ span {
   gap: 4rem;
 }
 
+.web-subMenu > .subMenu-cover:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
 .web-subMenu > .subMenu-cover {
   padding: 0.5rem 2rem;
 }
@@ -265,6 +269,11 @@ span {
   visibility: hidden;
   z-index: -1;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.subMenu-item:last-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .web-subMenu .subMenu-cover:hover > .subMenu-item,
@@ -326,7 +335,7 @@ span {
 .showSubMenu:nth-of-type(12) > .subMenu-item,
 .web-subMenu .subMenu-cover:nth-of-type(12):hover > .subMenu-item {
   width: fit-content;
-  left: -65%;
+  left: -96%;
 }
 
 /*?=== subNavbar and subNavbar-items styling ===*/
@@ -334,17 +343,54 @@ span {
 .subMenu-navbar {
   gap: 7rem;
 }
+
 .subNavbar-item {
   width: fit-content;
   opacity: 0;
   visibility: hidden;
 }
 
-.subMenu-navbar:hover > .subNavbar-item,
+.web-subMenu
+  .subMenu-cover:last-child
+  .subMenu-item
+  .subMenu-navbar:hover
+  > .subNavbar-item,
 .showSubNavbar .subNavbar-item {
-  left: -125%;
+  left: -90%;
   visibility: visible;
   opacity: 1;
+}
+
+/*?=== subNavbar and subNavbar-item positioning ===*/
+
+/**=== hide by hover effect ===*/
+.web-subMenu
+  .subMenu-cover:last-child
+  .subMenu-item
+  .subMenu-navbar:nth-child(2)
+  > .subNavbar-item,
+/**=== hide by click effect ===*/
+.web-subMenu
+  .subMenu-cover:last-child
+  .subMenu-item
+  .subMenu-navbar:nth-child(2)
+  .subNavbar-item {
+  top: -100%;
+}
+
+/**=== show on hover effect ===*/
+.web-subMenu
+  .subMenu-cover:last-child
+  .subMenu-item
+  .subMenu-navbar:nth-child(2):hover
+  > .subNavbar-item,
+  /**=== show on click effect ===*/
+.web-subMenu
+  .subMenu-cover:last-child
+  .subMenu-item
+  .showSubNavbar:nth-child(2)
+  .subNavbar-item {
+  left: -26%;
 }
 
 :is(.subMenu-navbar, .subNavbar-item) a:hover {
@@ -384,6 +430,10 @@ span {
 .subMenu-cover:nth-of-type(2):hover > .subMenu-item > a:nth-child(2),
 .heightlight-right {
   color: green;
+}
+
+.subMenu-navbar > a {
+  border: none;
 }
 
 /*?=== mobile subMenu ===*/

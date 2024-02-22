@@ -90,7 +90,8 @@
   /*?=== subMenu anchor's parent  ===*/
 
   .mob-subMenu > .subMenu-cover,
-  .subMenu-item a {
+  .subMenu-item a,
+  .subMenu-item .subMenu-navbar {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     padding: 0.7rem 2rem;
     gap: 4rem;
@@ -154,7 +155,10 @@
   .subMenu-cover:nth-of-type(5) > .subMenu-item,
   .subMenu-cover:nth-of-type(6) > .subMenu-item,
   .subMenu-cover:nth-of-type(10) > .subMenu-item,
-  .subMenu-cover:nth-of-type(11) > .subMenu-item {
+  .subMenu-cover:nth-of-type(11) > .subMenu-item,
+  .subMenu-cover:nth-of-type(12) > .subMenu-item,
+  .subMenu-navbar,
+  .subNavbar-item {
     width: 100%;
   }
   .subMenu-cover:nth-of-type(9) > .subMenu-item {
@@ -167,17 +171,46 @@
     top: -725%;
   }
 
+  .subMenu-cover:nth-of-type(12) > .subMenu-item {
+    top: -100%;
+  }
+
   .showSubMenu:nth-of-type(3) > .subMenu-item,
   .showSubMenu:nth-of-type(5) > .subMenu-item,
   .showSubMenu:nth-of-type(6) > .subMenu-item,
   .showSubMenu:nth-of-type(10) > .subMenu-item,
-  .showSubMenu:nth-of-type(11) > .subMenu-item {
+  .showSubMenu:nth-of-type(11) > .subMenu-item,
+  .showSubMenu:nth-of-type(12) > .subMenu-item,
+  .subNavbar-item {
     left: 0%;
   }
 
-  /*?=== anchor's in subMenu Item ===*/
-  .subMenu-item > a {
+  /*?=== subMenuNavbar & subNavbar item styling ===*/
+
+  .subMenu-navbar {
+    background-color: var(--mainColor2);
+  }
+
+  .subNavbar-item {
+    opacity: 1;
+    top: -140%;
+    left: 0%;
+    visibility: visible;
+    z-index: 9;
+  }
+
+  .subMenu-navbar >a{
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+
+  /*?=== anchor's in subMenu Item & subNavbar ===*/
+  .subMenu-item > a,
+  .subNavbar-item > a {
     padding-inline: 2rem;
+  }
+  .subMenu-navbar > a {
+    border: none;
   }
 }
 
@@ -191,7 +224,8 @@
   }
   .subMenu-cover:nth-of-type(9) > .subMenu-item,
   .subMenu-cover:nth-of-type(10) > .subMenu-item,
-  .subMenu-cover:nth-of-type(11) > .subMenu-item {
+  .subMenu-cover:nth-of-type(11) > .subMenu-item,
+  .subMenu-cover:nth-of-type(12) > .subMenu-item {
     top: 100%;
   }
   /*?=== subMenu Items styling ===*/
@@ -207,12 +241,11 @@
     visibility: visible;
     overflow: hidden;
   }
-
   .showSubMenu .subMenu-item {
     height: 8rem;
-    left: 0%;
     display: flex;
   }
+
   .showSubMenu:nth-of-type(1) > .subMenu-item {
     height: 28rem;
   }
@@ -240,6 +273,32 @@
   .showSubMenu:nth-of-type(10) > .subMenu-item,
   .showSubMenu:nth-of-type(11) > .subMenu-item {
     height: 70rem;
+  }
+
+  .showSubMenu:nth-of-type(12) > .subMenu-item {
+    height: 5rem;
+    overflow: visible;
+  }
+  .subMenu-navbar {
+    background-color: var(--mainColor2);
+  }
+  .subNavbar-item {
+    top: 100%;
+    left: 0%;
+    height: 0%;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .showSubNavbar .subNavbar-item {
+    opacity: 1;
+    overflow: visible;
+    visibility: visible;
+    height: 10rem;
+    left: 0%;
+  }
+
+  .showSubNavbar .subNavbar-item {
   }
 }
 
