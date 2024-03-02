@@ -2372,7 +2372,8 @@
     </header>
     <!--!====== next section starts =====-->
     <div class="main-container">
-      <h1 class="txt-center">Randam Topics</h1>
+      <!--!todo======= operatores =======-->
+      <h1 id="" class="txt-center main-heading">arithmetic operators</h1>
 
       <ol>
         <!--!== question 1 ===-->
@@ -2636,6 +2637,265 @@
               men increament huwa jis se iski value huwi <strong>5</strong> but
               wo show nhi hoga q k ab wo print hone k baad execute huwa hai.
             </li>
+          </ul>
+        </li>
+      </ol>
+
+      <!--!todo======= predefined methods & functions =======-->
+      <h1 id="Predefined methods" class="txt-center">Predefined methods</h1>
+      <ol>
+        <!--!== question 1 ===-->
+
+        <li class="br-radius-6">
+          <p class="question">
+            <strong>Predefined methods</strong> se kya murdad hai?
+          </p>
+          <p class="answer">
+            har <strong>programming language</strong> men
+            <strong>Predefined methods/functions</strong> hote hen. jo k
+            <strong>programming language</strong> hamen provide krti hai jin
+            methods/functions ko us language k developer ne banaya hota hai
+            <strong>coders</strong> ki asani k lye.<strong>JavaScript</strong> k
+            <strong>Predefined methods/functions</strong> men se kuch ye hen.
+            <br />
+            <strong>&starf; alert</strong><br />
+            <strong>&starf; prompt</strong><br />
+            <strong>&starf; confirm</strong><br />
+            <strong>&starf; setTimeout</strong><br />
+            <strong>&starf; setInterval</strong><br />
+            <strong>&starf; clearTimeout</strong><br />
+            <strong>&starf; clearInterval</strong><br />
+          </p>
+        </li>
+
+        <!--!== question 2 ===-->
+
+        <h2 class="txt-cap sub-heading" id="alert">&starf; alert</h2>
+        <li class="br-radius-6">
+          <p class="question"><strong>alert</strong> q use hota hai?</p>
+          <p class="answer">
+            <strong>alert</strong> user ko esa message show krwane k lye use
+            hota hai or Aise chhote popup messages ko
+            <strong>"alert"</strong> kehte hain. Ye ek tarah ka notification hai
+            jo user ko kisi message ya information ke baare mein batata hai.
+            <br />
+            for example <br />
+            <img
+              src="./assets/images/alert.png"
+              alt="this is image of alert to show the example"
+            />
+          </p>
+        </li>
+
+        <!--!== question 3 ===-->
+
+        <h2 class="txt-cap sub-heading" id="prompt">&starf; prompt</h2>
+        <li class="br-radius-6">
+          <p class="question"><strong>prompt</strong> q use hota hai?</p>
+          <p class="answer">
+            <strong>prompt</strong> ek <strong>JavaScript</strong> function hai
+            jo user se <strong>input</strong> lene ke liye use hota hai. Ye ek
+            <strong>dialog box</strong> ko display karta hai jisme user se kuch
+            <strong>input</strong> maanga ja sakta hai, aur phir us
+            <strong>input</strong> ko JavaScript ke variable mein store kiya ja
+            sakta hai. Ye generally user se information collect karne ke liye ya
+            user se kuch <strong>input</strong> lenay ke liye istemal hota hai.
+            <br />
+            for example <br />
+            <img
+              src="./assets/images/prompt.png"
+              alt="this is image of prompt to show the example"
+            />
+            <br />
+            or is men <strong>2</strong> values bhi ap de skte hen aik
+            <strong>placeholder</strong> ki Jise ap <strong>string</strong> men
+            likhenge <br />
+            for example. <br />
+            <strong>prompt("enter your first name")</strong> <br />
+            us k baad dusri value ham as a <strong>default value</strong> ham
+            rakh skte hen or ye bhi ap <strong>string</strong> men hi likhenge.
+            <br />
+            for example. <br />
+            <strong>prompt("enter your first name","SanaUllah")</strong> <br />
+            ab yhan ye pehli <strong>string</strong> as a
+            <strong>placeholder</strong> aaegi or dusri
+            <strong>string</strong> as a <strong>default value</strong> aaegi.
+          </p>
+        </li>
+
+        <!--!== question 4 ===-->
+
+        <h2 class="txt-cap sub-heading" id="confirm">&starf; confirm</h2>
+        <li class="br-radius-6">
+          <p class="question"><strong>confirm</strong> q use hota hai?</p>
+          <p class="answer">
+            <strong>confirm JavaScript</strong> webpage ek
+            <strong>dialog box</strong> display karta hai jisme
+            <strong>"OK"</strong> aur <strong>"Cancel"</strong> buttons hote
+            hain. Ye typically user se <strong>yes/no</strong> ya
+            <strong>true/false</strong> ki confirmation lenay ke liye istemal
+            hota hai. <br />
+            for example <br />
+            <img
+              src="./assets/images/confirm.png"
+              alt="this is image of confirm to show the example"
+            />
+          </p>
+        </li>
+
+        <!--!== question 5 ===-->
+
+        <h2 class="txt-cap sub-heading" id="setTimeout">&starf; setTimeout</h2>
+        <li class="br-radius-6">
+          <p class="question"><strong>setTimeout</strong> q use hota hai?</p>
+          <p class="answer">
+            <strong>setTimeout function JavaScript</strong> mein ek
+            <strong>delay</strong> ke baad ek function ko execute karne ke liye
+            istemal hota hai. Ye <strong>delay</strong>
+            <strong>milliseconds</strong> mein hota hai. <br />
+            for example
+          </p>
+          <ul>
+            <li>function <strong>greet()</strong> {</li>
+            <li>console.log("Hello, World!");</li>
+            <li>};</li>
+            <li><strong> setTimeout</strong> (greet, 3000);</li>
+            <li>
+              yhan setTimeout k zarie <strong>greet()</strong> ko
+              <strong>3 seconds</strong> k baad call kya gaya hai.
+            </li>
+            <li>
+              <strong> 3000 milliseconds = 3 seconds</strong>
+            </li>
+          </ul>
+        </li>
+
+        <!--!== question 6 ===-->
+
+        <h2 class="txt-cap sub-heading" id="setInterval">
+          &starf; setInterval
+        </h2>
+        <li class="br-radius-6">
+          <p class="question"><strong>setInterval</strong> q use hota hai?</p>
+          <p class="answer">
+            <strong>setInterval function JavaScript</strong>
+            mein ek <strong>specified interval</strong> ke baad ek function ko
+            baar baar execute karne ke liye istemal hota hai. Ye
+            <strong>interval milliseconds</strong> mein hota hai.
+            <strong>interval</strong> ka mtlab hai set kye gae waqt ka
+            <strong>doranya</strong> <br />
+            for example
+          </p>
+          <ul>
+            <li>
+              function <strong>greet()</strong> {<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log("Hello,
+              World!");<br />
+              &nbsp;&nbsp;&nbsp;};
+            </li>
+            <li><strong> setIntercal</strong> (greet, 3000);</li>
+            <li>
+              yhan setTimeout k zarie <strong>greet()</strong> ko
+              <strong>baar baar 3 seconds</strong> k baad call kya gaya hai.
+              yani har 3 seconds k baad ye functin khud hi call hota rhega
+            </li>
+            <li>
+              <strong> 3000 milliseconds = 3 seconds</strong>
+            </li>
+          </ul>
+        </li>
+
+        <!--!== question 7 ===-->
+
+        <h2 class="txt-cap sub-heading" id="clearTimeout">
+          &starf; clearTimeout
+        </h2>
+        <li class="br-radius-6">
+          <p class="question"><strong>clearTimeout</strong> q use hota hai?</p>
+          <p class="answer">
+            <strong>clearTimeout JavaScript</strong>
+            mein tab use hota hai jab aap kisi
+            <strong>setTimeout function</strong> k zariye se set ki gayi delay
+            ke baad chal rahe <strong>task</strong> ko
+            <strong>rukana</strong> chahte hain. Isse aap us task ko rok sakte
+            hain jo <strong>setTimeout</strong> ke zariye
+            <strong>schedule</strong> kiya gaya hai. <br />
+            for example
+          </p>
+          <ul>
+            <li>
+              function <strong>greet()</strong> {<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log("Hello,
+              World!");<br />
+              &nbsp;&nbsp;&nbsp;};
+            </li>
+            <li><strong> let timeoutID = setTimeout</strong> (greet, 3000);</li>
+            <li>
+              yhan setTimeout k zarie <strong>greet()</strong> ko
+              <strong>3 seconds</strong> k baad call kya gaya hai.
+            </li>
+            <li><strong> 3000 milliseconds = 3 seconds</strong></li>
+            <li><strong> clearTimeout(timeoutID);</strong></li>
+            <li>
+              or phr <strong>clearTimeout</strong> k zarie
+              <strong>setTimeout</strong> function ki execution ko rok dya gaya
+              jis se ye functin ab print nhi krega.balke apne time se pehle hi
+              ruk jaega.
+            </li>
+          </ul>
+        </li>
+
+        <!--!== question 8 ===-->
+
+        <h2 class="txt-cap sub-heading" id="clearInterval">
+          &starf; clearInterval
+        </h2>
+        <li class="br-radius-6">
+          <p class="question"><strong>clearInterval</strong> q use hota hai?</p>
+          <p class="answer">
+            <strong>clearInterval JavaScript</strong>
+            mein tab use hota hai jab aap kisi
+            <strong>setInterval function</strong> k zariye shuru ki gayi
+            <strong>regularly repeat</strong> hone wali <strong>task</strong> ko
+            <strong>rukana ya clear</strong> karna chahte hain. Isse aap us task
+            ko rok sakte hain jo <strong>setInterval</strong> ke zariye schedule
+            kiya gaya hai; <br />
+
+            for example <br />
+          </p>
+          <ul>
+            <li>
+              function <strong>displayMessage()</strong> {<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log("Hello
+              World!");<br />
+              &nbsp;&nbsp;&nbsp;};
+            </li>
+            <li>
+              var <strong>intervalID </strong> = setInterval(<strong
+                >displayMessage, 2000</strong
+              >);
+            </li>
+            <li>
+              yhan <strong>setInterval</strong> ko use kya gaya hai har 2
+              seconds k baad baar baar <strong>function</strong> ko call krne k
+              lye.
+            </li>
+            <li><strong> 2000 milliseconds = 2 seconds</strong></li>
+            <li>
+              uske baad ab yhan neeche pehel <strong>setTimeout</strong> ka use
+              kr k delay time define kya gaya k <strong>10 seconds</strong> k
+              baad <strong>setInterval</strong> ko rokna hai phr is
+              <strong>function</strong> k andar <strong>setInterval</strong> ko
+              rokne k lye <strong>clearInterval</strong> ko use kya gaya hai jis
+              se <strong>10 seconds</strong> k baad
+              <strong>setInterval</strong> chalna band ho jaega
+            </li>
+            <li><strong>setTimeout</strong> (function() {</li>
+            <li><strong>clearInterval</strong> (intervalID);</li>
+            <li>
+              console.log("Interval cleared after 10 seconds.");}, 10000);
+            </li>
+            <li><strong> 10000 milliseconds = 10 seconds </strong></li>
           </ul>
         </li>
       </ol>

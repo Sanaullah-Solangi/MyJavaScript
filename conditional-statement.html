@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My JavaScript</title>
     <!--!=== facicon link ===-->
     <link
       rel="shortcut icon"
@@ -22,6 +21,7 @@
     <!--!=== style sheets link ===-->
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="stylesheet" href="./assets/responsive.css" />
+    <title>My JavaScript (Conditional-Statement)</title>
   </head>
   <body>
     <!--!====== header section starts =====-->
@@ -120,7 +120,120 @@
       </nav>
     </header>
     <!--!====== next section starts =====-->
+    <div class="main-container">
+      <!--!todo======= conditonal operatores =======-->
+      <h1 class="txt-center">Conditional-Statements</h1>
 
+      <ol>
+        <!--!== question 1 ===-->
+        <h2 class="txt-cap sub-heading" id="mathametical familiar operatores">
+          &starf; if statements
+        </h2>
+        <li class="br-radius-6">
+          <p class="question">
+            <strong>if statement</strong> ka syntax kya hai?
+          </p>
+          <p class="answer">
+            <strong>if</strong> ka <strong>syntax</strong> ye hai. <br />
+            <strong>&starf; if () {};</strong>
+          </p>
+          <ul>
+            <li>
+              if statement likhne k lye <strong>" if " keyword</strong> use krna
+              hoga
+            </li>
+            <li>
+              uske baad <strong>round brackets "()"</strong> use hote hen jin
+              men ham koi bhi <strong>condition</strong> btate hen jo k ya to
+              <strong>true</strong> hogi ya phr <strong>false</strong> hogi ise
+              aik or tareeqe samjhen k yhan ham btate hen k
+              <strong>code</strong> ko run krna hai ya nhi
+            </li>
+            <li>
+              <strong>round brackets "()"</strong> sirf
+              <strong>boolean value</strong> hi leta hai yani is men ap jo bhi
+              likhenge ya to wo <strong>true</strong> hoga ya phr wo
+              <strong>false</strong> hoga.
+            </li>
+            <li>
+              or uske baad <strong>curly brackets "{}"</strong> lagte hen jine
+              men ap wo <strong>code</strong> likhte hen jise ap ne chalana hai
+              ya execute krna hai. agar ap ne jo
+              <strong>condition</strong> lagai hia wo <strong>true</strong> hogi
+              to code execute ho jaega agar <strong>false</strong> hogi to code
+              execute nhi hoga. isi tarha ap khud bhi <strong>true</strong> ya
+              <strong>false</strong> likh bhi skte hen check krne k lye k kese
+              kaam hota hai. for example <br />
+              if(<strong>true</strong>)
+              <br />
+              ye likhenge to code exceute ho jaega. <br />
+              or agar ap ese likhenge to code excute nhi hoga. <br />
+              for example <br />
+              if(<strong>false</strong>)
+            </li>
+          </ul>
+        </li>
+
+        <!--!== question 2 ===-->
+        <li class="br-radius-6">
+          <p class="question">
+            <strong>if statements</strong> q or kese use krte hen?
+          </p>
+          <p class="answer">
+            if statement ka istemal <strong>condition</strong> ko check karne ya
+            <strong>condition</strong> lagane aur uske mutabiq code ko
+            <strong>execute</strong> karne ke liye hota hai. Agar aapko kisi
+            <strong>shart</strong> ki tasdeeq karni hai, aur agar wo
+            <strong>shart</strong> sach hai <strong>(true)</strong>, to aap
+            <strong>if statement</strong> ke andar ka code chalate hain.
+            <br />for example:
+          </p>
+          <ul>
+            <li>var <strong>time</strong> = <strong>10</strong> ;</li>
+            <li>
+              <strong>if</strong> (time < 12) { <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>console.log</strong> ("Good
+              morning!");
+              <strong
+                >// Agar 'time' 12 se chhota hai, to yeh print hoga</strong
+              >
+              <br />};
+            </li>
+            <li>
+              Yahan, agar <strong>time 12</strong> se chhota hai, to
+              <strong>"Good morning!"</strong> print hoga. Agar
+              <strong>time 12</strong> ya usse zyada hota, to yeh code chalana
+              band kar dega.
+            </li>
+          </ul>
+        </li>
+
+        <!--!== question 2 ===-->
+        <li class="br-radius-6">
+          <p class="question">
+            <strong>if statements</strong> men condition kese lagate hen inke
+            lye kya krna hota hai?
+          </p>
+          <p class="answer">
+            <strong>condition</strong> lagane k lye hamen har
+            <strong>programming language</strong> men
+            <strong>comparison operatores</strong> milte hen jinke zarie se ham
+            aik <strong>condition</strong> banate hen. for example <br />
+            ⭐ <strong>if</strong>(gender <strong>===</strong> "male") { <br />
+            &nbsp;&nbsp;&nbsp;&nbsp; alert("hello") <br />
+            }; <br />
+            ab yhan ye <strong>condition</strong> lagai hai k agar
+            <strong>gender</strong> ki value <strong>male</strong> ho to hi wo
+            "hello" ko print kre. <br />
+            or yhan hamne <strong>Strict equal to (===)</strong> ka
+            <strong>comprison operatore</strong> use kya hai condition lagane k
+            lye jiska use ham tab krte hen jab hamne value ki
+            <strong>data type</strong> ko or <strong>us value</strong> ko
+            campare krna ho ya check krna ho.
+          </p>
+        </li>
+      </ol>
+    </div>
     <!--!====== script section starts =====-->
     <script src="./assets/app.js"></script>
   </body>

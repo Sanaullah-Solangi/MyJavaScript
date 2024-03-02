@@ -334,8 +334,13 @@ span {
 
 .showSubMenu:nth-of-type(12) > .subMenu-item,
 .web-subMenu .subMenu-cover:nth-of-type(12):hover > .subMenu-item {
+  top: -130%;
+}
+
+.showSubMenu:nth-of-type(12) > .subMenu-item,
+.web-subMenu .subMenu-cover:nth-of-type(12):hover > .subMenu-item {
   width: fit-content;
-  left: -96%;
+  left: -95%;
 }
 
 /*?=== subNavbar and subNavbar-items styling ===*/
@@ -356,7 +361,7 @@ span {
   .subMenu-navbar:hover
   > .subNavbar-item,
 .showSubNavbar .subNavbar-item {
-  left: -90%;
+  left: -93%;
   visibility: visible;
   opacity: 1;
 }
@@ -367,15 +372,15 @@ span {
 .web-subMenu
   .subMenu-cover:last-child
   .subMenu-item
-  .subMenu-navbar:nth-child(2)
+  :is(.subMenu-navbar:nth-child(2),.subMenu-navbar:nth-child(3))
   > .subNavbar-item,
 /**=== hide by click effect ===*/
 .web-subMenu
   .subMenu-cover:last-child
   .subMenu-item
-  .subMenu-navbar:nth-child(2)
+  :is(.subMenu-navbar:nth-child(2),.subMenu-navbar:nth-child(3))
   .subNavbar-item {
-  top: -100%;
+  top: -620%;
 }
 
 /**=== show on hover effect ===*/
@@ -390,7 +395,22 @@ span {
   .subMenu-item
   .showSubNavbar:nth-child(2)
   .subNavbar-item {
-  left: -26%;
+  left: -80%;
+}
+
+/**=== show on hover effect ===*/
+.web-subMenu
+  .subMenu-cover:last-child
+  .subMenu-item
+  .subMenu-navbar:nth-child(3):hover
+  > .subNavbar-item,
+  /**=== show on click effect ===*/
+.web-subMenu
+  .subMenu-cover:last-child
+  .subMenu-item
+  .showSubNavbar:nth-child(3)
+  .subNavbar-item {
+  left: -40%;
 }
 
 :is(.subMenu-navbar, .subNavbar-item) a:hover {
@@ -436,6 +456,14 @@ span {
   border: none;
 }
 
+.subMenu-navbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.subMenu-navbar > a {
+  font-size: 1.7rem;
+}
+
 /*?=== mobile subMenu ===*/
 
 .mob-subMenu {
@@ -466,7 +494,7 @@ ol > li {
   bottom: -45%;
   left: 8%;
   background-color: orange;
-  width: 30%;
+  width: 10rem;
   height: 0.5rem;
 }
 
@@ -523,4 +551,8 @@ ul > li {
 }
 ul > li:last-child {
   padding-bottom: 1rem;
+}
+
+ul > li::marker {
+  content: " ⭐ ";
 }

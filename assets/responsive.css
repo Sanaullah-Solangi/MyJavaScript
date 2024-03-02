@@ -199,7 +199,7 @@
     z-index: 9;
   }
 
-  .subMenu-navbar >a{
+  .subMenu-navbar > a {
     font-size: 1.7rem;
     font-weight: bold;
   }
@@ -298,7 +298,8 @@
     left: 0%;
   }
 
-  .showSubNavbar .subNavbar-item {
+  .answer > img {
+    max-width: 100%;
   }
 }
 
