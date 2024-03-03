@@ -78,7 +78,7 @@ body {
   margin-top: 10rem;
 }
 
-.main-heading {
+h1 {
   font-size: 4rem;
   margin-bottom: 3rem;
 }
@@ -333,7 +333,7 @@ span {
 /*!===== this is subNavbar positioning =====*/
 
 .showSubMenu:nth-of-type(12) > .subMenu-item,
-.web-subMenu .subMenu-cover:nth-of-type(12) > .subMenu-item {
+.web-subMenu .subMenu-cover:nth-of-type(12):hover > .subMenu-item {
   top: -130%;
 }
 
