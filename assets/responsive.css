@@ -337,6 +337,7 @@
 
   /**=== This is the subMenu-item which contains SubNavbar ===*/
   /*!=== jtne iske andar subNavar add hunge utni iski height bharani hogi ===*/
+  /*!== last time jo masla tha wo ye overflow ki property dene se hal huwa ===*/
   .showSubMenu:nth-of-type(12) > .subMenu-item {
     height: 14rem;
     overflow: visible;
