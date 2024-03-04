@@ -272,7 +272,7 @@ span {
   border-left: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.subMenu-item:last-child {
+.web-subMenu .subMenu-cover:last-child > .subMenu-item:last-child {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 

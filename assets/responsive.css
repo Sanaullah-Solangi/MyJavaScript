@@ -1,3 +1,4 @@
+/*!======== This is for tablet view responsiveness ========*/
 @media (width <= 860px) {
   .header,
   .navbar {
@@ -151,6 +152,8 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 1rem;
   }
+
+  /*?=== 100% width is given to theas all ===*/
   .subMenu-cover:nth-of-type(3) > .subMenu-item,
   .subMenu-cover:nth-of-type(5) > .subMenu-item,
   .subMenu-cover:nth-of-type(6) > .subMenu-item,
@@ -161,6 +164,8 @@
   .subNavbar-item {
     width: 100%;
   }
+
+  /*?=== managed top position of thease ===*/
   .subMenu-cover:nth-of-type(9) > .subMenu-item {
     top: -510%;
   }
@@ -175,6 +180,7 @@
     top: -100%;
   }
 
+  /*?=== managed left position of thease ===*/
   .showSubMenu:nth-of-type(3) > .subMenu-item,
   .showSubMenu:nth-of-type(5) > .subMenu-item,
   .showSubMenu:nth-of-type(6) > .subMenu-item,
@@ -187,16 +193,66 @@
 
   /*?=== subMenuNavbar & subNavbar item styling ===*/
 
-  .subMenu-navbar {
-    background-color: var(--mainColor2);
-  }
-
   .subNavbar-item {
     opacity: 1;
-    top: -140%;
+    top: -540%;
     left: 0%;
+    background-color: var(--mainColor2);
     visibility: visible;
     z-index: 9;
+  }
+
+  /**=== subMenuNavbar parent ===*/
+  /**=== jab is men or subNavbar add hun or ise neeche krna ho to yhan se hoga ===*/
+  .mob-subMenu .subMenu-cover:last-child .subMenu-item {
+    top: -300%;
+  }
+
+  .mob-subMenu .subMenu-cover:last-child .subMenu-item .subMenu-navbar {
+    background-color: var(--mainColor1);
+  }
+
+  /**=== positioning of subMenuItem===*/
+  /**=== isko cherne ki ho skta hai zarurat na pare ===*/
+  .mob-subMenu
+    .subMenu-cover:last-child
+    .subMenu-item
+    .subMenu-navbar
+    .subNavbar-item {
+    left: -100%;
+  }
+
+  /**=== subNavbar-item ki top se position yhan se change hogi ===*/
+  .mob-subMenu
+    .subMenu-cover:last-child
+    .subMenu-item
+    .subMenu-navbar:nth-child(1)
+    .subNavbar-item {
+    top: -150%;
+  }
+  .mob-subMenu
+    .subMenu-cover:last-child
+    .subMenu-item
+    .subMenu-navbar:nth-child(2)
+    .subNavbar-item {
+    top: -580%;
+  }
+
+  .mob-subMenu
+    .subMenu-cover:last-child
+    .subMenu-item
+    .subMenu-navbar:nth-child(3)
+    .subNavbar-item {
+    top: -500%;
+  }
+
+  /**=== show on click ===*/
+  .mob-subMenu
+    .subMenu-cover:last-child
+    .subMenu-item
+    .showSubNavbar
+    .subNavbar-item {
+    left: 0%;
   }
 
   .subMenu-navbar > a {
@@ -214,7 +270,9 @@
   }
 }
 
+/*!======== This is for mobile view responsiveness ========*/
 @media (width <=595px) {
+  /**=== multiple columns are in single column now ===*/
   .subMenu-cover:nth-of-type(3) > .subMenu-item,
   .subMenu-cover:nth-of-type(4) > .subMenu-item,
   .subMenu-cover:nth-of-type(5) > .subMenu-item,
@@ -222,10 +280,12 @@
   .subMenu-cover:nth-of-type(11) > .subMenu-item {
     grid-template-columns: 1fr;
   }
+
+  /**=== top position is 100% ===*/
   .subMenu-cover:nth-of-type(9) > .subMenu-item,
   .subMenu-cover:nth-of-type(10) > .subMenu-item,
   .subMenu-cover:nth-of-type(11) > .subMenu-item,
-  .subMenu-cover:nth-of-type(12) > .subMenu-item {
+  .mob-subMenu .subMenu-cover:last-child .subMenu-item {
     top: 100%;
   }
   /*?=== subMenu Items styling ===*/
@@ -243,9 +303,9 @@
   }
   .showSubMenu .subMenu-item {
     height: 8rem;
-    display: flex;
   }
 
+  /**=== different height is given here according to content ===*/
   .showSubMenu:nth-of-type(1) > .subMenu-item {
     height: 28rem;
   }
@@ -275,27 +335,71 @@
     height: 70rem;
   }
 
+  /**=== This is the subMenu-item which contains SubNavbar ===*/
+  /*!=== jtne iske andar subNavar add hunge utni iski height bharani hogi ===*/
   .showSubMenu:nth-of-type(12) > .subMenu-item {
-    height: 5rem;
+    height: 14rem;
     overflow: visible;
   }
+
   .subMenu-navbar {
     background-color: var(--mainColor2);
   }
-  .subNavbar-item {
+
+  /**=== yhan se subNavbar-item ki handling start hai ===*/
+  .mob-subMenu
+    .subMenu-cover:last-child
+    .subMenu-item
+    .subMenu-navbar
+    .subNavbar-item {
     top: 100%;
     left: 0%;
     height: 0%;
-    overflow: hidden;
-    opacity: 0;
-    visibility: hidden;
-  }
-  .showSubNavbar .subNavbar-item {
     opacity: 1;
-    overflow: visible;
     visibility: visible;
-    height: 10rem;
-    left: 0%;
+    overflow: hidden;
+  }
+
+  /*?=== show on height width height ===*/
+  .mob-subMenu
+    .subMenu-cover:last-child
+    .subMenu-item
+    .showSubNavbar
+    .subNavbar-item {
+    height: 7rem;
+  }
+
+  .mob-subMenu
+    .subMenu-cover:last-child
+    .subMenu-item
+    .showSubNavbar:nth-of-type(2)
+    .subNavbar-item {
+    height: 30rem;
+  }
+
+  .mob-subMenu
+    .subMenu-cover:last-child
+    .subMenu-item
+    .showSubNavbar:nth-of-type(3)
+    .subNavbar-item {
+    height: 25rem;
+  }
+
+  /**=== subNavbar-item ki top se position 100 yhan se hogi ===*/
+  .mob-subMenu
+    .subMenu-cover:last-child
+    .subMenu-item
+    :is(
+      .subMenu-navbar:nth-child(1),
+      .subMenu-navbar:nth-child(2),
+      .subMenu-navbar:nth-child(3)
+    )
+    .subNavbar-item {
+    top: 100%;
+  }
+
+  .mob-subMenu .subMenu-cover:last-child > .subMenu-item:last-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
   }
 
   .answer > img {
@@ -317,7 +421,7 @@
     padding: 1rem;
   }
 
-  h1 {
+  .main-heading {
     font-size: 3rem;
   }
 }
