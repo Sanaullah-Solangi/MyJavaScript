@@ -556,3 +556,16 @@ ul > li:last-child {
 ul > li::marker {
   content: " ⭐ ";
 }
+.link {
+  animation: blink 1s infinite alternate;
+  -webkit-animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+  0% {
+    color: red;
+  }
+  100% {
+    color: blue;
+  }
+}
