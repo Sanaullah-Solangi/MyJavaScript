@@ -121,11 +121,11 @@
     </header>
     <!--!====== next section starts =====-->
     <div class="main-container">
+      <!--!todo======= array  =======-->
       <h1 class="txt-center main-heading">arrays</h1>
-
       <ol>
         <!--!== question 1 ===-->
-        <li id="string" class="br-radius-6">
+        <li class="br-radius-6">
           <p class="question">array kya hote hen or inka syntax kya hai?</p>
           <p class="answer">
             <b>array JavaScript</b> ka aik <b>data type</b> hai <br />or iska
@@ -140,7 +140,7 @@
         </li>
 
         <!--!== question 2 ===-->
-        <li id="string" class="br-radius-6">
+        <li class="br-radius-6">
           <p class="question">array ko q use krte hen?</p>
           <p class="answer">
             multiple values ko store krne k lye ya phr multiple value ka aik set
@@ -160,7 +160,7 @@
         </li>
 
         <!--! ==== question 3 ===-->
-        <li id="string" class="br-radius-6">
+        <li class="br-radius-6">
           <p class="question">
             array ko <b>print</b> kese krte hen or agar <b>array</b> ki koi
             specific value chahie ho to wo kese print krte hen?
@@ -191,7 +191,7 @@
         </li>
 
         <!--! ==== question 4 ===-->
-        <li id="string" class="br-radius-6">
+        <li class="br-radius-6">
           <p class="question">
             ye number kis cheez ka apne lagaya hai <b>array</b> k name k baad?
           </p>
@@ -216,7 +216,7 @@
         </li>
 
         <!--! ==== question 5 ===-->
-        <li id="string" class="br-radius-6">
+        <li class="br-radius-6">
           <p class="question">
             agar hamne esa <b>index</b> dya jis per koi <b>element</b> na ho to
             kya print hoga?
@@ -229,7 +229,28 @@
         </li>
 
         <!--! ==== question 6 ===-->
-        <li id="string" class="br-radius-6">
+        <li class="br-radius-6">
+          <p class="question">
+            agar ham kisi <b>element</b> ko update krna chahen or uski jag koi
+            or <b>value</b> dena chahe to kya ye possible hai or esa kese krte
+            hen?
+          </p>
+          <p class="answer">
+            g ham <b>array</b> ki kisi bhi <b>value</b> ko update kr skte hen is
+            tareeqa ye hai jis <b>index</b> per wo <b>value</b> hai jise apne
+            <b>update</b> krna hai usi <b>index</b> per <b>updated</b> value
+            assign krden. for example <br />
+            var students = ["sanaullah" , "jamal" , "kamran"]; <br />
+            ab agar ap is <b>array</b> k <b>1st value</b> ko <b>update</b> krna
+            chahte hen to is tarah se kr skte hen. <br />
+            students[ <b>0</b> ] = "raffy"; <br />
+            ab iska result hoga. <br />
+            <b>raffy , jamal , kamran</b>
+          </p>
+        </li>
+
+        <!--! ==== question 7 ===-->
+        <li class="br-radius-6">
           <p class="question">
             is men konsi type ki values ko store kya ja skta hai?
           </p>
@@ -253,8 +274,8 @@
           &starf; adding & removing elements
         </h3>
 
-        <!--! ==== question 7 ===-->
-        <li id="string" class="br-radius-6">
+        <!--! ==== question 8 ===-->
+        <li class="br-radius-6">
           <p class="question">
             agar ham <b>array</b> men mazeed elements <b>add</b> krna chahen
             jese <b>variable</b> men baad men <b>value</b> update ya add ki jati
@@ -277,8 +298,8 @@
           </p>
         </li>
 
-        <!--! ==== question 8 ===-->
-        <li id="string" class="br-radius-6">
+        <!--! ==== question 9 ===-->
+        <li class="br-radius-6">
           <p class="question">
             agar hamen <b>array</b> ki <b>length</b> maloom na ho to uske akhir
             men kese <b>element</b> ko add krenge?
@@ -332,18 +353,81 @@
           </p>
         </li>
 
-        <!--! ==== question 9 ===-->
-        <!-- <li id="string" class="br-radius-6">
-          <p class="question">?</p>
-          <p class="answer"></p>
-        </li> -->
+        <!--! ==== question 10 ===-->
+        <li class="br-radius-6">
+          <p class="question">
+            agar <b>array</b> men <b>2 elements</b> hun or ham
+            <b>index number 5</b> per aik or <b>element</b> add kren. for
+            example<br />
+            var students = ["Sanaullah" , "jamal"] <br />
+            students[5] = "kamran"; <br />
+            to kya hoga?
+          </p>
+          <p class="answer">
+            agar kabhi esa ho k <b>array</b> ki <b>length</b> se age k
+            <b>index</b> per <b>element</b> assign kya jae to koi
+            <b>error</b> nhi aaega balke <b>element</b> us <b>index</b> per
+            assign ho jaega or us se pehle k jo <b>index</b> reh gae hunge wo
+            <b>undefined</b> ho jaenge. for example <br />
+            var students = ["Sanaullah" , "jamal"] <br />
+            students[5] = "kamran"; <br />
+            ab yhan per <b>index 5</b> per <b>"kamran"</b> add ho jaega or
+            <b>2,3,4</b> ye <b>index numbers</b> <b>undefined</b> hunge
+          </p>
+        </li>
       </ol>
 
       <!--!todo======= array methods =======-->
       <h2 class="txt-center main-heading" id="array methods">array methods</h2>
       <ol>
-        <!--!== question 1 ===-->
+        <!--! ==== question 1 ===-->
+        <h3 class="txt-cap sub-heading" id="pop">&starf; pop</h3>
+        <li class="br-radius-6">
+          <p class="question">pop q use hota hai?</p>
+          <p class="answer">
+            <b class="lowerCase">pop</b> kisi bhi <b>array</b> k
+            <b>last index</b> ko remover krta hai or <b>existing array</b> ko
+            <b>update</b> kr deta hai. for example <br />
+            var student = ["sanaullah" , "jamal", "kamran"] <br />
+            ab agar ise ham <b>pop</b> krte hen. <br />
+            students.<b>pop</b><br />
+            to iska result hoga. <br />
+            <b>sanaullah , jamal</b> <br />
+            q k <b>pop</b> ne <b>students</b> k last wale <b>index</b> ko remove
+            kr dya.
+          </p>
+        </li>
 
+        <!--! ==== question 2 ===-->
+        <li class="br-radius-6">
+          <p class="question">
+            <b>pop</b> kya koi <b>value</b> return krta hai or konsi
+            <b>value</b> return krta hai? or <b>pop</b> ki
+            <b>returned value</b> ko ham get kese kr skte hen.
+          </p>
+          <p class="answer">
+            <b>pop</b> wo <b>element</b> return krta hai jise isne
+            <b>remove</b> kya hota hai. for example <br />
+            var student = ["sanaullah" , "jamal", "kamran"] <br />
+            to ab is ki <b>remove</b> krda <b>value</b> ko get krne k lye jhan
+            per hamne <b>array</b> ko <b>pop</b> kya hai us <b>statement</b> ko
+            kisi <b>variable</b> men strore krna hoga take <b>pop</b> ki
+            <b>remove</b> krda value us men store ho jae or phr ham use print kr
+            sken. for example <br />
+            var <b>returnedValue</b> = students.<b class="lowerCase">pop</b
+            ><br />
+            console.log( <b>returnedValue</b> ) <br />
+            to ab iska result hoga. <b>kamran</b> <br />
+            q k <b>students</b> wale <b>array</b> ki last value yhi hai.
+          </p>
+        </li>
+
+        <!--! ==== question 11 ===-->
+        <!-- <li class="br-radius-6">
+          <p class="question">?</p>
+          <p class="answer"></p>
+        </li> -->
+        <!--!== question 2 ===-->
         <h3 class="txt-cap sub-heading" id="length">&starf; length</h3>
         <li class="br-radius-6">
           <p class="question"><strong>length</strong> q use hota hai?</p>
