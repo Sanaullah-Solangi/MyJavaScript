@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My JavaScript</title>
     <!--!=== facicon link ===-->
     <link
       rel="shortcut icon"
@@ -22,6 +21,7 @@
     <!--!=== style sheets link ===-->
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="stylesheet" href="./assets/responsive.css" />
+    <title>My JavaScript (Array)</title>
   </head>
   <body>
     <!--!====== header section starts =====-->
@@ -120,7 +120,258 @@
       </nav>
     </header>
     <!--!====== next section starts =====-->
+    <div class="main-container">
+      <h1 class="txt-center main-heading">arrays</h1>
 
+      <ol>
+        <!--!== question 1 ===-->
+        <li id="string" class="br-radius-6">
+          <p class="question">array kya hote hen or inka syntax kya hai?</p>
+          <p class="answer">
+            <b>array JavaScript</b> ka aik <b>data type</b> hai <br />or iska
+            <b>syntax/format</b> ye hai <br />
+            var students = <b>["Sanaullah", "Raffay", "zohaib"]</b>
+            <br />
+            yhan per <b>students</b> jo hai wo aik <b>array</b> hai or ye
+            <b>"[ ]" square brackets</b> array likhne ka
+            <b>structure/tareeqa/format</b> hai ap isi tarah <b>array</b> men
+            multiple values ko store kr skte hen.
+          </p>
+        </li>
+
+        <!--!== question 2 ===-->
+        <li id="string" class="br-radius-6">
+          <p class="question">array ko q use krte hen?</p>
+          <p class="answer">
+            multiple values ko store krne k lye ya phr multiple value ka aik set
+            banane k lye ise use krte hen or iski koi <b>limit</b> nhi hai ap
+            jtne <b>elements</b> chahen store kr skte hen. for example<br />
+            apko <b>students</b> k name ki list chahie to ya to ap har
+            <b>student</b> ka name alag alag <b>variable</b> men store kren jo k
+            boht <b>space</b> bhi lega or lamba bhi hoga to is kaam k lye ham
+            aik set banate hen jis men ham sari value ko jama kr dete hen jis se
+            <b>space</b> bhi kam acquire hoti hai or tamam values ka aik set bhi
+            ban jata hai. for example <br />
+            var <b>students</b> = ["sanaullah", "jamal", "kamran"]
+            <br />
+            ab yhan per 3 students k name hamne aik hi jaga store kr k students
+            k name ka aik set bana dya
+          </p>
+        </li>
+
+        <!--! ==== question 3 ===-->
+        <li id="string" class="br-radius-6">
+          <p class="question">
+            array ko <b>print</b> kese krte hen or agar <b>array</b> ki koi
+            specific value chahie ho to wo kese print krte hen?
+          </p>
+          <p class="answer">
+            <b>array</b> ko bhi ap usi tarah se print krenge jis tarah se ap
+            <b>variable</b> ko print krte hen. for example
+            <br />
+            var <b>students</b> = [ <b>"Sanaullah", "jamal", "kamran"</b> ];
+            <br />
+            ab ap ise print is tarah se kr skte hen. <br />
+            document.write( <b>students</b> ) <br />
+            iska result aaega kuch is tarah se. <br />
+            <strong>Sanaullah, jamal, kamran</strong>
+            <br />
+            yani sari values hi print ho jaengi or agar ap kisi aik specific
+            value ko print krana chahen to uske lye ap ko ye <b>format</b> use
+            krna hoga. <br />
+            document.write( <b>student[0]</b> ) <br />
+            yani <strong>array</strong> ka name likhne k baad jis tarah values
+            assign krne k lye <b>square brackets</b> lagate hen wese brackets
+            laga k jis number ki value apko print krwani hai wo number
+            <strong>square brackets</strong> men dene se us
+            <strong>index</strong> per mojood value print ho jaegi ab is example
+            men <b>sanaullah</b> print hoga q k uska <strong>index</strong> 0
+            hai.
+          </p>
+        </li>
+
+        <!--! ==== question 4 ===-->
+        <li id="string" class="br-radius-6">
+          <p class="question">
+            ye number kis cheez ka apne lagaya hai <b>array</b> k name k baad?
+          </p>
+          <p class="answer">
+            <b>array</b> tamam <b>elements</b> ko numberwise store krta hai or
+            is ki <b>numbring</b> ko <b>indexing</b> kha jata hai yani har
+            <b>element</b> ka aik number yani <b>index</b> hota hai or
+            <b>array</b> men <b>indexing 0</b> se start hoti hai yani k jo
+            <b>1st element</b> hai uska <b>index/number</b> 0 hoga or jo
+            <b>2nd element</b> hai uska <b>index/number</b> 1 hoga. for example
+            <br />
+            var <b>students</b> = [ <b>"sanaullah", "jamal", "kamran"</b> ]
+            <br />
+            ab is <b>array</b> men <b>sanaullah</b> ka <b>index</b> yani
+            <b>number</b> <b>0</b> hai or <b>jamal</b> ka <b>1</b> or
+            <b>kamran</b> ka <b>2</b> to agar ap is tarah se print krte hen.
+            <br />
+            document.write( <b>students[0]</b> ) <br />
+            to iska result hoga <b>sanaullah</b> <br />
+            q k ye <b>0 index</b> per hai.
+          </p>
+        </li>
+
+        <!--! ==== question 5 ===-->
+        <li id="string" class="br-radius-6">
+          <p class="question">
+            agar hamne esa <b>index</b> dya jis per koi <b>element</b> na ho to
+            kya print hoga?
+          </p>
+          <p class="answer">
+            is <b>situation</b> men jese <b>empty variable</b> ko print krne per
+            <b>undefined</b> milta hai isi tarah is <b>index</b> per value na
+            hone ki waja se <b>undefined</b> aaega.
+          </p>
+        </li>
+
+        <!--! ==== question 6 ===-->
+        <li id="string" class="br-radius-6">
+          <p class="question">
+            is men konsi type ki values ko store kya ja skta hai?
+          </p>
+          <p class="answer">
+            <b>arrays</b> men <b>JavaScript</b> ki jtni <b>data types</b> hen un
+            sab ko store kya ja skta hai. for example <br />
+            <b
+              >string <br />
+              number <br />
+              object <br />
+              etc</b
+            >
+            sab ko ham <b>array</b> men store krwa skte hen. for example <br />
+            var <b class="lowerCass">arr</b> = ["Sanaullah", 23 , true] <br />
+            ab is example men hamne aik <b>array</b> men 3
+            <b>different data types</b> ko store kya hai.
+          </p>
+        </li>
+
+        <h3 class="txt-cap sub-heading" id="includes">
+          &starf; adding & removing elements
+        </h3>
+
+        <!--! ==== question 7 ===-->
+        <li id="string" class="br-radius-6">
+          <p class="question">
+            agar ham <b>array</b> men mazeed elements <b>add</b> krna chahen
+            jese <b>variable</b> men baad men <b>value</b> update ya add ki jati
+            hai to ye <b>arrays</b> men kese kr skte hen?
+          </p>
+          <p class="answer">
+            iska boht asan sa tareeqa hai k jese ap kisi <b>array element</b> ko
+            print krwate hen to <b>array</b> ka name likh k uske baad
+            <b>square brackets</b> men wo <b>index</b> dete hen jis per mojood
+            <b>element</b> apne print krwana hai to isi tarha jis
+            <b>index</b> per apne <b>element</b> add krna hai us <b>index</b> ko
+            <b>array</b> k name k saath laga kr aga value <b>assign</b> kr den.
+            for example <br />
+            var <b>students[3]</b> = <b>"daniyal"</b> <br />
+            ab is
+            <b
+              >array men <b>3rd index</b> per aik or student ka name add ho gaya
+              hai.</b
+            >
+          </p>
+        </li>
+
+        <!--! ==== question 8 ===-->
+        <li id="string" class="br-radius-6">
+          <p class="question">
+            agar hamen <b>array</b> ki <b>length</b> maloom na ho to uske akhir
+            men kese <b>element</b> ko add krenge?
+          </p>
+          <p class="answer">
+            iske lye hamare pas aik <b>technich</b> hai k ham pehle
+            <b>array</b> ki <b>length</b> ko get krte hen or phr us
+            <b>length</b> se milne wale <b>number</b> ko as a
+            <b>index number</b> ham <b>array</b> k akhir men lagate hen jis
+            tarah se ham <b>array</b> ki koi bhi value print krwate huwe
+            <b>index number</b> likhte hen. for example <br />
+            <br />
+            var students = [ "sanaullah" , "jamal" , "kamran" , "zohaib" ]
+            <br />
+            students[ <b>0</b> ]; <br />
+            <br />
+            ab yhan per <b>students</b> k <b>1st index</b> per jo bhi value hogi
+            wo print ho jaegi or isi tarah se <b>index</b> bta kr ham koi bhi
+            <b>element</b> add bhi kr skte hen . <br />
+            <br />
+            var students[4] = "wow"; <br />
+            var students = [ "sanaullah" , "jamal" , "kamran" , "zohaib", "wow"]
+            <br />
+            <br />
+            but masla yhi ata hai k hamesha hamen last
+            <b>index</b> maloom nhi hota yani k <b>array</b> k andar ktne
+            <b>elements</b> hen ye maloom nhi hota to ab is situation men ham
+            <b>last index</b> per <b>element</b> ko lagane k lye
+            <b>length</b> ka use krte hen. for example <br /><br />
+            var students = [ "sanaullah" , "jamal" , "kamran" , "zohaib" ]
+            <br />
+            students[ <b>students.length</b> ] = "wow" <br />
+            var students = [ "sanaullah" , "jamal" , "kamran" , "zohaib" ,
+            "wow"]
+            <br />
+            <br />
+            ab yhan kya huwa thora sa wo samjh len. <b>students</b> ki
+            <b>indexing</b> start hoti hai <b>0</b> se to is ka
+            <b>last index</b> hoga <b>3</b> q k total <b>elements 4</b> hen to
+            <b>last index 3</b> hoga jabke <b>length</b> bhi <b>4</b> hi hogi q
+            k <b>length</b> to normal counting k hisab se hi number btati hai to
+            <b>students</b> ka <b>last index</b> hoga <b>3</b> or
+            <b>next index</b> hoga <b>4</b> or <b>length</b> hamen <b>4</b> hi
+            return kr rhi hai q k total <b>elements</b> hi itne hen to <br />
+            <b>students</b> ka <b>next index</b> bhi <b>4</b> or
+            <b>length</b> bhi <b>4</b> <br />
+            to is tarah hamen <b>array</b> k <b>last</b> men <b>element</b> add
+            krne k lye jo <b>array</b> k last men <b>elements</b> add krne k lye
+            jo number chahie wo mil gaya jis k zarie ham akhir men
+            <b>elements</b> add kr skte hen.
+          </p>
+        </li>
+
+        <!--! ==== question 9 ===-->
+        <!-- <li id="string" class="br-radius-6">
+          <p class="question">?</p>
+          <p class="answer"></p>
+        </li> -->
+      </ol>
+
+      <!--!todo======= array methods =======-->
+      <h2 class="txt-center main-heading" id="array methods">array methods</h2>
+      <ol>
+        <!--!== question 1 ===-->
+
+        <h3 class="txt-cap sub-heading" id="length">&starf; length</h3>
+        <li class="br-radius-6">
+          <p class="question"><strong>length</strong> q use hota hai?</p>
+          <p class="answer">
+            <strong>length array</strong> ka aik <b>method</b> hai jo k
+            <b>array</b> k andar ktne <b>elements</b> hen ye btane k lye use
+            hota hai yani <b>array</b> k andar total ktne <b>elements</b> hen ye
+            maloom krne k lye is <b>method</b> ka use krte hen. for example .
+            <br />
+            var <b>students</b> = [ <b>"sanaullah", 23 , true</b> ] <br />
+            ab yhan <b>"students"</b> men ktne <b>elements</b> hen ye maloom
+            krna ho to ham is tarah se maloom kr skte hen. <br />
+            console.log( <b>students.length</b> ) <br />
+            to ab result aaega <b>3</b> q k <b>students</b> k andar 3
+            <b>elements</b> hen <br />
+
+            <b>note :</b> ye baat bhi yaad rakhen k <b>length</b> ka
+            <b>indexing</b> se koi talueq nhi yani k jab <b>array</b> ki
+            <b>values</b> 5 hoti hen to <b>last index</b> to <b>4</b> hota hia q
+            k <b>array</b> ki <b>indexing</b> 0 se start hoti hia to
+            <b>length</b> bhi <b>0</b> se start ho esa nhi hai balke
+            <b>length</b> 1 se hi start hoti hia jese normal
+            <b>counting</b> hoti hai ye bas direct yhi btati hai k
+            <b>array</b> k andar total <b>elements</b> ktne hen
+          </p>
+        </li>
+      </ol>
+    </div>
     <!--!====== script section starts =====-->
     <script src="./assets/app.js"></script>
   </body>
