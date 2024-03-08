@@ -334,7 +334,7 @@ span {
 
 .showSubMenu:nth-of-type(12) > .subMenu-item,
 .web-subMenu .subMenu-cover:nth-of-type(12) > .subMenu-item {
-  top: -130%;
+  top: -210%;
 }
 
 .showSubMenu:nth-of-type(12) > .subMenu-item,
@@ -372,16 +372,33 @@ span {
 .web-subMenu
   .subMenu-cover:last-child
   .subMenu-item
-  :is(.subMenu-navbar:nth-child(2),.subMenu-navbar:nth-child(3))
+  :is(.subMenu-navbar:nth-child(2),.subMenu-navbar:nth-child(4))
   > .subNavbar-item,
 /**=== hide by click effect ===*/
 .web-subMenu
   .subMenu-cover:last-child
   .subMenu-item
-  :is(.subMenu-navbar:nth-child(2),.subMenu-navbar:nth-child(3))
+  :is(.subMenu-navbar:nth-child(2),.subMenu-navbar:nth-child(4))
   .subNavbar-item {
   top: -620%;
 }
+
+/**=== hide by hover effect ===*/
+.web-subMenu
+  .subMenu-cover:last-child
+  .subMenu-item
+  .subMenu-navbar:nth-child(3)
+  > .subNavbar-item,
+/**=== hide by click effect ===*/
+.web-subMenu
+  .subMenu-cover:last-child
+  .subMenu-item
+  .subMenu-navbar:nth-child(3)
+  .subNavbar-item {
+  top: -200%;
+}
+
+
 
 /**=== show on hover effect ===*/
 .web-subMenu
@@ -395,7 +412,7 @@ span {
   .subMenu-item
   .showSubNavbar:nth-child(2)
   .subNavbar-item {
-  left: -80%;
+  left: -82%;
 }
 
 /**=== show on hover effect ===*/
@@ -409,6 +426,21 @@ span {
   .subMenu-cover:last-child
   .subMenu-item
   .showSubNavbar:nth-child(3)
+  .subNavbar-item {
+  left: -55%;
+}
+
+/**=== show on hover effect ===*/
+.web-subMenu
+  .subMenu-cover:last-child
+  .subMenu-item
+  .subMenu-navbar:nth-child(4):hover
+  > .subNavbar-item,
+  /**=== show on click effect ===*/
+.web-subMenu
+  .subMenu-cover:last-child
+  .subMenu-item
+  .showSubNavbar:nth-child(4)
   .subNavbar-item {
   left: -40%;
 }
