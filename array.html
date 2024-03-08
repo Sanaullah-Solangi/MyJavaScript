@@ -380,6 +380,7 @@
       <!--!todo======= array methods =======-->
       <h2 class="txt-center main-heading" id="array methods">array methods</h2>
       <ol>
+        <!--!?=== pop ===-->
         <!--! ==== question 1 ===-->
         <h3 class="txt-cap sub-heading" id="pop">&starf; pop</h3>
         <li class="br-radius-6">
@@ -390,7 +391,7 @@
             <b>update</b> kr deta hai. for example <br />
             var student = ["sanaullah" , "jamal", "kamran"] <br />
             ab agar ise ham <b>pop</b> krte hen. <br />
-            students.<b>pop</b><br />
+            students.<b>pop()</b><br />
             to iska result hoga. <br />
             <b>sanaullah , jamal</b> <br />
             q k <b>pop</b> ne <b>students</b> k last wale <b>index</b> ko remove
@@ -422,12 +423,151 @@
           </p>
         </li>
 
-        <!--! ==== question 11 ===-->
-        <!-- <li class="br-radius-6">
-          <p class="question">?</p>
-          <p class="answer"></p>
-        </li> -->
-        <!--!== question 2 ===-->
+        <!--!?=== push ===-->
+        <!--!== question 3 ===-->
+        <h3 class="txt-cap sub-heading" id="push">&starf; push</h3>
+        <li class="br-radius-6">
+          <p class="question"><strong>push</strong> q use hota hai?</p>
+          <p class="answer">
+            <strong>push array</strong> k <b>last index</b> men
+            <b>element/value</b> add krne k lye use hota hai or esa krne k lye
+            hamen <b>index number</b> bhi dalne ki need nhi hoti balke
+            <b>puch</b> khud hi <b>elements</b> ko <b>array</b> k last men add
+            krta hai. for example<br />
+            <br />
+            var students = [ "sanaullah" , "jamal" , "kamran" , "zohaib" ]
+            <br />
+            students.<b>puch</b>("raffy"); <br />
+            <br />
+            to iska result hoga. <br />
+            var students = [ "sanaullah" , "jamal" , "kamran" , "zohaib" ,
+            <b>"raffy"</b> ] <br />
+            <br />
+            yani k <b class="lowerCase">push</b> k zaie se ap <b>array</b> k
+            <b>last index/end</b> men mazeed <b>elements</b> add krwa skte hen.
+            lekin iska aik or faida bhi hai k ap
+            <b>multiple elements comma seprated</b> ko bhi is men aik hi baar
+            men add krwa skte ho. for example . <br />
+            <br />
+            students.<b>puch</b>("atif","bilal"); <br />
+            <br />
+            to iska result hoga. <br />
+            var students = [ "sanaullah" , "jamal" , "kamran" , "zohaib" ,
+            "raffy", <b>"atif" , "bilal"</b> ] <br />
+            <br />
+          </p>
+        </li>
+
+        <!--! ==== question 4 ===-->
+        <li class="br-radius-6">
+          <p class="question">
+            kya <b>push</b> bhi koi value <b>return</b> krta hai or agar krta
+            hai to konsi <b>value</b> return krta hai?
+          </p>
+          <p class="answer">
+            g han <b>puch</b> bhi <b>return</b> krta hai but koi
+            <b>value ya element</b> nhi balke jis <b>array</b> men <b>puch</b> k
+            saath <b>elements</b> add huwe hen uski jo
+            <b>updated length</b> hogi wo return krta hai. for example <br />
+            <br />
+            var students = [ "sanaullah" , "jamal" , "kamran" , "zohaib" ]
+            <br />
+            var returnedValue = students.<b>puch</b>("raffy"); <br />
+            consol.log( <b>returnedValue</b> );
+            <br />
+            <br />
+            to iska result aaega.
+            <b>5</b>
+            <br />
+            q k ab <b>students</b> ki <b>updated length</b> jo hai wo
+            <b>5</b> hai
+          </p>
+        </li>
+
+        <!--!?=== unshift ===-->
+        <!--!== question 5 ===-->
+        <h3 class="txt-cap sub-heading" id="shift">&starf; shift</h3>
+        <li class="br-radius-6">
+          <p class="question"><strong>shift</strong> q use hota hai?</p>
+          <p class="answer">
+            <strong>shift array</strong> k <b>1st index</b> se <b>element</b> ko
+            remove krta hai ye <b>pop</b> wala kaam krta hai bas <b>pop</b> end
+            se <b>remove</b> krta hai or <b>shift</b> start se. for example
+            <br />
+            var student = ["sanaullah" , "jamal", "kamran"] <br />
+            ab agar ise ham <b>shift</b> krte hen. <br />
+            students.<b>shift()</b><br />
+            to iska result hoga. <br />
+            <b>"jamal", "kamran"</b> <br />
+            q k <b>pop</b> ne <b>students</b> k start wale <b>index</b> ko
+            remove kr dya.
+          </p>
+        </li>
+
+        <!--! ==== question 6 ===-->
+        <li class="br-radius-6">
+          <p class="question"><b>shift</b> kya return krta hai?</p>
+          <p class="answer">
+            <b>shift</b> bhi <b>pop</b> ki tarah <b>removed element</b> return
+            krta hai. for example
+            <br />
+            for example <br />
+            var student = ["sanaullah" , "jamal", "kamran"] <br />
+            to ab is ki <b>remove</b> krda <b>value</b> ko get krne k lye jhan
+            per hamne <b>array</b> ko <b>shift()</b> kya hai us
+            <b>statement</b> ko kisi <b>variable</b> men strore krna hoga take
+            <b>shift()</b> ki <b>remove</b> krda value us men store ho jae or
+            phr ham use print kr sken. for example <br />
+            var <b>returnedValue</b> = students.<b class="lowerCase">shift()</b
+            ><br />
+            console.log( <b>returnedValue</b> ) <br />
+            to ab iska result hoga. <b>"sanaullah"</b> <br />
+            q k <b>students</b> wale <b>array</b> ki 1st value yhi hai.
+          </p>
+        </li>
+
+        <!--!?=== shift ===-->
+        <!--!== question 7 ===-->
+        <h3 class="txt-cap sub-heading" id="unshift">&starf; unshift</h3>
+        <li class="br-radius-6">
+          <p class="question"><strong>unshift</strong> q use hota hai?</p>
+          <p class="answer">
+            <strong>unshift array</strong> k <b>1st index</b> per
+            <b>element/value</b> add krne k lye use hota hai yani same whi kaam
+            hai jo <b>push</b> krta hai yani <b>addition</b> bas
+            <b>"push or pop" array</b> k end per kaam krte hen or
+            <b
+              >"unshift or ununshift"( jis k bare men agle question men arha ha
+              )</b
+            >
+            ye <b>array</b> k <b>start</b> men kaam krte hen. for example <br />
+            <br />
+            var students = [ "sanaullah" , "jamal" , "kamran" , "zohaib" ]
+            <br />
+            students.<b>unshift</b>("raffy"); <br />
+            consol.log( <b>students</b> ); <br /><br />
+            to iska result hoga. <br />
+            <b>"raffy"</b> "sanaullah" , "jamal" , "kamran" , "zohaib"
+          </p>
+        </li>
+
+        <!--! ==== question 8 ===-->
+        <li class="br-radius-6">
+          <p class="question"><b>unshift</b> kya return krta hai?</p>
+          <p class="answer">
+            ye bhi <b>array</b> ki <b>updated length</b> return krta hai. for
+            example <br />
+            <br />
+            var students = [ "sanaullah" , "jamal" , "kamran" , "zohaib" ]
+            <br />
+            var returnValue = students.<b>unshift</b>("raffy"); <br />
+            consol.log( <b>returnValue</b> ); <br /><br />
+            to iska result hoga. <br />
+            <b>5</b>
+          </p>
+        </li>
+
+        <!--!== question  ===-->
         <h3 class="txt-cap sub-heading" id="length">&starf; length</h3>
         <li class="br-radius-6">
           <p class="question"><strong>length</strong> q use hota hai?</p>
@@ -454,6 +594,12 @@
             <b>array</b> k andar total <b>elements</b> ktne hen
           </p>
         </li>
+
+        <!--! ==== question 11 ===-->
+        <!-- <li class="br-radius-6">
+          <p class="question">?</p>
+          <p class="answer"></p>
+        </li> -->
       </ol>
     </div>
     <!--!====== script section starts =====-->
