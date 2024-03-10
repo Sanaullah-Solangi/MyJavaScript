@@ -408,7 +408,8 @@
           </p>
           <p class="answer">
             <b>pop</b> wo <b>element</b> return krta hai jise isne
-            <b>remove</b> kya hota hai. for example <br />
+            <b>remove</b> kya hota hai or return bhi <b>string</b> bana k krta
+            hai. for example <br />
             var student = ["sanaullah" , "jamal", "kamran"] <br />
             to ab is ki <b>remove</b> krda <b>value</b> ko get krne k lye jhan
             per hamne <b>array</b> ko <b>pop</b> kya hai us <b>statement</b> ko
@@ -419,7 +420,8 @@
             ><br />
             console.log( <b>returnedValue</b> ) <br />
             to ab iska result hoga. <b>kamran</b> <br />
-            q k <b>students</b> wale <b>array</b> ki last value yhi hai.
+            q k <b>students</b> wale <b>array</b> ki last value yhi hai or ab ye
+            <b>string</b> hai.
           </p>
         </li>
 
@@ -484,7 +486,7 @@
           </p>
         </li>
 
-        <!--!?=== unshift ===-->
+        <!--!?=== shift ===-->
         <!--!== question 5 ===-->
         <h3 class="txt-cap sub-heading" id="shift">&starf; shift</h3>
         <li class="br-radius-6">
@@ -509,7 +511,7 @@
           <p class="question"><b>shift</b> kya return krta hai?</p>
           <p class="answer">
             <b>shift</b> bhi <b>pop</b> ki tarah <b>removed element</b> return
-            krta hai. for example
+            krta hai <b>string</b> bana k. for example
             <br />
             for example <br />
             var student = ["sanaullah" , "jamal", "kamran"] <br />
@@ -522,11 +524,12 @@
             ><br />
             console.log( <b>returnedValue</b> ) <br />
             to ab iska result hoga. <b>"sanaullah"</b> <br />
-            q k <b>students</b> wale <b>array</b> ki 1st value yhi hai.
+            q k <b>students</b> wale <b>array</b> ki 1st value yhi hai or ye ab
+            <b>string</b> hai.
           </p>
         </li>
 
-        <!--!?=== shift ===-->
+        <!--!?=== unshift ===-->
         <!--!== question 7 ===-->
         <h3 class="txt-cap sub-heading" id="unshift">&starf; unshift</h3>
         <li class="br-radius-6">
@@ -567,6 +570,151 @@
           </p>
         </li>
 
+        <!--!?=== splice ===-->
+        <!--!== question 9 ===-->
+        <h3 class="txt-cap sub-heading" id="splice">&starf; splice</h3>
+
+        <li class="br-radius-6">
+          <p class="question"><strong>splice</strong> q use hota hai?</p>
+          <p class="answer">
+            <b>splice</b> basically <b>3</b> kaam krta hai. <br />
+            <b>
+              &starf; addition <br />
+              &starf; deletion <br />
+              &starf; updating <br />
+            </b>
+          </p>
+        </li>
+        <!--! ==== question 10 ===-->
+        <li class="br-radius-6">
+          <p class="question"><b>splice</b> ka <b>syntax</b> kya hai?</p>
+          <p class="answer">
+            <b>splice</b> apne kaam kese krta hai ye samjhne se pehle
+            <b>splice</b> ka <b>syntax ya formate</b> samjhna parega jis ka
+            <b>motive</b> ye hai k age ane wali examples apko samjh men aa ske
+            to ye jo <b>example</b> apko next line men dikh rhi hai.
+            <br /><br />
+            var students = ["sanaullah","jamal","atif"]; <br />
+            students. <b>" splice( 0,1,"kamran","raffy" ) "</b><br />
+            <br />
+            ye <b>splice</b> ka <b>syntax ya formate</b> hai. <br />
+            ab samjhte hen k <b>splice</b> k andar ye jo <b>values</b> likhi hen
+            inka kya mtlab hai or ye q yhan likhe gae hen. <br />
+          </p>
+          <ul>
+            <li>
+              to sab se pehla jo <b>number ya index</b> hai ye
+              <b>starting point</b> hai yani <b>array</b> k kis <b>index</b> se
+              ap apna <b>action</b> perform krna chahte hen. for example
+              <br /><br />
+              var students = "sanaullah" , <b>"jamal"</b> , "kamran"; <br />
+              students.splice( <b>1</b> ) <br /><br />
+              to yhan per <b>splice</b> men hamne <b>array</b> k
+              <b>index number 1</b> ko target kya hai. ab ham chahen to is
+              <b>index</b> per mojood <b>element</b> ko delete kr den ya
+              <b>delete kye bina</b> is ki jaga is <b>index</b> per koi or value
+              assign kr den.
+            </li>
+            <li>
+              <b>2nd value</b> <b>delete</b> krwane k lye lagate hen. ye
+              <b>counting</b> hai yani ap yhan btae ho k ktne <b>elements</b> ko
+              delete krna hai or ye <b>optoinal</b> hai. agar apne is men
+              <b>0</b> number dya to koi <b>element</b> delete nhi hoga. for
+              example <br /><br />
+              &starf; var students = "sanaullah" , "jamal" , "kamran"; <br />
+              &starf; students.splice( <b>1 , 0</b> ) <br /><br />
+              ab is example men hamne <b>target</b> kya <b>index number 1</b> ko
+              or next value men hamne btaya k hamne koi value <b>delete</b> nhi
+              krni. to print krwane per iska result hoga. <br />
+              &starf; <b>sanaullah , jamal , kamran</b> <br /><br />
+              or agar is men apne <b>1</b> dya to aik <b>element</b> delete
+              hoga. for example <br /><br />
+              &starf; var students = "sanaullah" , "jamal" , "kamran"; <br />
+              &starf; students.splice( <b>1 , 1</b> ) <br /><br />
+              ab is example men hamne <b>target</b> kya <b>index number 1</b> ko
+              or next value men hamne btaya k hamne yhan se aik
+              <b>element</b> ko <b>delete</b> krni hai. to print krwane per iska
+              result hoga. <br />
+              &starf; <b>jamal , kamran</b> <br /><br />
+              yani jtne <b>elements</b> ap delete krna chahen utne number ap
+              yhan likhenge or utne <b>elements</b> yhan se delete ho jaenge. or
+              ap na chahen to koi value bhi <b>delete</b> na kren.
+            </li>
+            <li>
+              3rd <b>value</b> per agar apne koi <b>element</b> add krwana hota
+              hai to wo likhte hen. for example <br /><br />
+              &starf; var students = "sanaullah" , "jamal" , "kamran"; <br />
+              &starf; students.splice( <b>1 , 1, "raffy"</b> ) <br /><br />
+              to ab print krwane per iska result hoga. <br />
+              sanaullah , <b>raffy</b> , kamran <br /><br />
+              q k yhan hamne <b>index 1</b> ko target kr k yhan se
+              <b>splice krna start</b> kya or agle number se hamne btaya k aik
+              <b>element</b> ko delete krna hai is lye <b>index 1</b> per pehle
+              se mojood value <b>"jamal</b> remove ho gai or. uske baad
+              <b>third value</b> men hamne bataya k hamne konsi value add krni
+              hai.
+            </li>
+          </ul>
+        </li>
+
+        <!--!== question 11 ===-->
+        <li class="br-radius-6">
+          <p class="question">
+            <strong>splice</strong> k zarie ki jane wali
+            <b>addition, deletion or updating</b> ki kuch explations.
+          </p>
+          <p class="answer">
+            <b class="title">addition :</b> <b>splice</b> k zarie ap
+            <b>jis index se chahe</b> value <b>add</b> kr skte hen or yhi farak
+            hai <b>push or unshift</b> men q k wo dono <b>fix place</b> yani k
+            ya <b>starting</b> ya phr <b>end</b> men <b>addition</b> krte hen
+            jabke <b>splice</b> k zarie jhan se ap chahen whan se
+            <b>addition</b> kr skte hen. for example ham yhan <b>center</b> men
+            add kr k dekhte hen.<br />
+            <br />
+            var students = "Sanaullah", <b>"jamal"</b> , "kamran";
+            <br />
+            student.splice(<b>1</b>,0,<b>"raffy"</b>); <br />
+            to ab iska result hoga. <br />
+            Sanaullah,<b>raffy</b>, jamal , kamran
+            <br /><br />
+            <b class="title">deletion : </b> ap <b>splice</b> k zarie delete bhi
+            kr skte hen but kisi bhi <b>index</b> se yani ye hamari
+            <b>marzi</b> k mutabiq kaam krta hai. <b>pop</b> or <b>shift</b> ki
+            tarah is ka <b>remove</b> krne ka <b>index</b> fix nhi hai yani k
+            jese <b>pop</b> end se or <b>shift</b> start se <b>remove</b> krta
+            hai <b>splice</b> men esi koi restriction nhi hai is k zarie se khin
+            se bhi <b>remove</b> kya ja skta hai.for example ham yhan
+            <b>center</b> se delete kr k dekhte hen.<br />
+            <br />
+            var students = "Sanaullah", <b>"jamal"</b> , "kamran";
+            <br />
+            student.splice(1,<b>1</b>,<b>"raffy"</b>); <br />
+            to ab iska result hoga. <br />
+            Sanaullah, <b>raffy</b>, kamran <br /><br />
+          </p>
+        </li>
+
+        <!--! ==== question 12 ===-->
+        <li class="br-radius-6">
+          <p class="question"><b>splice</b> kya return krta hai?</p>
+          <p class="answer">
+            <b>splice</b> bhi <b>removed/deleted value</b> return krta hai but
+            is men or <b>pop or shift</b> men aik faraq ye hai k
+            <b>pop or shift string</b> men value return krte hen jabke
+            <b>splice</b> <b>array</b> men value return krta hai. for example
+            <br /><br />
+            var students = "Sanaullah", "jamal" , "kamran";
+            <br />
+            var returnValue = student.splice(1,1,"raffy"); <br />
+            consol.log( <b>returnedValue</b> ) <br />
+            to ab iska result hoga. <br />
+            <b>[jamal]</b><br /><br />
+            q k yhan hamne <b>1 index</b> ki value ko <b>delet</b> kya hai to is
+            lye <b>splice</b> hamne ye <b>array</b> men return kr rha hai.
+          </p>
+        </li>
+
         <!--!== question  ===-->
         <h3 class="txt-cap sub-heading" id="length">&starf; length</h3>
         <li class="br-radius-6">
@@ -595,7 +743,7 @@
           </p>
         </li>
 
-        <!--! ==== question 11 ===-->
+        <!--! ==== question  ===-->
         <!-- <li class="br-radius-6">
           <p class="question">?</p>
           <p class="answer"></p>
