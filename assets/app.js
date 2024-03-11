@@ -13,7 +13,7 @@ let subMenuAnchors = document.querySelectorAll(".subMenu-item > a");
 let subNavbar = document.querySelectorAll(".subMenu-navbar");
 let subNavbarBtns = document.querySelectorAll(".subNavbar-btns");
 
-console.log(subNavbar);
+// console.log(subNavbar);
 
 //!=== header functionality ===
 
