@@ -715,6 +715,92 @@
           </p>
         </li>
 
+        <!--!?=== slice ===-->
+        <!--!== question 13 ===-->
+        <h3 class="txt-cap sub-heading" id="slice">&starf; slice</h3>
+
+        <li class="br-radius-6">
+          <p class="question"><strong>slice</strong> q use hota hai?</p>
+          <p class="answer">
+            <b>slice</b> basically <b>copy</b> kr k <b>elements</b> ko aik
+            <b>new array</b> store krne lye use hota hai. yani agar ap kisi
+            <b>existing array</b> men se kuch <b>elements</b> ko copy kr k aik
+            new <b>array</b> men store krna chahte hen to iske lye ap
+            <b>slice</b> ko use kr skte hen. Jese kisi cake men se aik
+            <b>slice</b> nikala jata hai same whi kam hota hai.
+          </p>
+        </li>
+
+        <!--! ==== question 14 ===-->
+        <li class="br-radius-6">
+          <p class="question"><b>slice</b> return kya krta hai?</p>
+          <p class="answer">
+            <b>slice</b> ki return value ko pehle discuss krne ka maqsad ye hai
+            k apko agle <b>questions</b> samajh men aa ske. <br />
+            <b>slice</b> wo <b>elements</b> return krta hai jo pehle wale
+            existing <b>array</b> se copy ki hoti hen. or copy krda values ko
+            get krne k lye ap ko wo <b>statement</b> jis men apne pehle wale
+            existing <b>array</b> men se kuch <b>elements</b> copy kye use kisi
+            <b>variable</b> men store krna parta hai. for example <br /><br />
+            var students = "sanaullah","jamal","kamran"; <br />
+            var copyArr = students.<b>splice(1,3)</b> <br /><br />
+            to jab ham <b>copyArr</b> ko print krwaenge to hamen result milega.
+            <br /><br />
+            <b>jamal,kamran</b><br /><br />
+            or jab ham <b>slice</b> use krte hen to definately hamen
+            <b>return</b> men <b>elements</b> chahie hoti hen isi lye iska use
+            krte hen
+          </p>
+        </li>
+
+        <!--! ==== question 15 ===-->
+        <li class="br-radius-6">
+          <p class="question">
+            <b>slice</b> ko use krne ka tareeqa or <b>syntax/formate</b> kya
+            hai?
+          </p>
+          <p class="answer">
+            <b>slice</b> ka <b>syntax/formate</b> ye hai. <br />
+            students.<b>splice(1,3)</b> <br />
+            <br />
+            ab is men ham <b>2 values</b> dete hen <br />
+            &starf; <b>1st</b> wo <b>index number</b> jhan se <b>slice</b> krna
+            yani <b>copy</b> krna start krna hai.
+            <br />
+            &starf; <b>2nd</b> wo <b>index number</b> jhan tak <b>slice</b> krna
+            yani <b>copy</b> krna start krna hai. for example <br /><br />
+            var students = "sanaullah","jamal","kamran","raffy"; <br />
+            var copyArr = students.<b>splice(1,3)</b> <br />
+            console.log(<b>copyArr</b>) <br /><br />
+            to iska result aaega. <br />
+            <b>jamal,kamran</b> <br /><br />
+            esa is lye huwa k hamne <b>starting point</b> rakha hai
+            <b>"1" index</b> to is per jo <b>element</b> hai wo hai
+            <b>jamal</b> or <b>ending pint</b> btaya hai <b>"3" index</b> jis
+            per <b>"raffy"</b> likha hai <br />
+            to ab yhan samjhne ki baat ye hai k jo <b>ending point</b> apne
+            btaya hai ye us samet <b>copy</b> nhi krega balke
+            <b>us tak ya ese samjhen k us se pehle</b> tak hi copy krega. jese k
+            is example men <b>"3" index</b> yani k <b>"raffy"</b> se pehle tak
+            hi <b>copy</b> kya hai.
+
+            <br />
+          </p>
+        </li>
+
+        <!--! ==== question 16 ===-->
+        <li class="br-radius-6">
+          <p class="question">acha kya <b>slice</b> negative index bhi leta hai?</p>
+          <p class="answer">g han ap <b>slice</b> men <b>negative index</b> bhi de skte hen. for example <br><br>
+          var students = ["sanaullah","jamal","kamran"] <br>
+          var copyArr = students.slice(<b>-1</b>); <br>
+          console.log(<b>copyArr</b>); <br><br>
+          to iska result aaega. <br><br>
+          <b>"kamran"</b> <br>
+          q k ye last index per hai or <b>-1</b> ka mtlab hai last value.
+        </p>
+        </li>
+
         <!--!== question  ===-->
         <h3 class="txt-cap sub-heading" id="length">&starf; length</h3>
         <li class="br-radius-6">
