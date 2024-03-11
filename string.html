@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My JavaScript</title>
+    <title>My JavaScript (string)</title>
     <!--!=== facicon link ===-->
     <link
       rel="shortcut icon"
@@ -2372,7 +2372,7 @@
     </header>
     <!--!====== next section starts =====-->
     <main class="main-container">
-      <h1 class="txt-center">strings</h1>
+      <h1 class="txt-center main-heading">strings</h1>
 
       <ol>
         <!--!=== question 1 ===-->
@@ -2417,17 +2417,157 @@
         </li>
 
         <!--!=== question 4 ===-->
-        <li class="br-radius-6" id="splice">
-          <p class="question">splice</p>
-          <p class="answer">
-            ye apko hamesha deleted value return krta hai<br />
-            <span> splice 3 kaam krta hia khin se bhi</span>
+        <li class="br-radius-6">
+          <p class="question">
+            agar <strong>string</strong> k letters ko <b>index number</b> k
+            zarie get krna ho jese <b>array</b> k <b>elements</b> ko get krte
+            hen to kya esa possible hai?
           </p>
-          <ul class="subItems">
-            <li>delete krna</li>
-            <li>update krna</li>
-            <li>add krna</li>
-          </ul>
+          <p class="answer">
+            g han <b>string</b> k <b>letters</b> ko bhi <b>index number</b> k
+            zarie get kya ja skta hai. for example <br /><br />
+            var str = <b>"sanaullah"</b>; <br />
+            console.log(str<b>[0]</b>)<br />
+            to result hoga <b>"s"</b>; <br /><br />
+            isi tarah ap <b>index number</b> k zarie <b>string</b> k andar se
+            koi bhi letters get kr skte hen.
+          </p>
+        </li>
+
+        <!--!todo======= string methods =======-->
+        <h2 class="txt-center main-heading" id="string methods">
+          string methods
+        </h2>
+
+        <!--!=== question 5 ===-->
+        <!--!?=== slice ===-->
+        <h3 class="txt-cap sub-heading" id="slice">&starf; slice</h3>
+        <li class="br-radius-6">
+          <p class="question"><strong>slice</strong> q use hota hai?</p>
+          <p class="answer">
+            <b>slice</b> basically existing <b>string</b> men se
+            <b>elements/letters</b> <b>copy</b> kr k <b>new string</b> banane k
+            lye use hota hai. yani agar ap kisi <b>existing string</b> men se
+            kuch <b>elements</b> ko copy kr k aik new <b>string</b> men banana
+            krna chahte hen to iske lye ap <b>slice</b> ko use kr skte hen. Jese
+            kisi cake men se aik <b>slice</b> nikala jata hai same whi kam hota
+            hai.
+          </p>
+        </li>
+
+        <!--! ==== question 6 ===-->
+        <li class="br-radius-6">
+          <p class="question"><b>slice</b> return kya krta hai?</p>
+          <p class="answer">
+            <b>slice</b> ki return value ko pehle discuss krne ka maqsad ye hai
+            k apko agle <b>questions</b> samajh men aa ske. <br />
+            <b>slice</b> wo <b>elements</b> return krta hai jo pehle wali
+            existing <b>string</b> se copy kye hote hen. or copy krda values ko
+            get krne k lye ap ko wo <b>statement</b> jis men apne pehle wali
+            existing <b>string</b> men se kuch <b>elements</b> copy kye use kisi
+            <b>variable</b> men store krna parta hai. for example <br /><br />
+            var student = "sanaullah"; <br />
+            var copyStr = student.<b>splice(0,4)</b> <br /><br />
+            to jab ham <b>copyStr</b> ko print krwaenge to hamen result milega.
+            <br /><br />
+            <b>"Sana"</b><br />
+            q k <b>0</b> per <b>"s"</b> hai or <b>4</b> per <b>"u"</b> to
+            <b>"s"</b> se lekar <b>"u"</b> se pehle tak copy ho jaega.
+            <br /><br />
+            or jab ham <b>slice</b> use krte hen to definately hamen
+            <b>return</b> men <b>elements</b> chahie hoti hen isi lye iska use
+            krte hen
+          </p>
+        </li>
+
+        <!--! ==== question 7 ===-->
+        <li class="br-radius-6">
+          <p class="question">
+            <b>slice</b> ko use krne ka tareeqa or <b>syntax/formate</b> kya
+            hai?
+          </p>
+          <p class="answer">
+            <b>slice</b> ka <b>syntax/formate</b> ye hai. <br />
+            students.<b>splice(1,3)</b> <br />
+            <br />
+            ab is men ham <b>2 values</b> dete hen <br />
+            &starf; <b>1st</b> wo <b>index number</b> jhan se <b>slice</b> krna
+            yani <b>copy</b> krna start krna hai.
+            <br />
+            &starf; <b>2nd</b> wo <b>index number</b> jhan tak <b>slice</b> krna
+            yani <b>copy</b> krna start krna hai. for example <br /><br />
+            var student = "sanaullah"; <br />
+            var copyStr = student.<b>splice(0,4)</b> <br />
+            console.log(<b>copyStr</b>) <br /><br />
+            to iska result aaega. <br />
+            <b>"sana"</b> <br /><br />
+            esa is lye huwa k hamne <b>starting point</b> rakha hai
+            <b>"0" index</b> to is per jo <b>element ya letter</b> hai wo hai
+            <b>"s"</b> or <b>ending pint</b> btaya hai <b>"4" index</b> jis per
+            <b>"u"</b> likha hai <br />
+            to ab yhan samjhne ki baat ye hai k jo <b>ending point</b> apne
+            btaya hai ye us samet <b>copy</b> nhi krega balke
+            <b>us tak ya ese samjhen k us se pehle</b> tak hi copy krega. jese k
+            is example men <b>"4" index</b> yani k <b>"u"</b> se pehle tak hi
+            <b>copy</b> kya hai.
+
+            <br />
+          </p>
+        </li>
+
+        <!--! ==== question 8 ===-->
+        <li class="br-radius-6">
+          <p class="question">
+            acha kya <b>slice</b> negative index bhi leta hai?
+          </p>
+          <p class="answer">
+            g han ap <b>slice</b> men <b>negative index</b> bhi de skte hen. for
+            example <br /><br />
+            var student = "sanaullah" <br />
+            var copystr = student.slice(<b>-10,-5</b>); <br />
+            console.log(<b>copystr</b>); <br /><br />
+            to iska result aaega. <br /><br />
+            <b>"sana"</b> <br />
+            q k <b>end se (-10)</b> per <b>"s"</b> aarha hai jo k
+            <b>end se</b> last letter hai apke <b>case</b> men koi or
+            <b>index</b> bhi ho skta hai. or phr <b>(-5)</b> per end se
+            <b>"u"</b> arha hai to is se pehle tak <b>slice/copy</b> ho jaega.
+            <br />
+            <b class="link">note : </b> ye baat rakhen k <b>minus</b> men jo
+            value ap denge <b>slicing/coping</b> us number se age hi hogi yani k
+            esa nhi k <b>minus</b> men number denge to <b>slicing/coping</b> bhi
+            ulti hogi wo usi <b>direction</b> men hogi jis men pehle ho rhi thi
+            just <b>indexing</b> ka tareeqa hamne badla hai. <br />
+          </p>
+          <a href="./array.html#slice" class="link"
+            >note : <b>slice array</b> ka method hai or us per kese kam krta hia
+            janne k lye click kren</a
+          >
+        </li>
+
+        <!--!?=== length ===-->
+        <!--!== question 9 ===-->
+        <h3 class="txt-cap sub-heading" id="length">&starf; length</h3>
+        <li class="br-radius-6">
+          <p class="question"><strong>length</strong> q use hota hai?</p>
+          <p class="answer">
+            <strong>length array</strong> ka aik <b>method</b> hai jo k
+            <b>string</b> per bhi chalta hai ye <b>array ya string</b> k andar
+            ktne <b>elements</b> hen ye btane k lye use hota hai yani
+            <b>string</b> k andar total ktne <b>elements ya letters</b> hen ye
+            maloom krne k lye is <b>method</b> ka use krte hen. for example .
+            <br />
+            var <b>student</b> = <b>"sanaullah"</b> <br />
+            ab yhan <b>"student"</b> men ktne <b>letters</b> hen ye maloom krna
+            ho to ham is tarah se maloom kr skte hen. <br />
+            console.log( <b>student.length</b> ) <br />
+            to ab result aaega <b>" 9 "</b> q k <b>student</b> k andar
+            <b>" 9 "</b> <b>letters</b> hen <br />
+          </p>
+          <a href="./array.html#length" class="link"
+            >note : <b>length array</b> ka method hai or us per kese kam krta
+            hia janne k lye click kren</a
+          >
         </li>
       </ol>
     </main>
