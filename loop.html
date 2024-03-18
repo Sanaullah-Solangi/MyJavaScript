@@ -251,6 +251,7 @@
           </ul>
           <p class="answer"></p>
         </li>
+
         <!--!=== question 6 ===-->
         <li class="br-radius-6">
           <p class="question">
@@ -267,13 +268,14 @@
             krte hen.
           </p>
         </li>
+
         <!--!=== question 7 ===-->
         <li class="br-radius-6">
           <p class="question">
             <b>for loop</b> ki <b>working</b> kese hoti hai?
           </p>
           <p class="answer">
-            <b>for loop</b> ki working ko step by step address krte hen.
+            <b>for loop</b> ki working ko step by step address krte hen. <br />
             <b class="lowerCase">for(var i = 1; i <= 5; i++)</b>
           </p>
           <ul>
@@ -302,6 +304,160 @@
             <li>
               uske baad dobara <b>increament</b> hoga or isi tarah tab tak ye
               circle chalega jab tak <b>condition false</b> nhi ho jati.
+            </li>
+          </ul>
+        </li>
+
+        <!--!=== question 8 ===-->
+        <li class="br-radius-6">
+          <p class="question">
+            kya ham <b>for loop</b> k <b>zarie</b> se <b>array</b> ko print krwa
+            skte hen?
+          </p>
+          <p class="answer">
+            g han ham <b>for loop</b> ki madad se <b>array</b> k
+            <b>elements</b> ko <b>one by one</b> print krwa skte hen. for
+            example <br />
+            <br />
+            var <b class="lowerCase">arr</b> = ["jamal","kamran","sanaullah"]
+            <br />
+            for(var i = 1; i <= 5; i++){<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;document.write(
+            <b class="lowerCase">i + ") " + arr[ i ]</b> ) <br />
+            }<br />ab iska result aaega. <br />
+            <b> 0) jamal <br />1) kamran <br />2) sanaullah <br /></b>
+            <br />
+            ye ese huwa k jab <b>loop</b> start huwa to
+            <b class="lowerCase">i</b> ki value thi <b>0</b> or hamne
+            <b>loop k block</b> k andar <b>loop k variable k is number</b> ko
+            <b>array k index</b> k tor per laga dya or ise print krwa dya to
+            <b>array k "0" index</b> per jo <b>element</b> tha wo print huwa or
+            phr dobara loop chala to <b class="lowerCase">i</b> ki value
+            <b>increament</b> ho k <b>1</b> ho gai to <b>array k index 1</b> per
+            mojood value print huwi isi tarah age bhi working hoti rhi <br />
+            or is men jo <b>numbering</b> shuru men print huwi wo bhi isi
+            <b class="lowerCase">i</b> ki values ko hi print krwaya huwa hai.
+          </p>
+        </li>
+
+        <!--!?=== loop flag ===-->
+        <h2 class="txt-center main-heading">
+          Array Element Search Using Loop Flag Concept
+        </h2>
+        <!--!=== question 9 ===-->
+        <h3 class="txt-cap sub-heading" id="for loop">&starf; loop flag</h3>
+        <li class="br-radius-6">
+          <p class="question">
+            <b>flag</b> kya hota hai? or ise q use krte hen.
+          </p>
+          <p class="answer">
+            <b>fleg</b> aik <b>variable</b> hi hota hai normal sa but is men ham
+            koi <b>false</b> value rakhte hen. for example <br />
+            var <b class="lowerCase">flag</b> = false; <br />
+            take <b>loop</b> k zarie se <b>array</b> k kisi aik
+            <b>element</b> ko search krne k lye. or ye kese krte hen age apko
+            btaya jaega. or yaad rahe k <b>variable</b> ka name
+            <b>flag</b> rakhna zaruri nhi hai.
+          </p>
+        </li>
+
+        <!--!=== question 10 ===-->
+        <li class="br-radius-6">
+          <p class="question">
+            <b>flag</b> k zarie <b>array elements</b> ki <b>searcing</b> kese
+            krte hen?
+          </p>
+          <p class="answer">
+            <b>loop</b> zarie <b>array elements</b> ko ese search kr skte hen.
+          </p>
+          <ul>
+            <li>
+              is k lye ap ko sab se pehle aik <b>array</b> banana hoga. for
+              example <br />
+              <b class="lowerCase"
+                >var arr = ["sanaullah","jamal","kamran","raffay"]</b
+              >
+            </li>
+            <li>
+              uske baad aik <b>flag</b>(yani aik esa <b>variable</b> jis men koi
+              <b>false</b> value hogi) banana hoga. for example <br />
+              var <b class="lowerCase">flag</b> = false;
+            </li>
+            <li>
+              phr <b>loop</b> chala k us men <b>condition</b> laga kr batana
+              hoga k hamari matlooba value ya <b>element</b> mile to hamen kya
+              krna hai. for example <br /><br />
+              for(<b class="lowerCase">var i = 0; i < arr.length; i++</b>){
+              <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;if(
+              <b class="lowerCase">arr[ i ] === "sanaullah"){</b> <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <b class="lowerCase">flag = true;</b>
+              <br />
+              &nbsp;&nbsp;&nbsp; <b>}</b> <br />
+              } <br />
+              ab yhan per apni matlooba <b>value ya element</b> ko mojooda
+              <b>array</b> men search kya ja rha hai. mil jane per
+              <b>block</b> ka code run hoga or <b>flag</b> ki
+              <b>false value</b> ko <b>true</b> kr dega agar value na mili to
+              nhi krega.
+            </li>
+            <li>
+              us k baad ab <b>loop</b> k bahir aik <b>if statement</b> banai
+              jaegi jis men ab ham <b>condition</b> <b>falg</b> ki basis per
+              lagaenge k agar <b>flag</b> ki value <b>flase</b> ho to
+              <b>"else"</b> chale or agar <b>true</b> ho to
+              <b>"if" ka code execute</b> ho jae <br />for example. <br />
+              if(<b>flag</b> == <b>true</b>){ <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.write("mil gai
+              value") <br />
+              }else{ <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.write("nhi mili
+              value") } <br /><br />
+              to is tarah se <b>array</b> men se kisi bhi value ko
+              <b>search</b> kya ja skta hai.
+            </li>
+          </ul>
+        </li>
+
+        <!--!=== question 11 ===-->
+        <li class="br-radius-6">
+          <p class="question">
+            <b>flag</b> k zarie <b>array element</b> ko search krne k code aik
+            saath paish farmaen.
+          </p>
+          <p class="answer">
+            ab yhan per <b>flag</b> Concept k zarie <b>array element</b> ko
+            search krne ka code aik saath pais hai.
+          </p>
+
+          <ul>
+            <li>
+              var <b class="lowerCase">arr</b> =
+              ["sanaullah","jamal","kamran","raffay"]
+            </li>
+            <li>
+              Var <b class="lowerCase">flag</b> =
+              <b class="lowerCase">False</b>;
+            </li>
+            <li>
+              for(<b class="lowerCase">var i = 0; i < arr.length; i++</b>){
+              <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;if(
+              <b class="lowerCase">arr[ i ] === "sanaullah"){</b> <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <b class="lowerCase">flag = true;</b>
+              <br />
+              &nbsp;&nbsp;&nbsp; <b>}</b> <br />
+              }
+            </li>
+            <li>
+              if(<b>flag</b> == <b>true</b>){ <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.write("mil gai
+              value") <br />
+              }else{ <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.write("nhi mili
+              value") }
             </li>
           </ul>
         </li>
