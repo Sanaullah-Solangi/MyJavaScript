@@ -2579,42 +2579,89 @@
           </p>
         </li>
 
-        <!--!?=== purpuse of case methods ===-->
+        <!--!?=== use case of these two methods ===-->
         <!--!=== question 11 ===-->
-        <h3 class="txt-cap sub-heading" id="purpuse of case methods">
-          &starf; purpuse of case methods
+        <h3 class="txt-cap sub-heading" id="use case of these two methods">
+          &starf; use case of these two methods
         </h3>
         <li class="br-radius-6">
-          <p class="question"><b>ye dono case methods</b> q use hote hen?</p>
+          <p class="question">
+            <b>ye dono methods</b> ka use khan or kese hota hai?
+          </p>
           <p class="answer">
-            ye dono <b>methods string</b> men se kisi <b>word</b> ko
-            <b>search</b> krne k lye use hote hen wo is tarah k agar apke pas
-            koi data base men koi <b>paragraphe</b> hai or usmen koi
+            ye dono <b>methods "string"</b> men se kisi <b>word</b> ko
+            <b>search</b> krne men madad krte hen is tarah k agar apke pas koi
+            <b>"data base"</b> men koi <b>data</b> hai or usmen koi
             <b>word</b> hai jo <b>user</b> dekhna chahta hai to ab ap ko kese
             pta chalega k <b>user</b> kis <b>word</b> ko dekhna chahta hai to
             iska jawab simple hai ap <b>prompt</b> men user ki value leke use
             <b>match</b> kreanege apni value se agar dono same hungi to ap us
-            value ko show kr doge. <b>but</b> yhan aik masla hai wo ye k
-            <b>JavaScript</b> to <b>case sensitive</b> hai to ye kes insure hoga
-            k user ne jo value di hai uska <b>case</b> apke
-            <b>paragraphe</b> men mojood <b>word</b> se match krta hai q k agar
-            <b>case match</b> nhi hoga to <b>condition</b> kabhi bhi true nhi
-            hogi or result nhi aaega. to iske lye ap in dono <b>methods</b> men
-            se kisi ka use krte hen is tarah se k apne apna <b>content</b> jis
-            <b>case</b> men rakha hai <b>user k input</b> ko bhi usi
-            <b>case</b> men ap <b>convert</b> kr dete hen q k jab bhi ap koi
-            <b>app ya project</b> banate hen to ap apni <b>app/project</b> ka
-            aik <b>standard</b> set krte hen k hamare <b>app/project</b> ka
-            <b>case lowerCase</b> hoga ya phr <b>UpperCase</b> or phr use match
-            krwate ho to is tarha se ap kisi bhi <b>word</b> ko <b>search</b> kr
-            skte ho. for example <br /><br />
+            value ko show kr doge. <br />
+            <b>but</b> yhan aik masla hai wo ye k <b>JavaScript</b> to
+            <b>case sensitive</b> hai to ye kes insure hoga k user ne jo value
+            di hai uska <b>case</b> apke <b>data</b> men mojood <b>word</b> se
+            match krta hai q k agar <b>case match</b> nhi hoga to
+            <b>condition</b> kabhi bhi true nhi hogi or result nhi aaega. to
+            iske lye ap in dono <b>methods</b> men se kisi ka use krte hen is
+            tarah se k apne apna <b>content</b> jis <b>case</b> men rakha hai
+            <b>user k input</b> ko bhi usi <b>case</b> men ap <b>convert</b> kr
+            dete hen q k jab bhi ap koi <b>app ya project</b> banate hen to ap
+            apni <b>app/project</b> ka aik <b>standard</b> set krte hen k hamare
+            <b>app/project</b> ka <b>case lowerCase</b> hoga ya phr
+            <b>UpperCase</b> or phr use match krwate ho to is tarha se ap kisi
+            bhi <b>word</b> ko <b>search</b> kr skte ho. for example
+            <br /><br />
             var <b>userInput</b> = prompt("Enter any value").<b
               >toLowerCase()</b
             >
             ; <br /><br />
             ab is men jo value bhi aaegi wo <b>lowerCase</b> men convert ho
-            jaegi jise ap <b>loop</b> k zarie se <b>search</b> kr skte hen.
+            jaegi. for example <br />
+            <b class="lowerCase">sanaullah</b> <br />
+            ab ise ap <b>loop</b> k zarie se <b>search</b> kr skte hen.
           </p>
+        </li>
+
+        <!--!?=== String Capitalization ===-->
+        <!--!=== question 11 ===-->
+        <h3 class="txt-cap sub-heading" id="String Capitalization">
+          &starf; String Capitalization
+        </h3>
+        <li class="br-radius-6">
+          <p class="question">
+            kya <b>string</b> ko <b>capitalize</b> krne ka koi
+            <b>method</b> hota hai? agar nhi to phr <b>capitalize</b> kese krte
+            hen.
+          </p>
+          <p class="answer">
+            g nhi <b>JavaScript</b> men <b>capitalize</b> krne ka koi method nhi
+            hota agar apne kisi <b>string</b> ko <b>capitalize</b> krna hia to
+            ye apko khud krna hoga. or ye kaam krne ka tareeqa hai k.
+          </p>
+          <ul>
+            <li>
+              apne jis <b>word</b> ko <b>capitalize</b> krna hai pehle uska
+              pehla <b>letter</b> copy kren or use yhi per <b>UpperCase</b> men convert kr den jis k lye apko <b>slice</b> use krna
+              hoga. for example <br />
+              var str = <b class="lowerCase">sanaullah</b> <br />
+              var firstLetter = str.slice( <b>0,1</b> ).toUpperCase <br> <br />
+              ab is <b>string</b> ka pehla <b>letter</b> copy ho chuka hai.
+            </li>
+            <li>
+              iske baad <b>string</b> k baad wale sare <b>letters</b> ko copy
+              krna hoga. for example <br />
+              var remaingLetters = str.slice(1) <br />
+              ab is men sirf <b>starting index</b> hi denge q k hamen
+              <b>last index</b> btane ki zarurat nhi wo q k <b>last index</b> na
+              btane se <b>slice starting index</b> wale sare letters copy kr
+              lega.
+            </li>
+            <li>
+              uske baad in dono <b>variables</b> ko apas men <b>concat</b> krwa
+              denge. for example <br />
+              var result = <b>firstLetter + remaingLetters;</b>
+            </li>
+          </ul>
         </li>
 
         <!--!?=== word searching by loop ===-->
@@ -2627,16 +2674,13 @@
             <b>loop </b>k zarie se <b>string men word searching</b> kese krte
             hen?
           </p>
+
           <p class="answer">
-            <b>loop</b> k zarie <b>word search</b> krne k lye apko
-            <b>word</b> ki <b>length</b> btani parti hai. to ab user kya
-            <b>word</b> deta hai ye hamen maloom nhi hota jis ki waja se
-            <b>length</b> bhi maloom nhi hoti to iske lye ham
-            <b>length method</b> use krte hen. or is tarah se
-            <b>searching</b> krte hen. acha aik baat note kren k age jo
-            <b>text</b> word use ho rha hai wo <b>variable</b> hai jis men data
-            store hai or us men ham <b>word</b> ko <b>search</b> kr hre hen for
-            example <br /><br />
+            <b>word searching</b> ka aik <b>tareeqa</b> bana huwa hai jise hamne
+            follow krna hota hai. or aik baat ye <b>note</b> kr len k age jo
+            <b>text</b> name use hoga as a b variable wo hamne <b>assume</b> kya
+            hai k hamara storege hai jis men data hai. so <b>searcing</b> ka
+            tareeqa ye hai k <br />
             var <b class="lowerCase">input</b> = prompt("Enter your word");
             <br />
             for(var i = 0; i < <b class="lowerCase">text.length</b>; i++){<br />
@@ -2648,36 +2692,117 @@
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write("found") <br />
             &nbsp;&nbsp;&nbsp;}<br />
-            }
+            } <br />
+            ab is sab ki <b>explaination</b> hazir hai.
           </p>
           <ul>
             <li>
-              ab yhan <b>loop</b> ko <b>text variable</b> ki <b>length</b> tak
-              is lye chalaya take poore <b>variable</b> men <b>word</b> ko
-              <b>search</b> kr sken
+              <b>loop</b> k zarie <b>word search</b> krne k lye apko
+              <b>word</b> ki <b>length</b> btani parti hai k itne
+              <b>letters</b> wale <b>word</b> ko <b>search</b> kro.
             </li>
             <li>
-              us k baad jo <b>word search</b> kr rhe hen usko
-              <b>poore paragraphe</b> men se <b>copy</b> kr k nikalna hoga jis k
-              lye <b>slice</b> ka use hoga.
+              to ab user kya
+              <b>word</b> deta hai ye hamen maloom nhi hota jis ki waja se
+              <b>length</b> bhi maloom nhi hoti
             </li>
             <li>
-              ab jo <b>word search</b> kr hre hen wo kis <b>index</b> per hai ye
-              exact maloom nhi hai to ab ham <b>search</b> krne k lye ye maloom
-              krenge k jo <b>word</b> hamne <b>search</b> krna hai uskte
-              <b>letters</b> ktene hen jis k lye <br />
-              <b>input.length</b> <br />
-              ka use kya hai. jis se hamen <b>input</b> men aae huwe
-              <b>word</b> ki <b>length</b> maloom ho jaegi.
+              or jtne <b>letters</b> hunge <b>word</b> men utni uski
+              <b>length</b> hogi. for example
+              <br />
+              <b>sanaullah</b> <br />
+              ye aik <b>word</b> hai jis men <b>9</b> letters hen to iski
+              <b>length</b> bhi <b>9</b> hogi.
             </li>
             <li>
-              phr ham ye <b>condition</b> lagaenge k jab bhi kisi bhi
-              <b>index</b> per itni <b>length</b> ka koi <b>word</b> aae use
-              <b>input</b> ki value k saath <b>match</b> krwaya jae.
+              to <b>user input</b> ki <b>length</b> maloom krne k lye ham
+              <b>length method</b> use krte hen. for example <br /><br />
+              var <b>input</b> = prompt("Enter any value"); <br />
+              var inputLength = <b>input.length</b> <br />
+              <br />
+              ab <b>inputLength</b> men hamen <b>user k input</b> men ktne
+              <b>letters</b> hen wo maloom ho gaya.
             </li>
+            <li>ab iske baad <b>loop</b> k zarie <b>searching</b> ki jaegi.</li>
             <li>
-              agar <b>words match</b> ho jate hen to <b>condition</b> true ho
-              jaegi or maloom ho jaega k ye <b>word</b> is para men hai.
+              jiska tareeqa ye hai k. <br />
+              <ol class="searchingLoop">
+                <li>
+                  <b>loop</b> ap chalaenge apke pas jo <b>data</b> mojood hai
+                  uske <b>length</b> tak. for example <br />
+                  &nbsp;&nbsp;&nbsp;for(<b class="lowerCase"
+                    >var i = 0; i < text.length; i++ </b
+                  >){ };<br />
+                  ab yhan <b>text</b> hamra wo <b>variable</b> hai jis men
+                  hamara sara <b>data</b> mojood hai or ham <b>loop</b> ko uski
+                  <b>tottal length</b> tak chalenge take us poore
+                  <b>data</b> men <b>user input</b> ko <b>search</b> kr sken.
+                </li>
+                <li>
+                  uske baad ap <b>loop</b> k andar aik <b>condition</b> lagaenge
+                  jis men ap <b>user input</b> ki jtni <b>length</b> hai us k
+                  barabar length wale <b>word</b> ko <b>search</b> krenge or us
+                  <b>word</b> ko <b>user</b> k <b>input</b> k saath match
+                  krwange.
+                </li>
+                <li>
+                  ab is men aik baat ye hai k ap ne
+                  <b>user input ki length</b> match nhi krwani balke utni
+                  <b>length</b> wale <b>word</b> ko match krwana hai to ab wo
+                  <b>word</b> jo <b>user input</b> ki <b>length</b> k barabar
+                  hai wo mil bhi jae to to use ham kese <b>get</b> krenge. to
+                  iske lye ham <b>slice</b> ka use krte hen take wo
+                  <b>word</b> jese hi mile ham use <b>copy</b> kr len.
+                </li>
+
+                <li>
+                  ab ap jante hen <b>slice 2 parameters</b> leta hai <br />
+                  1. <b>starting index</b> <br />
+                  2. <b>ending index</b> <br />
+                  or <b>starting index</b> ap tab denge jab ap ko wo
+                  <b>word</b> pta hoga k wo <b>search hone wala word</b> konsa
+                  hai or phr us <b>word</b> ka <b>index number</b> konsa hai. or
+                  wo to hamen maloom nhi to phr is k lye ham ye krte hen k
+                  <b>loop</b> men mojood <b>variable " i "</b> ko as a
+                  <b>index</b> dete hen. for example <br /><br />
+                  text.slice(<b class="lowerCase">i</b>,) <br /><br />jis se
+                  sare k sare word <b>"alag alag"</b> <b>"toot toot"</b> kr
+                  aaenge or un sab ko <b>if condition</b> men ham check kr
+                  skenge.
+                </li>
+
+                <li>
+                  ab uske baad ap ko <b>slice</b> ka <b>2nd parameter</b> dena
+                  hai yani k <b>length</b> or apko q k maloom nhi k
+                  <b>user input</b> kya hoga to apko <b>length</b> bhi maloom
+                  nhi hogi is lye ham yhan <b>user input ki length</b> ko lagate
+                  hen. for example <br />
+                  &starf; text.slice( <b class="lowerCase">i</b> ,
+                  <b><b class="lowerCase">i</b> + userInput.length </b>)
+                  <br />
+                  ab yhan per jis bhi <b>index number</b> per <b>user</b> k
+                  <b>input</b> ka pehla <b>word</b> aaega us
+                  <b>index number</b> men <b>user input</b> ki <b>length</b> ko
+                  <b>plus</b> kr denge. for example <br />
+                  &starf; var <b>text</b> = "my name is <b>Sanaullah</b>";
+                  <br />
+                  ab agar user <b>sanaullah</b> ko <b>search</b> krta hai to na
+                  hamen ye maloom hai k ye <b>word</b> kis <b>index</b> per hai
+                  or na hi ye maloom hai k iski <b>length</b> ktni hai to jab
+                  <b>loop</b> chalta huwa is k <b>first letter k index</b> aega
+                  to us <b>index</b> men is <b>word</b> ki <b>length plus</b> ho
+                  jaegi. or ye <b>word get ho jaega.</b>
+                </li>
+                <li>
+                  ab <b>loop</b> chalaenge kese is tarah se. <br />
+                  for(var i = 0; i < text.length; i++){<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;if(
+                  <b>text.slice( i , i + userInput.length) == userInput</b> )
+                  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write("The
+                  word is found"); <br />
+                  }
+                </li>
+              </ol>
             </li>
           </ul>
         </li>
