@@ -398,8 +398,6 @@ span {
   top: -200%;
 }
 
-
-
 /**=== show on hover effect ===*/
 .web-subMenu
   .subMenu-cover:last-child
@@ -572,14 +570,16 @@ ul > li {
   font-size: 1.7rem;
   font-weight: bold;
 }
-
+.searchingLoop > li,
+ul > li {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
 ul > li {
   text-align: left;
   padding: 0.5rem 2rem;
   background-color: var(--mainColor2);
   list-style-position: inside;
   list-style-type: decimal;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 ul > li:last-child {
   padding-bottom: 1rem;
@@ -587,6 +587,20 @@ ul > li:last-child {
 
 ul > li::marker {
   content: " ⭐ ";
+}
+
+.searchingLoop > li {
+  text-align: left;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  background-color: var(--mainColor2);
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
+  padding-top: 0rem;
+  list-style-type: circle;
+}
+
+.searchingLoop > li::marker {
+  content: " 🚀 ";
 }
 .link {
   animation: blink 1s infinite alternate;
