@@ -2623,7 +2623,7 @@
         </li>
 
         <!--!?=== String Capitalization ===-->
-        <!--!=== question 11 ===-->
+        <!--!=== question 12 ===-->
         <h3 class="txt-cap sub-heading" id="String Capitalization">
           &starf; String Capitalization
         </h3>
@@ -2641,10 +2641,12 @@
           <ul>
             <li>
               apne jis <b>word</b> ko <b>capitalize</b> krna hai pehle uska
-              pehla <b>letter</b> copy kren or use yhi per <b>UpperCase</b> men convert kr den jis k lye apko <b>slice</b> use krna
-              hoga. for example <br />
+              pehla <b>letter</b> copy kren or use yhi per <b>UpperCase</b> men
+              convert kr den jis k lye apko <b>slice</b> use krna hoga. for
+              example <br />
               var str = <b class="lowerCase">sanaullah</b> <br />
-              var firstLetter = str.slice( <b>0,1</b> ).toUpperCase <br> <br />
+              var firstLetter = str.slice( <b>0,1</b> ).toUpperCase <br />
+              <br />
               ab is <b>string</b> ka pehla <b>letter</b> copy ho chuka hai.
             </li>
             <li>
@@ -2665,7 +2667,7 @@
         </li>
 
         <!--!?=== word searching by loop ===-->
-        <!--!== question 12 ===-->
+        <!--!== question 13 ===-->
         <h3 class="txt-cap sub-heading" id="word searching by loop">
           &starf; word searching by loop
         </h3>
@@ -2806,6 +2808,204 @@
             </li>
           </ul>
         </li>
+
+        <!--!?=== indexOf ===-->
+        <!--!== question 14 ===-->
+        <h3 class="txt-cap sub-heading" id="indexOf">&starf; indexOf</h3>
+        <li class="br-radius-6">
+          <p class="question"><b>indexOf</b> q use hota hai?</p>
+          <p class="answer">
+            <b>indexOf method</b> k zarie ham <b>loop</b> ka
+            <b>searching</b> wala kaam easily kr skte hen. is men jis bhi
+            <b>word</b> ko likhenge ye uska <b>starting index</b> hamen return
+            krega. for example. <br />
+            var text = <b>"my name is <i>sanaullah"</i></b> <br />
+            ab ham yhan <b>text string variable</b> men se kisi <b>word</b> ko
+            <b>find</b> krte hen <b>indexOf</b> ki madad se. <br />
+            var indeNum = text.<b>indexOf</b>("sanaullah"); <br />
+            document.write( <b>indeNum</b> ) <br />
+            to ye return men hamne iska <b>index number</b> dega. to iska
+            <b>result</b> hoga.
+            <br />
+            <b>11</b><br />
+            q k <b>sanaullah</b> ka pehla <b>letter 11 index number</b> per hai.
+            jis se hamen pta chal gaya k han ye <b>word</b> is <b>string</b> men
+            mojood hai. <br />
+            ab agar kabhi esa <b>word search</b> kya jo k is <b>string</b> men
+            na ho to us case men return men <b>-1</b> milta hai jiska mtlab ye
+            hai k esa koi <b>word</b> mojood nhi hai esa is lye k <b>-1</b> koi
+            <b>index</b> hi nhi hai. to jab ye aaya to mtlab esi koi value nhi
+            hai.
+          </p>
+          <a href="./array.html#indexOf" class="link"
+            >note : <b>indexOf array</b> ka method hai or us per kese kam krta
+            hia janne k lye click kren</a
+          >
+        </li>
+
+        <!--!?=== lastIndexOf ===-->
+        <!--!== question 15 ===-->
+        <h3 class="txt-cap sub-heading" id="lastIndexOf">
+          &starf; lastIndexOf
+        </h3>
+        <li class="br-radius-6">
+          <p class="question"><b>lastIndexOf</b> q use hota hai?</p>
+          <p class="answer">
+            <b>lastIndexOf method</b> bhi same whi kaam krta hai jo
+            <b>indexOf</b> krta hai bas in men difference ye hai k
+            <b>indexOf</b> starting se <b>search</b> krta hai or
+            <b>lastIndexOf</b> <b>end</b> se <b>search</b> krta hai. for
+            example. <br />
+            var text = <b>"my name is <i>sanaullah"</i></b> <br />
+            ab ham yhan <b>text string variable</b> men se kisi <b>word</b> ko
+            <b>find</b> krte hen <b>lastIndexOf</b> ki madad se. <br />
+            var indeNum = text.<b>lastIndexOf</b>("sanaullah"); <br />
+            document.write( <b>indeNum</b> ) <br />
+            to ye return men hamne iska <b>index number</b> dega. to iska
+            <b>result</b> hoga.
+            <br />
+            <b>11</b><br />
+            q k <b>sanaullah</b> ka pehla <b>letter 11 index number</b> per hai.
+            chahe ap <b>left to right ya right to left</b> jaen dono tarf se ye
+            <b>11</b> per hai. jis se hamen pta chal gaya k han ye
+            <b>word</b> is <b>string</b> men mojood hai. <br />
+          </p>
+          <a href="./array.html#lastIndexOf" class="link"
+            >note : <b>lastIndexOf array</b> ka method hai or us per kese kam
+            krta hia janne k lye click kren</a
+          >
+        </li>
+
+        <!--!?=== charAt ===-->
+        <!--!== question 16 ===-->
+        <h3 class="txt-cap sub-heading" id="charAt">&starf; charAt</h3>
+        <li class="br-radius-6">
+          <p class="question"><b>charAt</b> q use hota hai?</p>
+          <p class="answer">
+            <b>charAt array</b> aik esa method hai jis men ap ne
+            <b>index number</b> ko enter krna hota hai or us <b>index</b> per jo
+            bhi value hoti hai ye use return krta hai. <br /><br />
+            var text = "my name is sanaullah"; <br />
+            var indexnum = text.<b>charAt(11)</b>; document.write(
+            <b>indexnum</b> ); <br />
+            <br />
+            ab ye return krega <b>"S"</b> q k <b>11 index number</b> per yhi
+            hai.
+          </p>
+        </li>
+
+        <!--!?=== replace ===-->
+        <!--!== question 16 ===-->
+        <h3 class="txt-cap sub-heading" id="replace">&starf; replace</h3>
+        <li class="br-radius-6">
+          <p class="question"><b>replace</b> q use hota hai?</p>
+          <p class="answer">
+            <b>replace string</b> aik esa method hai jis k zarie ap
+            <b>string</b> men mojood kisi bhi word ko asani se <b>replace</b> kr
+            skte hen. for example <br><br />
+            var <b>text</b>  = <b>' " Dollor "</b> Lorem ipsum dolor sit amet <b>" Dollor "</b> consectetur adipisicing elit.
+            Facilis distinctio reprehenderit dolorum natus! Suscipit, <b>" Dollor " '</b> <br><br>
+            is variable men jo text hai is men ham agar <b>dollor</b> ko replace krna chahen to is tarah se kr skte hen. for example <br><br>
+            document.write(text.replace( <b>"Dollor","pkr"</b> )) <br>
+            ab is men hamne <b>dollor</b> ko <b>pkr</b> se replace kr dya. <br><b>note : </b> but aik baat yaad rahe <b>replace</b> sirf pehle milne wale word ko hi replace krega baqi words ko nhi krega agar ap sare words ko replace krna chahte hen to us k lye age <b>method aarha hai</b> or yhan bhi iska aik tareeqa hai. wo ye k apne jis <b>word</b> ko replace krna hai use ap <b>string </b> men nhi balke <b>(forward slashes //) </b> men likh k last men <b>g</b> likh den to is se bhi sare words replace ho jaenge jo apna krna chahte hen.<br>
+            document.write(text.replace( <b>/Dollor/g,"pkr"</b>  )) 
+
+          </p>
+        </li>
+
+        
+        <!--!?=== replaceAll ===-->
+        <!--!== question 16 ===-->
+        <h3 class="txt-cap sub-heading" id="replaceAll">&starf; replaceAll</h3>
+        <li class="br-radius-6">
+          <p class="question"><b>replaceAll</b> q use hota hai?</p>
+          <p class="answer">
+            <b>replaceAll string</b> bhi <b>string</b> men kisi <b>word</b> ko <b>replace</b> krne k lye use hota hai but ye sirf pehle milne wale word ko nhi balke ap k likha huwa <b>word</b> jhan bhi hoga sab jaga <b>replace</b> kr dega. for example <br><br>
+            document.write(text.replaceAll(<b>"Dollor","PKR"</b>)) <br><br>
+            ab yhan per hamne upar wale <b>variable</b> men <b>dollor</b> ko <b>pkr</b> se <b>replace</b> kya hai or <b>replaceAll</b> k zarie jhan bhi <b>Dollor</b> hoga sab jaga <b>replace</b> ho jaega.
+
+          </p>
+        </li>
+
+        <!--!?=== string replacement by loop ===-->
+        <!--!== question 16 ===-->
+        <h3 class="txt-cap sub-heading" id="string replacement by loop">&starf; string replacement by loop</h3>
+        <li class="br-radius-6">
+          <p class="question">kya ham <b>string replacement by loop</b> kr skte hen or kese kr skte hen?</p>
+          <p class="answer">g han ham 
+            <b>string replacement by loop </b> kr skte hen. jis ka tareeqa ye hai. <br><br>
+            var text =
+                      "<b>PHP</b>  is indeed a versatile programming language widely used in web. However, it's essential to note that the tech landscape is evolving. it's crucial to diversify skills and adapt to the latest trends alongside mastering <b>PHP</b> ."; <br><br>
+            var <b>user</b> = prompt("Enter any value");<br>
+            var <b>userDesire</b> = prompt("Enter desired value");<br>
+          for(var i = 0; i < <b>text.length</b>; i++){<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;if(text.slice(i, <b>user.length</b> === <b>user</b>){ <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write( <b>text</b> = text.slice(<b>0 , i</b>) + userDesire + " " + text.slice( <b>i + userDesire.length</b>)) <br>
+            })   
+
+          } <br>
+          <br>
+          ab ise samajhte hen k ye kese kaam kr rha hai.
+          </p>
+          <ul>
+            <li>sab se pehle to ye samjh len k hamne <b>text</b> name ka aik variable upar banaya huwa hai jis men wo text hai jis men se kisi aik <b>word</b> ko ham <b>replace</b> krenge.</li>
+            <li>us k baad aik <b>user</b> name ka variable hai jis men ham <b>user</b> se <b>input</b> lenge k wo kis <b>word</b> ko <b>replace</b> krna chahta hai.</li>
+            <li>uske baad aik or variable hai <b>userDesire</b> k name se is men ham wo value lenge user se jis ko wo lagana chahta hai.</li>
+            <li>us k baad <b>loop</b> chalaegne <b>" 0 " index</b> se take <b>string</b> k pehle <b>letter</b> se <b>searching</b> start ho or is <b>loop</b> ko chalaenge <b>text ki length</b> tab take poore variable men <b>searchin</b> ki ja ske</li> 
+            <li>us k baad ham ne <b>condition</b> lagai is tarah<br>
+              if(text.slice(i, <b>user.length</b> === <b>user</b>) <br>
+            <b>text</b> ka har <b>letter loop k <i class="lowerCase">i </i> variable</b> k zarie mangwaya or <b>slice method</b> ki madad se us men <b>user input ki length</b> ko add kr k <b>user k input</b> jtna aik <b>word</b> banaya phr in <b>words</b> ko alag alag check kya <b>condition</b> ki madad se k ye whi <b>word</b> to nhi jo <b>user</b> ne <b>input</b> kya hai</li> 
+            <li>jab <b>user</b> ne jo <b>word input</b> men dya hai wo mil jata hai to phr use <b>replace</b> krte hen. ese <br>
+              document.write( <b>text</b> = text.slice(<b>0 , i</b>) + userDesire + " " + text.slice( <b>i + userDesire.length</b>)) <br>
+              ab yhan per <b>text variable</b> men <b>concat</b> kya jaega <b>user k desired word</b>  ko wo is tarah k <br>sab se pehle <b>string</b> k <b>first index </b> se lekr jhan per wo word mojood hai jise <b>replace</b> krna hai whan tak <b>slice</b> kya jaega or use <b>text variable</b> men <b>assign</b> kr dya jaega. <br>
+              phr <b>user</b> ne jo <b>word lagana</b> hai us <b>word</b> ko <b>add</b> krenge or us k baad <b>space</b> bhi add kr denge. <br>
+              phr jo <b>word user</b> ne <b>replace</b> kya hai us k baad se leker akhir tak poore <b>string</b> ko <b>add</b> krenge to is tarah <b>loop</b> k zarie se replacement ho jaegi. 
+            </li>
+            <li><b>user</b> ne jis word ko replace kya hai uske baad se copy krna start krne k lye hamne <b>slice</b> k pehle parameter yani k <b>starting index</b> men us word ka index dya jise replace kya gaya or us men <b>user</b> k input ki <b>length</b> ko add krdya jis se wo <b>starting point</b> us word k baad se start huwa.</li>
+          </ul>
+        </li>
+
+        <!--!?=== string replacement by indexOf ===-->
+        <!--!== question 16 ===-->
+        <h3 class="txt-cap sub-heading" id="string replacement by indexOf">&starf; string replacement by indexOf</h3>
+        <li class="br-radius-6">
+          <p class="question">kya ham <b>string replacement by indexOf</b> kr skte hen or kese kr skte hen?</p>
+          <p class="answer">g han ham 
+            <b>string replacement by indexOf </b> kr skte hen. jis ka tareeqa ye hai. <br><br>
+            var text =
+                      "<b>PHP</b>  is indeed a versatile programming language widely used in web. However, it's essential to note that the tech landscape is evolving. it's crucial to diversify skills and adapt to the latest trends alongside mastering <b>PHP</b> ."; <br><br>
+            var <b>user</b> = prompt("Enter any value");<br>
+            var <b>userIndex</b> = text.<b>indexOf</b>(user)<br>
+            var <b>userDesire</b> = prompt("Enter desired value");<br>
+            if( <b>userIndex</b> !== -1){ <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write( <b>text</b> = text.slice(<b>0 , userIndex</b>) + userDesire + " " + text.slice( <b>userIndex + userDesire.length</b>)) <br>
+          } <br>
+          <br>
+          ab ise samajhte hen k ye kese kaam kr rha hai.
+          </p>
+          <ul>
+            <li>sab se pehle to ye samjh len k hamne <b>text</b> name ka aik variable upar banaya huwa hai jis men wo text hai jis men se kisi aik <b>word</b> ko ham <b>replace</b> krenge.</li>
+            <li>us k baad aik <b>user</b> name ka variable hai jis men ham <b>user</b> se <b>input</b> lenge k wo kis <b>word</b> ko <b>replace</b> krna chahta hai.</li>
+            <li>uske baad aik or variable hai <b>userDesire</b> k name se is men ham wo value lenge user se jis ko wo lagana chahta hai.</li>
+            <li>us k baad <b>loop</b> chalaegne <b>" 0 " index</b> se take <b>string</b> k pehle <b>letter</b> se <b>searching</b> start ho or is <b>loop</b> ko chalaenge <b>text ki length</b> tab take poore variable men <b>searchin</b> ki ja ske</li> 
+            <li>us k baad ham ne <b>condition</b> lagai is tarah<br>
+              if(text.slice(i, <b>user.length</b> === <b>user</b>) <br>
+            <b>text</b> ka har <b>letter loop k <i class="lowerCase">i </i> variable</b> k zarie mangwaya or <b>slice method</b> ki madad se us men <b>user input ki length</b> ko add kr k <b>user k input</b> jtna aik <b>word</b> banaya phr in <b>words</b> ko alag alag check kya <b>condition</b> ki madad se k ye whi <b>word</b> to nhi jo <b>user</b> ne <b>input</b> kya hai</li> 
+            <li>jab <b>user</b> ne jo <b>word input</b> men dya hai wo mil jata hai to phr use <b>replace</b> krte hen. ese <br>
+              document.write( <b>text</b> = text.slice(<b>0 , i</b>) + userDesire + " " + text.slice( <b>i + userDesire.length</b>)) <br>
+              ab yhan per <b>text variable</b> men <b>concat</b> kya jaega <b>user k desired word</b>  ko wo is tarah k <br>sab se pehle <b>string</b> k <b>first index </b> se lekr jhan per wo word mojood hai jise <b>replace</b> krna hai whan tak <b>slice</b> kya jaega or use <b>text variable</b> men <b>assign</b> kr dya jaega. <br>
+              phr <b>user</b> ne jo <b>word lagana</b> hai us <b>word</b> ko <b>add</b> krenge or us k baad <b>space</b> bhi add kr denge. <br>
+              phr jo <b>word user</b> ne <b>replace</b> kya hai us k baad se leker akhir tak poore <b>string</b> ko <b>add</b> krenge to is tarah <b>loop</b> k zarie se replacement ho jaegi. 
+            </li>
+            <li><b>user</b> ne jis word ko replace kya hai uske baad se copy krna start krne k lye hamne <b>slice</b> k pehle parameter yani k <b>starting index</b> men us word ka index dya jise replace kya gaya or us men <b>user</b> k input ki <b>length</b> ko add krdya jis se wo <b>starting point</b> us word k baad se start huwa.</li>
+          </ul>
+        </li>
+
+        <script>
+          var text  = ' "Dollor" Lorem ipsum dolor sit amet "Dollor" consectetur adipisicing elit. Facilis distinctio reprehenderit dolorum natus! Suscipit, "Dollor" ' 
+          console.log(text.replace( /Dollor/g,"pkr" )) 
+
+        </script>
 
         <!--!?=== length ===-->
         <!--!== question 9 ===-->
